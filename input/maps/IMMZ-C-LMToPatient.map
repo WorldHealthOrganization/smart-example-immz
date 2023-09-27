@@ -1,4 +1,4 @@
-map "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureMap/IMMZ-C-LMToPatient" = "IMMZ-C-LMToPatient"
+map "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureMap/IMMZCLMToPatient" = "IMMZCLMToPatient"
 
 uses "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/IMMZ-C-register-client" alias IMMZC as target
 uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as target
@@ -15,7 +15,7 @@ group IMMZCToPatient (source immzc : IMMZC, target patient: Patient) {
   immzc.birthDate as birthDate -> patient.birthDate = birthDate "SetBirthDate";
 
   immzc.caregiver as caregiver -> patient.contact as contact, contact.name as hname 
-    then CGNameToHumanName( immzc, hname ) "SetCaregiver";
+    then NameToHumanName( caregiver, hname ) "SetCaregiver";
 
   immzc.phone as phone -> patient.telecom as telecom then {
     phone as content -> telecom.value = content, telecom.system = 'phone' "SetPhoneValue";
@@ -35,18 +35,8 @@ group NameToHumanName (
   source immzc,
   target hname
 ) {
-  immzc.fullName as fullName -> hname.text = fullName "SetFullName";
+  immzc.name as fullName -> hname.text = fullName "SetFullName";
   immzc.firstName as firstName -> hname.given = firstName "SetFirstName";
   immzc.familyName as familyName -> hname.family = familyName "SetFamilyName";
 }
 
-
-
-group CGNameToHumanName (
-  source immzc,
-  target hname
-) {
-  immzc.cgfullName as fullName -> hname.text = fullName "SetFullName";
-  immzc.cgfirstName as firstName -> hname.given = firstName "SetFirstName";
-  immzc.cgfamilyName as familyName -> hname.family = familyName "SetFamilyName";
-}
