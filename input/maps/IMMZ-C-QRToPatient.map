@@ -1,17 +1,17 @@
-map "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureMap/IMMZ-C-QRToPatient" = "IMMZ-C-QRToPatient"
+map "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureMap/IMMZCQRToPatient" = "IMMZCQRToPatient"
 
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
 uses "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/IMMZ-C-register-client" alias IMMZC as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as target
 
-imports "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureMap/IMMZ-C-QRToLM"
-imports "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureMap/IMMZ-C-LMToPatient"
+imports "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureMap/IMMZCQRToLM"
+imports "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureMap/IMMZCLMToPatient"
 
 group QRestToIMMZC (
   source qr : QResp,
   target patient: Patient
 ) {
-  qr -> create("http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/IMMZ-C-register-client") as model 
+  qr -> create(IMMZC) as model 
   then{
     qr -> model then QRespToIMMZC( qr, model) "QRtoLM";
     qr -> patient then IMMZCToPatient( model, patient ) "LMtoPatient";

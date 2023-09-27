@@ -15,7 +15,7 @@ group QRespToIMMZC ( source qr : QResp, target immzc : IMMZC) {
     item as cgname where item.linkId = 'caregiver' then NameToIMMZC( item, immzc ) "SetNames";
 
     item.answer first as answer where item.linkId = 'sex' then {
-      answer as coding then {
+      answer.value as coding then {
         coding.code as content -> immzc.sex = content "SetSex";
       } "ProcessCoding";
     } "FirstAnswerForIdentifier";
@@ -24,7 +24,7 @@ group QRespToIMMZC ( source qr : QResp, target immzc : IMMZC) {
       answer as content -> immzc.birthDate = content "SetBirthDate2";
     } "FirstAnswerForBirthDate";
 
-    item as caregiver where item.linkId = 'caregiver' -> immzc.caregiver as caretgt 
+    item.answer as caregiver where item.linkId = 'caregiver' -> immzc.caregiver as caretgt 
       then NameToIMMZC( caregiver, caretgt ) "SetCaregiver";
 
     item.answer first as answer where item.linkId = 'phone' then {
