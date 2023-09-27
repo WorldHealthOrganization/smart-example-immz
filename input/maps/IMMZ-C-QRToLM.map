@@ -1,0 +1,77 @@
+map "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureMap/IMMZ-C-QRToLM" = "IMMZ-C-QRToLM"
+
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
+uses "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureDefinition/IMMZ-C-register-client" alias IMMZC as target
+
+group QRespToIMMZC ( source qr : QResp, target immzc : IMMZC) {
+  qr.item as item then {
+
+    item.answer first as answer where item.linkId = 'uniqueId' then {
+      answer.valueString as content -> immzc.uniqueId = content  "SetIdentifier";
+    } "FirstAnswerForIdentifier";
+
+    item as name where item.linkId = 'name' then NameToIMMZC( name, immzc ) "SetNames";
+
+    item as cgname where item.linkId = 'caregiver' then CGNameToIMMZC( cgname, immzc ) "SetNames";
+
+    item.answer first as answer where item.linkId = 'sex' then {
+      answer.valueCoding as coding then {
+        coding.code as content -> immzc.sex = content "SetSex";
+      } "ProcessCoding";
+    } "FirstAnswerForIdentifier";
+  
+    item.answer first as answer where item.linkId = 'birthDate' then {
+      answer.valueDate as content -> immzc.birthDate = content "SetBirthDate2";
+    } "FirstAnswerForBirthDate";
+
+    item.answer first as answer where item.linkId = 'ageInWeeks' then {
+      answer.valueInteger as content -> immzc.ageInWeeks = content "SetAgeInWeeks";
+    } "FirstAnswerForAgeInWeeks";
+
+    item.answer first as answer where item.linkId = 'ageInMonths' then {
+      answer.valueInteger as content -> immzc.ageInMonths = content "SetAgeInMonths";
+    } "FirstAnswerForAgeInMonths";
+
+    item.answer first as answer where item.linkId = 'ageInYears' then {
+      answer.valueInteger as content -> immzc.ageInYears = content "SetAgeInYears";
+    } "FirstAnswerForAgeInYears";
+
+    item as caregiver where item.linkId = 'caregiver' -> immzc.caregiver as caretgt 
+      then NameToIMMZC( caregiver, caretgt ) "SetCaregiver";
+
+    item.answer first as answer where item.linkId = 'phone' then {
+       answer.valueString as content -> immzc.phone = content  "SetPhone";
+     } "FirstAnswerForPhone";
+
+    item.answer first as answer where item.linkId = 'administrativeArea' then {
+      answer.value as coding -> immzc.administrativeArea as area then {
+        coding -> area.coding = coding "SetCodingValue";
+        coding.display as display -> area.text = display "SetDisplay";
+      } "SetCoding";
+    } "FirstAnswerForAdministrativeArea";
+    
+    item.answer first as answer where item.linkId = 'healthWorker' then {
+      answer.valueBoolean as content -> immzc.healthWorker = content  "SetHealthWorker";
+    } "FirstAnswerForHealthWorker";
+
+  } "processItems";
+
+}
+
+group NameToIMMZC( source name, target immzc) {
+  name.item as item then {
+
+    item.answer first as answer where item.linkId = 'fullName' then {
+      answer.valueString as content -> immzc.name = content "SetFullName";
+    } "FirstAnswerForFullName";
+
+    item.answer first as answer where item.linkId = 'firstName' then {
+      answer.valueString as content -> immzc.firstName = content "SetFirstName";
+    } "FirstAnswerForFirstName";
+
+    item.answer first as answer where item.linkId = 'familyName' then {
+      answer.valueString as content -> immzc.familyName = content "SetFamilyName";
+    } "FirstAnswerForFamilyName";
+
+  } "processNameItems";
+}
