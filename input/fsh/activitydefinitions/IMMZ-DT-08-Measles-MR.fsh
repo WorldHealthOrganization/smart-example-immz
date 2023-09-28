@@ -2,7 +2,7 @@ Instance: IMMZ-DT-08-Measles-MR
 InstanceOf: ActivityDefinition
 Usage: #example
 //* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationactivity"
-* url = "http://worldhealthorganization.github.io/smart-immunizations-mini/ActivityDefinition/IMMZ.DT.08.Measles.MR"
+* url = "http://worldhealthorganization.github.io/smart-immunizations-measles/ActivityDefinition/IMMZ.DT.08.Measles.MR"
 * version = "0.1.0"
 * name = "IMMZ-DT-08-Measles-MR"
 * title = "IMMZ.DT.08.Measles.MR"

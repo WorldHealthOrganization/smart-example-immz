@@ -11,7 +11,7 @@ Usage: #definition
 * contained[+] = IMMZ-D1.DE10
 
 * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
-* extension[=].valueCanonical = "http://worldhealthorganization.github.io/smart-immunizations-mini/StructureMap/IMMZ-C-QRToPatient"
+* extension[=].valueCanonical = "http://worldhealthorganization.github.io/smart-immunizations-measles/StructureMap/IMMZCQRToPatient"
 
 
 * insert Question(dose0, Indicates if the client has received a birth dose and/or supplementary dose, boolean, false, false)

@@ -1,11 +1,11 @@
-Instance:     IMMZ-C-SexToAdministrativeGender
+Instance:     IMMZCSexToAdministrativeGender
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ.C sex coding to FHIR Administrative Gender."
 Usage:        #definition
 
-* url = "http://worldhealthorganization.github.io/smart-immunizations-mini/ConceptMap/IMMZ-C-SexToAdministrativeGender"
+* url = "http://worldhealthorganization.github.io/smart-immunizations-measles/ConceptMap/IMMZCSexToAdministrativeGender"
 
-* name = "IMMZ_C_SexToAdministrativeGender"
+* name = "IMMZCSexToAdministrativeGender"
 * title = "ConceptMap to and From IMMZ.C sex to administrative gender"
 * status = #active
 * experimental = false
@@ -27,3 +27,5 @@ Usage:        #definition
   * insert ElementMap(unknown, DE8, equivalent)
   * insert ElementMap(other, DE9, narrower)
 
+  * element[=].target[=].comment = "intersex isn't as broad as 'other' but the FHIR binding doesn't support it"
+  

@@ -10,11 +10,11 @@ Expression:   "$this.matches('[A-Za-z-.]*')"
 Severity:     #error
 
 
-Logical:      IMMZ-C-register-client
+Logical:      IMMZCRegisterClient
 Title:        "IMMZ.C Register Client"
 Description:  "Data elements for the IMMZ.C Register Client Data Dictionary."
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
-* ^name = "IMMZ_C_Register_Client"
+* ^name = "IMMZCRegisterClient"
 * obeys IMMZ-C-DE10-1
 * uniqueId 1..1 SU string "Unique identifier" "Unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID)."
   * ^code[+] = IMMZ-C#DE1
