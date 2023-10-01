@@ -30,8 +30,8 @@ group IMMZCToPatient (source immzc : IMMZC, target patient: Patient) {
 
 }
 
-group NameToHumanName (source immzc, target hname) {
-  immzc.name as fullName -> hname.text = fullName "SetFullName";
-  immzc.firstName as firstName -> hname.given = firstName "SetFirstName";
-  immzc.familyName as familyName -> hname.family = familyName "SetFamilyName";
+group NameToHumanName (source name, target hname) {
+  name.name as fullName -> hname.text = fullName "SetFullName";
+  name.firstName as firstName -> hname.given = firstName "SetFirstName";
+  name.familyName as familyName -> hname.family = familyName "SetFamilyName";
 }
