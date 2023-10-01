@@ -307,6 +307,7 @@ meta:
 #   setId: always # always | standalone-only
 
 parameters:
+  produce-jekyll-data: true
   path-resource: 
     - input/actors
     - input/maps
