@@ -2,6 +2,9 @@ Alias: $IMMZ-C = http://worldhealthorganization.github.io/smart-immunizations-me
 
 Instance: QuestionnaireResponse1
 InstanceOf: QuestionnaireResponse
+Title: "Example Questionnaire Response"
+Description: "Questionnaire Response - Patient p007 registration"
+
 Usage: #example
 * status = #completed
 * authored = "2023-09-26T16:28:56.811Z"
