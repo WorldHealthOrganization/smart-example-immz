@@ -2,6 +2,9 @@ Alias: $IMMZ-C = http://worldhealthorganization.github.io/smart-immunizations-me
 
 Instance: QuestionnaireResponse1
 InstanceOf: QuestionnaireResponse
+Title: "Example Questionnaire Response"
+Description: "Questionnaire Response - Patient p007 registration"
+
 Usage: #example
 * status = #completed
 * authored = "2023-09-26T16:28:56.811Z"
@@ -54,7 +57,7 @@ Usage: #example
   * answer.valueString = "+123456789"
 * item[+]
   * linkId = "administrativeArea"
-  * text = "Administrative Area"
+  * text = "Administrative area"
   * answer.valueCoding = urn:iso:std:iso:3166:-2#KE-30 "Nairobi City"
 * item[+]
   * linkId = "healthWorker"
