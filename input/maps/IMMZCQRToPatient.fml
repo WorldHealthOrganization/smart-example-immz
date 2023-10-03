@@ -1,3 +1,7 @@
+/// name = "IMMZCQRToPatient"
+/// status = draft
+/// title = "IMMZ.C QuestionnaireResponse to Patient"
+
 map "http://worldhealthorganization.github.io/smart-immunizations-measles/StructureMap/IMMZCQRToPatient" = "IMMZCQRToPatient"
 
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
