@@ -15,7 +15,7 @@ Title:        "IMMZ.C Register Client"
 Description:  "Data elements for the IMMZ.C Register Client Data Dictionary."
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * ^name = "IMMZCRegisterClient"
-* obeys IMMZ-C-DE10-1
+//* obeys IMMZ-C-DE10-1
 * uniqueId 1..1 SU string "Unique identifier" "Unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID)."
   * ^code[+] = IMMZ-C#DE1
 //  * ^code[WHOCommon] = IMMZ-C#DE1
