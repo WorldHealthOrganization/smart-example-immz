@@ -37,7 +37,7 @@ Usage: #definition
   * code[+] = $SCT#69840006
 * insert Question(hivStatus, The current human immunodeficiency virus HIV status of the client, choice, false, false)
 * item[=]
-  * answerValueSet = Canonical(IMMZ-D1.DE10)
+  * answerValueSet = "#IMMZ-D1.DE10"
   * code[+] = IMMZ-D1#DE10
   * code[+] = $LNC#55277-8
   * code[+] = $SCT#278977008

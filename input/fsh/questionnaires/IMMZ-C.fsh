@@ -49,7 +49,7 @@ Usage: #definition
 
 * insert Question(sex, Sex,choice,true,false)
 * item[=]
-  * answerValueSet = Canonical(IMMZ-C-DE5)
+  * answerValueSet = "#IMMZ-C-DE5"
   * code[+] = IMMZ-C#DE5
   * code[+] = $LNC#46098-0	"Sex"
   * code[+] = $SCT#184100006 "Patient sex (observable entity)"

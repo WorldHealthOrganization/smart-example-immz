@@ -1,6 +1,6 @@
-/// name = "IMMZCQRToPatient"
-/// status = draft
-/// title = "IMMZ.C QuestionnaireResponse to Patient"
+// /// name = "IMMZCQRToPatient"
+// /// status = draft
+// /// title = "IMMZ.C QuestionnaireResponse to Patient"
 
 map "http://worldhealthorganization.github.io/smart-immunizations-measles/StructureMap/IMMZCQRToPatient" = "IMMZCQRToPatient"
 
