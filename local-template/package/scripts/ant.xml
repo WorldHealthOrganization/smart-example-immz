@@ -22,7 +22,18 @@
   </target>
   <extension-point name="onLoad.extend" depends="onLoad.updateIg"/>
 
-  <target name="processCQL">
+  <target name="checkJarExists">
+      <!-- Check if cqf-tooling.jar exists -->
+      <available file="${ig.scripts}/cqf-tooling.jar" property="jar.exists"/>
+  </target>
+
+  <target name="downloadJar" depends="checkJarExists" unless="jar.exists">
+      <!-- If it doesn't exist, download it -->
+      <get src="https://oss.sonatype.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.opencds.cqf&amp;a=tooling-cli&amp;v=2.4.0"
+          dest="${ig.scripts}/cqf-tooling.jar" skipexisting="true" usetimestamp="true" ignoreerrors="false"/>
+  </target>
+
+  <target name="processCQL" depends="downloadJar">
     <java jar="${ig.scripts}/cqf-tooling.jar" fork="true" failonerror="true">
       <jvmarg line="-Dfile.encoding=UTF-8"/>
       <arg line="-RefreshIG -ini=./ig.ini -d -p -t -lop ./fsh-generated/resources -mop ./fsh-generated/resources -rp ./fsh-generated/resources"/>
