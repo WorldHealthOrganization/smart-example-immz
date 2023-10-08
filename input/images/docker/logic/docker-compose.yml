@@ -9,9 +9,15 @@ services:
     container_name: ${server_name}
     ports:
       - ${server_port:-8080}:8080
+    env_file:
+      - .env
     environment:
        - hapi.fhir.allow_multiple_delete=true
        - hapi.fhir.reuse_cached_search_results_millis=1000
+
+       - hapi.fhir.implementationguides.${ig_name:-this}.url=${ig_url}/package.tgz
+       - hapi.fhir.implementationguides.${ig_name:-this}.name=${ig_package_name}
+       - hapi.fhir.implementationguides.${ig_name:-this}.version=${ig_version}
 
   busybox:
     image: costateixeira/busybox:latest
