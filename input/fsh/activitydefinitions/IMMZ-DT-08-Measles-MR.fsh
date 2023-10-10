@@ -1,27 +1,29 @@
-Alias: $mms = http://id.who.int/icd/release/11/mms
 
-Instance: IMMZ-DT-08-Measles-MR
-InstanceOf: ActivityDefinition
-Usage: #example
-//* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationactivity"
-* url = "http://worldhealthorganization.github.io/smart-immunizations-measles/ActivityDefinition/IMMZ-DT-08-Measles-MR"
+Instance: IMMZD2DTMeaslesMR
+InstanceOf: http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationactivity
+Title: "IMMZ.D2.DT.Measles.MR"
+Description: "Provide measles immunization"
+Usage: #definition
+
+* library = "http://fhir.org/guides/who/smart-immunization/Library/IMMZD2DTMeasles"
+* extension[+]
+  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+  * valueCode = #computable
 * version = "0.1.0"
-* name = "IMMZ-DT-08-Measles"
-* title = "IMMZ.DT.08.Measles"
-* status = #active
-* experimental = true
-* date = "2022-05-06T12:05:48.3799313-04:00"
+* name = "IMMZD2DTMeaslesMR"
+* status = #draft
+* experimental = false
+* date = 2023-10-03
 * publisher = "World Health Organization (WHO)"
-* contact.telecom
-  * system = #url
-  * value = "https://who.int"
-* description = "Provide measles immunization"
+* contact[+]
+  * telecom[+]
+    * system = #url
+    * value = "https://who.int"
 * kind = #MedicationRequest
-* code = $SCT#33879002 "Administration of vaccine to produce active immunity"
 * intent = #proposal
-* productCodeableConcept = $mms#XM28X5 "Measles vaccines"
-* doNotPerform = true
-* dynamicValue[0]
+* doNotPerform = false
+* productCodeableConcept = $ICD11#XM28X5 "Measles vaccines"
+* dynamicValue[+]
   * path = "status"
   * expression
     * language = #text/cql
