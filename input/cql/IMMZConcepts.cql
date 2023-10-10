@@ -16,28 +16,28 @@ codesystem "Extended Codes CodeSystem codes": 'http://fhir.org/guides/who/anc-cd
 valueset "WHO ATC": 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips'
 
 // General use ValueSets 
-valueset "Negative Result": 'http://worldhealthorganization.github.io/smart-immunizations-measles/ValueSet/Negativetestresult-values'
-valueset "Positive Result": 'http://worldhealthorganization.github.io/smart-immunizations-measles/ValueSet/PositiveTestResult-values'
-valueset "Immunocompromised": 'http://worldhealthorganization.github.io/smart-immunizations-measles/ValueSet/Immunocompromised-values'
-valueset "Patient birth weight observation value": 'http://worldhealthorganization.github.io/smart-immunizations-measles/ValueSet/Birthweight-values'
-valueset "PretermBirth": 'http://worldhealthorganization.github.io/smart-immunizations-measles/ValueSet/Preterm-values'
-valueset "Live Attenuated": 'http://worldhealthorganization.github.io/smart-immunizations-measles/ValueSet/LiveAttenduatedVaccines'
+valueset "Negative Result": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/Negativetestresult-values'
+valueset "Positive Result": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/PositiveTestResult-values'
+valueset "Immunocompromised": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/Immunocompromised-values'
+valueset "Patient birth weight observation value": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/Birthweight-values'
+valueset "PretermBirth": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/Preterm-values'
+valueset "Live Attenuated": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/LiveAttenduatedVaccines'
 
 //valueset "Target Disease": 'http://hl7.org/fhir/ValueSet/immunization-target-disease'
 
-valueset "HIV status": 'http://worldhealthorganization.github.io/smart-immunizations-measles/ValueSet/HIVstatus-values'
+valueset "HIV status": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/HIVstatus-values'
 valueset "HIV status - HIV positive Choices": 'http://fhir.org/guides/who/anc-cds/ValueSet/anc-b9-de46'
 valueset "HIV status - HIV negative Choices": 'http://fhir.org/guides/who/anc-cds/ValueSet/anc-b9-de47'
 
-valueset "ARV Drugs": 'http://worldhealthorganization.github.io/smart-immunizations-measles/ValueSet/ARVDrugs-values'
+valueset "ARV Drugs": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/ARVDrugs-values'
 
 // Vaccine Value Sets
 
-valueset "MCV Vaccine": 'http://worldhealthorganization.github.io/smart-immunizations-measles/ValueSet/IMMZ.A1.DE9'
+valueset "MCV Vaccine": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/IMMZ.A1.DE9'
 
 // Plugin is complaining about not finding these so that should be resolved, but here until it can be fixed
-valueset "BCG Vaccine": 'http://worldhealthorganization.github.io/smart-immunizations-measles/ValueSet/IMMZ.A1.DE1'
-valueset "Cholera Vaccine": 'http://worldhealthorganization.github.io/smart-immunizations-measles/ValueSet/IMMZ.A1.DE2'
+valueset "BCG Vaccine": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/IMMZ.A1.DE1'
+valueset "Cholera Vaccine": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/IMMZ.A1.DE2'
 
 
 

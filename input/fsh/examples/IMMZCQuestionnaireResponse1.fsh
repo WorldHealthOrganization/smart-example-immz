@@ -1,4 +1,4 @@
-Alias: $IMMZ-C = http://worldhealthorganization.github.io/smart-immunizations-measles/CodeSystem/IMMZ-C
+Alias: $IMMZ-C = http://smart.who.int/ig/smart-immunizations-measles/CodeSystem/IMMZ-C
 
 Instance: IMMZCQuestionnaireResponse1
 InstanceOf: QuestionnaireResponse
