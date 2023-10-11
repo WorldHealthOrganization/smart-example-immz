@@ -44,6 +44,7 @@ services:
 
   web:
     image: nginx:alpine
+    container_name: webserver    
     volumes:
       - ./app:/usr/share/nginx/html
     ports:
