@@ -38,13 +38,18 @@ services:
       # - hapi.fhir.implementationguides.base.version=0.1.0
 
 
-      - hapi.fhir.implementationguides.${ig_name:-this}.url=${ig_url}/package.tgz
-      - hapi.fhir.implementationguides.${ig_name:-this}.name=${ig_package_name}
-      - hapi.fhir.implementationguides.${ig_name:-this}.version=${ig_version}
+      # - hapi.fhir.implementationguides.${ig_name:-this}.url=${ig_url}/package.tgz
+      # - hapi.fhir.implementationguides.${ig_name:-this}.name=${ig_package_name}
+      # - hapi.fhir.implementationguides.${ig_name:-this}.version=${ig_version}
 
-  busybox:
-    image: costateixeira/busybox:latest
+  web:
+    image: nginx:alpine
     volumes:
-      - ./app:/home/static
+      - ./app:/usr/share/nginx/html
     ports:
-      - ${static_server_port:-8087}:3000
+      - ${static_server_port:-8087}:80
+    command: /bin/sh -c "apk --no-cache add git && \
+                         cd /tmp && \
+                         git clone https://github.com/DigitalSQR/fhirservers.git && \
+                         cp -r /tmp/fhirservers/matchbox/app/* /usr/share/nginx/html/ && \
+                         nginx -g 'daemon off;'"

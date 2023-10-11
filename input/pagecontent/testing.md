@@ -26,6 +26,8 @@ How to setup the server:
 
 ### Scheduling and Decision Logic, Measures
 CQFRuler
-* <a href="https://raw.githubusercontent.com/WorldHealthOrganization/smart-immunizations-measles/main/testing/docker/logic/.env" download>.env file</a>  
-* <a href="https://raw.githubusercontent.com/WorldHealthOrganization/smart-immunizations-measles/main/testing/docker/logic/docker-compose.yml" download>docker compose file</a>
-
+1. Download the <a href="https://raw.githubusercontent.com/WorldHealthOrganization/smart-immunizations-measles/main/testing/docker/logic/.env" download>.env file</a>  
+2. Download the <a href="https://raw.githubusercontent.com/WorldHealthOrganization/smart-immunizations-measles/main/testing/docker/logic/docker-compose.yml" download>docker compose file</a>
+3. From the same folder, run `docker-compose up -d`  
+4. Navigate to http://localhost:<static_server_port> e.g. <a href="http://localhost:8087">http://localhost:8087</a>  
+5. Follow the instructions there to setup and run the plan definitions.
