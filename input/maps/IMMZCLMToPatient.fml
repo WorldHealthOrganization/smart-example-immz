@@ -1,6 +1,6 @@
-// /// name = "IMMZCLMToPatient"
-// /// status = draft
-// /// title = "IMMZ.C Logical Model to Patient"
+/// name = "IMMZCLMToPatient"
+/// status = draft
+/// title = "IMMZ.C Logical Model to Patient"
 
 map "http://worldhealthorganization.github.io/smart-immunizations-measles/StructureMap/IMMZCLMToPatient" = "IMMZCLMToPatient"
 
