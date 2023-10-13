@@ -1,7 +1,3 @@
-/// name = "IMMZCLMToPatient"
-/// status = draft
-/// title = "IMMZ.C Logical Model to Patient"
-
 map "http://worldhealthorganization.github.io/smart-immunizations-measles/StructureMap/IMMZCLMToPatient" = "IMMZCLMToPatient"
 
 uses "http://worldhealthorganization.github.io/smart-immunizations-measles/StructureDefinition/IMMZCRegisterClient" alias IMMZC as source
