@@ -297,6 +297,6 @@ parameters:
   produce-jekyll-data: true
   path-resource: 
     - input/actors
-#    - input/maps
+    - input/maps
   special-url:
     - http://id.who.int/icd11/mms
