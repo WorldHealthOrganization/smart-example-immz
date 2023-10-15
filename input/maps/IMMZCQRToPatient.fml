@@ -68,15 +68,15 @@ group NameToHumanName(
   name.item as item then {
 
     item.answer first as answer where item.linkId = 'fullName' then {
-      answer.valueString as content -> hname.text = content "set full name";
+      answer.valueString as content -> hname.text = content "SeFfullName";
     } "firstAnswerForFullName";
 
     item.answer first as answer where item.linkId = 'firstName' then {
-      answer.valueString as content -> hname.given = content "set first name";
+      answer.valueString as content -> hname.given = content "SetFirstName";
     } "firstAnswerForFirstName";
 
     item.answer first as answer where item.linkId = 'familyName' then {
-      answer.valueString as content -> hname.family = content "set family name";
+      answer.valueString as content -> hname.family = content "SetFamilyName";
     } "firstAnswerForFamilyName";
 
   } "processNameItems";
