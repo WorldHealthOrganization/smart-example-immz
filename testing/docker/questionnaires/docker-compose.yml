@@ -19,6 +19,9 @@ services:
       - hapi.fhir.server_address=localhost:${server_port}
       - hapi.fhir.reuse_cached_search_results_millis=10000
       - matchbox.fhir.context.onlyOneEngine=true
+      - hapi.fhir.cors.allow_Credentials=true
+      - hapi.fhir.cors.allowed_origin_patterns="http:localhost:*"
+
 
       - hapi.fhir.implementationguides.fhir_r4_core.name=hl7.fhir.r4.core
       - hapi.fhir.implementationguides.fhir_r4_core.version=4.0.1
@@ -49,8 +52,15 @@ services:
       - ./app:/usr/share/nginx/html
     ports:
       - ${static_server_port:-8087}:80
-    command: /bin/sh -c "apk --no-cache add git && \
-                         cd /tmp && \
-                         git clone https://github.com/DigitalSQR/fhirservers.git && \
-                         cp -r /tmp/fhirservers/matchbox/app/* /usr/share/nginx/html/ && \
-                         nginx -g 'daemon off;'"
+    command: >-
+      /bin/sh -c "
+      apk --no-cache add git wget && \
+      cd /usr/share/nginx/html/ && \
+      wget -O resources.json $ig_url/package.db && \
+      echo '{\"ig_url\": \"'$ig_url'\", \"server_url\": \"http://localhost:'$server_port'/fhir\"}' > config.json && \
+      cd /tmp && \
+      rm -rf fhirservers && \
+      git clone https://github.com/DigitalSQR/fhirservers.git && \
+      cp -r /tmp/fhirservers/matchbox/app/* /usr/share/nginx/html/ && \
+      cp -r /tmp/fhirservers/matchbox/app/index2.html /usr/share/nginx/html/index.html && \
+      nginx -g 'daemon off;'"
