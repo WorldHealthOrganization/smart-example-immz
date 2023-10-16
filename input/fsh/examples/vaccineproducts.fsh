@@ -41,10 +41,13 @@ Description: "ICD-11."
 * #XT0S "Pregnancy"
 
 
-
 CodeSystem: VaccineProducts
 Title:     "Vaccine Prduct codes CodeSet"
 Description: "Vaccine Prduct codes, containing the different available products."
+
+* ^property[+].code = #classification
+* ^property[=].type = #code
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#classification"
 
 * #20009060/2 "Serum Institute of India Measles vaccine"
 * #7680007030014 "M-M-RvaxPRO"
@@ -57,11 +60,12 @@ Description: "Vaccine type Codes, containing the different types of antigens use
 * codes from system ICD11
 
 
-ValueSet: VSVaccineProducts
+ValueSet: VSMeaslesVaccineProducts
 Id: VSVaccineProducts        
-Title:     "Vaccine Type ValueSet"
+Title:     "MeaslesVaccine Type ValueSet"
 Description: "Vaccine type Codes, containing the different types of antigens used in vaccine guidelines."
-* codes from system VaccineProducts
+* codes from system VaccineProducts // where property[classification] = #XM28X5
+
 
 Instance: MedSIIMeaslesVaccine
 InstanceOf: VaccineProduct
@@ -69,6 +73,15 @@ Title: "Serum Institute of India Measles - Medication Product"
 Description: "Serum Institute of India Measles - Medication Product"
 * code = VaccineProducts#20009060/2
 * extension[classification][+].valueCodeableConcept = $ICD11#XM8L15
+
+Instance: GSKMeaslesVaccine
+InstanceOf: VaccineProduct
+Title: "GSK - M-M-RvaxPRO"
+Description: "M-M-RvaxPRO"
+* code = VaccineProducts#7680007030014
+* extension[classification][+].valueCodeableConcept = $ICD11#XM8L15
+* extension[classification][+].valueCodeableConcept = $ICD11#XM2340
+
 
 Extension: Classification
 Description: "Medication Classification."
@@ -81,3 +94,17 @@ Profile: VaccineProduct
 Parent: Medication
 
 * extension contains Classification named classification 0..* MS
+
+
+Profile: SGImmunization
+Parent: Immunization
+
+* extension contains SGIMMAdministeredProduct named administeredProduct 0..1
+
+
+Extension: SGIMMAdministeredProduct
+Id: sg-ext-administeredProduct
+Title: "SGAdministeredProduct"
+Description: "The product administered"
+* value[x] only Reference(VaccineProduct) or CodeableConcept
+
