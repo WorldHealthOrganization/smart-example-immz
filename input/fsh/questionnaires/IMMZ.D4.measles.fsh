@@ -14,7 +14,8 @@ Usage: #definition
 * extension[=].valueCanonical = "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZD4QRToResources"
 
 
-* insert Question(contraindications, Specific situations or medical conditions in which it is advised or recommended to avoid or delay administering a particular vaccine, choice, false, true)
+//* insert Question(contraindications, Specific situations or medical conditions in which it is advised or recommended to avoid or delay administering a particular vaccine, choice, false, true)
+* insert Question(contraindications, Contraindications, choice, false, true)
 * item[=]
   * answerValueSet = "#IMMZ.D4.DE161"
   * code[+] = IMMZ.D4#DE161
