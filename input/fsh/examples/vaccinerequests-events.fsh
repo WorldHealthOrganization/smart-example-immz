@@ -6,6 +6,7 @@ Parent: MedicationRequest
 
 Profile: VaccineRequest
 Parent: MedicationRequest
+Description: "An order for an actual product"
 * intent = #instance-order
 * medication[x] only Reference(VaccineProduct) 
 
@@ -34,7 +35,7 @@ InstanceOf: VaccineProduct
 
 Instance: Immunization1
 InstanceOf: SGImmunization
-* vaccineCode = #20009060/2
+* vaccineCode = VaccineProducts#20009060/2
 * lotNumber = "lot123"
 * expirationDate = "2023-10-01"
 * extension[administeredProduct].valueReference = Reference(Measlesprod1)
