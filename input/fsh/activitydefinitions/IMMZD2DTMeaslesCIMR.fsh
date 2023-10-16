@@ -25,6 +25,6 @@ Usage: #definition
 * dynamicValue[+]
   * path = "id"
   * expression
-    * description = "Draft Medication Request for MCV dose"
+    * description = "Draft Medication Request ID for MCV dose"
     * language = #text/cql-identifier
-    * expression = "Draft Medication Request for MCV dose"
+    * expression = "Draft Medication Request ID for MCV dose"

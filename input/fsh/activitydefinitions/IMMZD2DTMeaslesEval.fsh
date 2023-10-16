@@ -4,7 +4,7 @@ Title: "IMMZ.D2.DT.Measles.Eval"
 Description: "Provide measles immunization"
 Usage: #definition
 
-* library = "http://fhir.org/guides/who/smart-immunization/Library/IMMZD2DTMeasles"
+* library = "http://smart.who.int/ig/smart-immunizations-measles/Library/IMMZD2DTMeasles"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable
@@ -21,3 +21,9 @@ Usage: #definition
 * kind = #ServiceRequest
 * intent = #proposal
 * doNotPerform = false
+* dynamicValue[+]
+  * path = "code.coding"
+  * expression
+    * description = "Measles Code"
+    * language = #text/cql
+    * expression = "Code { system: 'http://hl7.org/fhir/sid/icd-11', code: 'XM28X5' }"
