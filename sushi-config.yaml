@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: who.fhir.smart-immunizations-measles
-canonical: http://worldhealthorganization.github.io/smart-immunizations-measles
+canonical: http://smart.who.int/ig/smart-immunizations-measles
 name: SMART
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
@@ -27,23 +27,10 @@ publisher:
 dependencies:
   who.fhir.smart-base: dev
   hl7.fhir.uv.sdc: 3.0.0
-#   hl7.fhir.us.core: 3.1.0
-#   hl7.fhir.us.mcode:
-#     id: mcode
-#     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-#     version: 1.0.0
+  hl7.fhir.uv.cpg: current
+  hl7.fhir.us.cqfmeasures: current
+
 #
-#
-# The pages property corresponds to IG.definition.page. SUSHI can
-# auto-generate the page list, but if the author includes pages in
-# this file, it is assumed that the author will fully manage the
-# pages section and SUSHI will not generate any page entries.
-# The page file name is used as the key. If title is not provided,
-# then the title will be generated from the file name.  If a
-# generation value is not provided, it will be inferred from the
-# file name extension.  Any subproperties that are valid filenames
-# with supported extensions (e.g., .md/.xml) will be treated as
-# sub-pages.
 #
 pages:
   index.md:
@@ -174,7 +161,7 @@ menu:
 
 meta:
   profile:
-    - http://smart.who.int/ig/smart-base/ImplementationGuide-SMARTImplementationGuide
+    - http://smart.who.int/ig/smart-base/ImplementationGuide-SGImplementationGuide
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
@@ -311,3 +298,5 @@ parameters:
   path-resource: 
     - input/actors
     - input/maps
+  special-url:
+    - http://id.who.int/icd11/mms

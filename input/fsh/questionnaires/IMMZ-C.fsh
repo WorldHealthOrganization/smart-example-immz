@@ -13,8 +13,8 @@ Usage: #definition
 //* contained[+] = YesNoUnknown
 
 * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
-//* extension[=].valueCanonical = "http://worldhealthorganization.github.io/smart-immunizations-measles/StructureMap/IMMZ-C-QRToPatient"
-* extension[=].valueCanonical = "http://worldhealthorganization.github.io/smart-immunizations-measles/StructureMap/IMMZ-C-QRToLM"
+* extension[=].valueCanonical = "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZCQRToPatient"
+//* extension[=].valueCanonical = "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZCQRToLM"
 
 //Header
 //* insert Question(header,Client Registration form: to fill in by ....,display,true,false)
