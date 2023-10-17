@@ -42,8 +42,8 @@ Description: "ICD-11."
 
 
 CodeSystem: VaccineProducts
-Title:     "Vaccine Prduct codes CodeSet"
-Description: "Vaccine Prduct codes, containing the different available products."
+Title:     "Vaccine Product codes CodeSet"
+Description: "Vaccine Product codes, containing the different available products."
 
 * ^property[+].code = #classification
 * ^property[=].type = #code
