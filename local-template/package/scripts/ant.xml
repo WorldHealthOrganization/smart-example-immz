@@ -29,7 +29,7 @@
 
   <target name="downloadJar" depends="checkJarExists" unless="jar.exists">
       <!-- If it doesn't exist, download it -->
-      <get src="https://oss.sonatype.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.opencds.cqf&amp;a=tooling-cli&amp;v=2.4.0"
+      <get src="https://oss.sonatype.org/service/local/repositories/releases/content/org/opencds/cqf/tooling-cli/2.5.0/tooling-cli-2.5.0.jar"
           dest="${ig.scripts}/cqf-tooling.jar" skipexisting="true" usetimestamp="true" ignoreerrors="false"/>
   </target>
 
