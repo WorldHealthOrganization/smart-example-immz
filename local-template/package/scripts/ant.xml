@@ -36,7 +36,11 @@
   <target name="processCQL" depends="downloadJar">
     <java jar="${ig.scripts}/cqf-tooling.jar" fork="true" failonerror="true">
       <jvmarg line="-Dfile.encoding=UTF-8"/>
+      <!-- 
       <arg line="-RefreshIG -ini=./ig.ini -d -p -t -lop ./fsh-generated/resources -mop ./fsh-generated/resources -rp ./fsh-generated/resources"/>
+       -->
+      <arg line="-RefreshIG -ini=./ig.ini -t -d -p --lp=fsh-generated/resources"/>
+
     </java>
   </target>
 
