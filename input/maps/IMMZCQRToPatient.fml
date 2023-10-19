@@ -18,5 +18,6 @@ group QRestToIMMZC (
       then{
         qr -> model then QRespToIMMZC( qr, model) "QRtoLM";
         qr -> patient then IMMZCToPatient( model, patient ) "LMtoPatient";
+        qr -> patient.active = true "rule_patient_active";
       } "QRtoPatient";
 }
