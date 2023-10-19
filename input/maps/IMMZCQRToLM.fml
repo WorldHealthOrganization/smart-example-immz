@@ -29,14 +29,12 @@ group QRespToIMMZC ( source qr : QResp, target immzc : IMMZC) {
        answer.value as content -> immzc.phone = content  "SetPhone";
      } "FirstAnswerForPhone";
 
-    /*
     item.answer first as answer where item.linkId = 'administrativeArea' then {
       answer.value as coding -> immzc.administrativeArea as area then {
         coding -> area.coding = coding "SetCodingValue";
         coding.display as display -> area.text = display "SetDisplay";
       } "SetCoding";
     } "FirstAnswerForAdministrativeArea";
-    */
 
     item.answer first as answer where item.linkId = 'healthWorker' then {
       answer.value as content -> immzc.healthWorker = content  "SetHealthWorker";
