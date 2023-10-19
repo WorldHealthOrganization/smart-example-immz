@@ -1,4 +1,4 @@
-map "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/ee569d2c-3299-4a0d-bd5d-4f88af814ecd" = "IMMZCQRToPatient"
+map "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZCQRToPatient" = "IMMZCQRToPatient"
 
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
 uses "http://smart.who.int/ig/smart-immunizations-measles/StructureDefinition/IMMZCRegisterClient" alias IMMZC as source
