@@ -1,6 +1,7 @@
 
 CodeSystem:   IMMZ.C
-Title:        "IMMZ.C CodeSystem for Data Elements"
+Id: IMMZC
+Title:        "IMMZ-C CodeSystem for Data Elements"
 Description:  "CodeSystem for IMMZ.C Data Elements"
 
 * ^experimental = false

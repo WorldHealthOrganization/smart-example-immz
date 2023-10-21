@@ -1,5 +1,5 @@
 
-Instance:     IMMZ.D1.ConceptMap
+Instance:     IMMZD1ConceptMap
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ.D1 Data Dictionary to other codesystems."
 Usage:        #definition
@@ -81,23 +81,24 @@ Usage:        #definition
   * insert ElementMap(DE16, 96381-9, relatedto)
   * insert ElementMap(DE92, 96381-9, relatedto)
 
-* group[+]
-  * source = $LNC
-  * target = Canonical(IMMZ.D1)
-  * insert ElementMap(10157-6, DE90, relatedto)
-  * insert ElementMap(27415-9, DE85, narrower)
-  * element[=].target[=].comment = "The source concept is more specific than the target"
-  * insert ElementMap(39263-9, DE86, equivalent)
-  * insert ElementMap(45241-7, DE88, relatedto)
-  * insert ElementMap(45683-0, DE11, equivalent)
-  * insert ElementMap(55277-8, DE10, equivalent)
-  * insert ElementMap(63895-7, DE82, narrower)
-  * element[=].target[=].comment = "The source concept is more specific than the target"
-  * insert ElementMap(76517-2, DE15, equivalent)
-  * insert ElementMap(82810-3, DE9, equivalent)
-  * insert ElementMap(8339-4, DE29, equivalent)
-  * insert ElementMap(96381-9, DE16, relatedto)
-  * insert ElementMap(96381-9, DE92, relatedto)
+// * group[+]
+//   * source = $LNC
+//   * target = Canonical(IMMZ.D1)
+//   * insert ElementMap(10157-6, DE90, relatedto)
+  // * insert ElementMap(27415-9, DE85, narrower)
+  // * element[=].target[=].comment = "The source concept is more specific than the target"
+  // * insert ElementMap(39263-9, DE86, equivalent)
+  // * insert ElementMap(45241-7, DE88, relatedto)
+  // * insert ElementMap(45683-0, DE11, equivalent)
+  // * insert ElementMap(55277-8, DE10, equivalent)
+  // * insert ElementMap(63895-7, DE82, narrower)
+  // * element[=].target[=].comment = "The source concept is more specific than the target"
+  // * insert ElementMap(76517-2, DE15, equivalent)
+  // * insert ElementMap(82810-3, DE9, equivalent)
+  // * insert ElementMap(8339-4, DE29, equivalent)
+  // * insert ElementMap(96381-9, DE16, relatedto)
+  // * insert ElementMap(96381-9, DE92, relatedto)
+
 
 * group[+]
   * source = Canonical(IMMZ.D1)
@@ -119,25 +120,25 @@ Usage:        #definition
   * insert ElementMap(DE36, 871740006, equivalent)
 
 
-* group[+]
-  * source = $SCT
-  * target = Canonical(IMMZ.D1)
-  * insert ElementMap(10828004, DE88, narrower)
-  * element[=].target[=].comment = "The source concept is more specific than the target"
-  * insert ElementMap(28163009, DE86, equivalent)
-  * insert ElementMap(68311008, DE85, equivalent)
-  * insert ElementMap(69840006, DE82, equivalent)
-  * insert ElementMap(77386006, DE9, equivalent)
-  * insert ElementMap(165815009, DE12, equivalent)
-  * insert ElementMap(165816005, DE11, equivalent)
-  * insert ElementMap(260385009, DE89, narrower)
-  * element[=].target[=].comment = "The source concept is more specific than the target"
-  * insert ElementMap(261665006, DE13, narrower)
-  * element[=].target[=].comment = "The source concept is more specific than the target"
-  * insert ElementMap(278977008, DE10, equivalent)
-  * insert ElementMap(370388006, DE16, equivalent)
-  * insert ElementMap(395507008, DE15, equivalent)
-  * insert ElementMap(417357006, DE40, equivalent)
-  * insert ElementMap(438998000, DE90, narrower)
-  * element[=].target[=].comment = "The source concept is more specific than the target"
-  * insert ElementMap(871740006, DE36, equivalent)
+// * group[+]
+//   * source = $SCT
+//   * target = Canonical(IMMZ.D1)
+//   * insert ElementMap(10828004, DE88, narrower)
+//   * element[=].target[=].comment = "The source concept is more specific than the target"
+//   * insert ElementMap(28163009, DE86, equivalent)
+//   * insert ElementMap(68311008, DE85, equivalent)
+//   * insert ElementMap(69840006, DE82, equivalent)
+//   * insert ElementMap(77386006, DE9, equivalent)
+//   * insert ElementMap(165815009, DE12, equivalent)
+//   * insert ElementMap(165816005, DE11, equivalent)
+//   * insert ElementMap(260385009, DE89, narrower)
+//   * element[=].target[=].comment = "The source concept is more specific than the target"
+//   * insert ElementMap(261665006, DE13, narrower)
+//   * element[=].target[=].comment = "The source concept is more specific than the target"
+//   * insert ElementMap(278977008, DE10, equivalent)
+//   * insert ElementMap(370388006, DE16, equivalent)
+//   * insert ElementMap(395507008, DE15, equivalent)
+//   * insert ElementMap(417357006, DE40, equivalent)
+//   * insert ElementMap(438998000, DE90, narrower)
+//   * element[=].target[=].comment = "The source concept is more specific than the target"
+//   * insert ElementMap(871740006, DE36, equivalent)

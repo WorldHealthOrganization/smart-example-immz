@@ -1,4 +1,3 @@
-
 Instance: QIMMZCRegisterClient
 InstanceOf: sdc-questionnaire-extr-smap
 Title: "Client Registration Questionnaire"
@@ -8,17 +7,16 @@ Usage: #definition
 * status = #draft
 * subjectType = #Patient
 * language = #en
-* status = #draft
-* contained[+] = IMMZ-C-DE5
+* contained[+] = IMMZ.C.DE5
 //* contained[+] = YesNoUnknown
 
 * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
 * extension[=].valueCanonical = "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZCQRToPatient"
-//* extension[=].valueCanonical = "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZCQRToLM"
+
 
 //Header
 //* insert Question(header,Client Registration form: to fill in by ....,display,true,false)
-* name = "ClientRegistrationQuestionnaire"
+
 * insert Question(uniqueId, Unique identifier for the client,string,true,false)
 * item[=]
   * code[+] = IMMZ.C#DE1
@@ -49,7 +47,7 @@ Usage: #definition
 
 * insert Question(sex, Sex,choice,true,false)
 * item[=]
-  * answerValueSet = Canonical(IMMZ-C-DE5)
+  * answerValueSet = Canonical(IMMZ.C.DE5)
   * code[+] = IMMZ.C#DE5
   * code[+] = $LNC#46098-0	"Sex"
   * code[+] = $SCT#184100006 "Patient sex (observable entity)"
@@ -65,16 +63,16 @@ Usage: #definition
   * code[+] = IMMZ.C#DE14
   * code[+] = $SCT#184140000 "Caregiver details (observable entity)"
 
-  * insert Question(cgfullName, Full name of the care giver,string,true,false)
+  * insert Question(fullName, Full name of the care giver,string,true,false)
   * item[=]
     * code[+] = IMMZ.C#DE15
     * code[+] = $SCT#184140000 "Caregiver details (observable entity)"
 
-  * insert Question(cgfirstName, First or given name,string,false,false)
+  * insert Question(firstName, First or given name,string,false,false)
   * item[=]
     * code[+] = IMMZ.C#DE16
 
-  * insert Question(cgfamilyName, Family name,string,false,false)
+  * insert Question(familyName, Family name,string,false,false)
   * item[=]
     * code[+] = IMMZ.C#DE17
 

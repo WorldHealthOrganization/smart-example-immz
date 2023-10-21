@@ -1,6 +1,6 @@
-ValueSet:     IMMZ-C-DE5
-Title:        "IMMZ-C-DE5 ValueSet for Sex"
-Description:  "ValueSet for Sex for IMMZ-C-DE5."
+ValueSet:     IMMZ.C.DE5
+Title:        "IMMZ.C.DE5 ValueSet for Sex"
+Description:  "ValueSet for Sex for IMMZ.C.DE5."
 
 * ^status = #active
 * ^experimental = false

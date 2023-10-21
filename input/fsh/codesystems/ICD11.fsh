@@ -4,16 +4,49 @@ Title:     "ICD-11"
 Description: "ICD-11."
 
 * ^url = $ICD11
+//* ^hierarchyMeaning = #is-a
+
+* ^property[+].code = #parent
+* ^property[=].type = #code
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#parent"
+
+
 
 * #XM28X5 "Measles vaccines"
+  // * ^property[+].code = #child
+  // * ^property[=].valueCode = #XM8L15
+  // * ^property[+].code = #child
+  // * ^property[=].valueCode = #XM9439
+  // * ^property[+].code = #child
+  // * ^property[=].valueCode = #XM8TF3
+  // * ^property[+].code = #child
+  // * ^property[=].valueCode = #XM21H2
+  // * ^property[+].code = #child
+  // * ^property[=].valueCode = #XM4AJ8
   * #XM8L15 "Measles, live attenuated"
+    // * ^property[+].code = #parent
+    // * ^property[=].valueCode = #XM28X5
   * #XM9439 "Measles, combinations with mumps, live attenuated"
+    // * ^property[+].code = #parent
+    // * ^property[=].valueCode = #XM28X5
   * #XM8TF3 "Measles, combinations with mumps and rubella, live attenuated"
+    // * ^property[+].code = #parent
+    // * ^property[=].valueCode = #XM28X5
   * #XM21H2 "Measles, combinations with rubella, live attenuated"
+    // * ^property[+].code = #parent
+    // * ^property[=].valueCode = #XM28X5
   * #XM4AJ8 "Measles, combinations with mumps, rubella and varicella, live attenuated"
+    // * ^property[+].code = #parent
+    // * ^property[=].valueCode = #XM28X5
 
 * #XM1131 "Mumps vaccines"
+  // * ^property[+].code = #child
+  // * ^property[=].valueCode = #XM2340
   * #XM2340 "Mumps, live attenuated"
+    // * ^property[+].code = #parent
+    // * ^property[=].valueCode = #XM1131
+
+
 
 * #XX45B7 "Intersex"
 * #XX2PX3 "Biological sex not specified"
