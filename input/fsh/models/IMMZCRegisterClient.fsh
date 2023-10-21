@@ -1,9 +1,3 @@
-Invariant:    IMMZ-C-DE10-1
-Description:  "If Date of Birth is entered, Calculated ages are required."
-Expression:   "birthDate.exists() implies ageInWeeks.exists().exists() and ageInMonths.exists() and ageInYears.exists()"
-Severity:     #error
-// TO DO: FIX THE EXPRESSION ABOVE
-
 Invariant:    IMMZ-C-name-1
 Description:  "Only letters and special characters (period, dash) allowed."
 Expression:   "$this.matches('[A-Za-z-.]*')"
@@ -15,7 +9,8 @@ Title:        "IMMZ.C Register Client"
 Description:  "Data elements for the IMMZ.C Register Client Data Dictionary."
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * ^name = "IMMZCRegisterClient"
-//* obeys IMMZ-C-DE10-1
+* ^status = #active
+
 * uniqueId 1..1 SU string "Unique identifier" "Unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID)."
   * ^code[+] = IMMZ.C#DE1
 //  * ^code[WHOCommon] = IMMZ.C#DE1
@@ -50,11 +45,10 @@ Description:  "Data elements for the IMMZ.C Register Client Data Dictionary."
   * ^code[+] = IMMZ.C#DE19
 * healthWorker 1..1 boolean "Active health worker" "Is the client an active and participating health worker. This data element is used mainly for reporting and indicators purposes."
   * ^code[+] = IMMZ.C#DE20
+  
 
-
-/*
 Mapping:      IMMZ-C-to-Patient
-Source:       IMMZ-C-register-client
+Source:       IMMZCRegisterClient
 Target:       "Patient"
 * -> "Patient"
 * uniqueId -> "Patient.identifier.value"
@@ -69,7 +63,3 @@ Target:       "Patient"
 * caregiver.familyName -> "Patient.contact.name.family"
 * phone -> "Patient.telecom.value"
 * administrativeArea -> "Patient.address.text"
-*/
-
-
-
