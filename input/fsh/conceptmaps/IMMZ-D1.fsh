@@ -1,17 +1,17 @@
 
-Instance:     IMMZ-D1.ConceptMap
+Instance:     IMMZ.D1.ConceptMap
 InstanceOf:   ConceptMap
-Description:  "Mapping to and from IMMZ-D1 Data Dictionary to other codesystems."
+Description:  "Mapping to and from IMMZ.D1 Data Dictionary to other codesystems."
 Usage:        #definition
 
 * name = "IMMZ_D1_ConceptMap"
-* title = "ConceptMap to and from IMMZ-D1 DataElements"
+* title = "ConceptMap to and from IMMZ.D1 DataElements"
 * status = #active
 * experimental = false
 * date = "2023-08-09"
 
 * group[+]
-  * source = Canonical(IMMZ-D1)
+  * source = Canonical(IMMZ.D1)
   * target = $ICD11
   * insert ElementMap(DE88, 1B1Z, relatedto)
   * insert ElementMap(DE11, 1C62.Z, equivalent)
@@ -36,7 +36,7 @@ Usage:        #definition
 
 * group[+]
   * source = $ICD11
-  * target = Canonical(IMMZ-D1)
+  * target = Canonical(IMMZ.D1)
   * insert ElementMap(1B1Z, DE88, relatedto)
   * insert ElementMap(1C62.Z, DE11, equivalent)
   * insert ElementMap(1H0Z, DE13, equivalent)
@@ -66,7 +66,7 @@ Usage:        #definition
   * insert ElementMap(XT0S, DE9, equivalent)
   
 * group[+]
-  * source = Canonical(IMMZ-D1)
+  * source = Canonical(IMMZ.D1)
   * target = $LNC
   * insert ElementMap(DE90, 10157-6, relatedto)
   * insert ElementMap(DE85, 27415-9, wider)
@@ -83,7 +83,7 @@ Usage:        #definition
 
 * group[+]
   * source = $LNC
-  * target = Canonical(IMMZ-D1)
+  * target = Canonical(IMMZ.D1)
   * insert ElementMap(10157-6, DE90, relatedto)
   * insert ElementMap(27415-9, DE85, narrower)
   * element[=].target[=].comment = "The source concept is more specific than the target"
@@ -100,7 +100,7 @@ Usage:        #definition
   * insert ElementMap(96381-9, DE92, relatedto)
 
 * group[+]
-  * source = Canonical(IMMZ-D1)
+  * source = Canonical(IMMZ.D1)
   * target = $SCT
   * insert ElementMap(DE88, 10828004, wider)
   * insert ElementMap(DE86, 28163009, equivalent)
@@ -121,7 +121,7 @@ Usage:        #definition
 
 * group[+]
   * source = $SCT
-  * target = Canonical(IMMZ-D1)
+  * target = Canonical(IMMZ.D1)
   * insert ElementMap(10828004, DE88, narrower)
   * element[=].target[=].comment = "The source concept is more specific than the target"
   * insert ElementMap(28163009, DE86, equivalent)
