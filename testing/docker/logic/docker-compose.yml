@@ -24,8 +24,21 @@ services:
     container_name: webserver
     ports:
       - ${static_server_port:-8087}:80
-    command: /bin/sh -c "apk --no-cache add git && \
-                         cd /tmp && \
-                         git clone https://github.com/PATH-Global-Health/MERindicators.git && \
-                         cp -r /tmp/MERindicators/test/server/app/* /usr/share/nginx/html/ && \
-                         nginx -g 'daemon off;'"
+    command: >-
+      /bin/sh -c "
+      apk --no-cache add git wget && \
+      cd /usr/share/nginx/html/ && \
+      wget -O resources.json $ig_url/package.db && \
+      echo '{\"ig_url\": \"'$ig_url'\", \"server_url\": \"http://localhost:'$server_port'/fhir\"}' > config.json && \
+      cd /tmp && \
+      rm -rf MERindicators && \
+      git clone https://github.com/PATH-Global-Health/MERindicators.git && \
+      cp -r /tmp/MERindicators/test/server/app/* /usr/share/nginx/html/ && \
+      cd /usr/share/nginx/html/ && \
+      echo '{\"ig_url\": \"'$ig_url'\", \"server_url\": \"http://localhost:'$server_port'/fhir\"}' > config.json && \
+      nginx -g 'daemon off;'"
+
+
+
+    volumes:
+      - ./nginx-content:/usr/share/nginx/html                         
