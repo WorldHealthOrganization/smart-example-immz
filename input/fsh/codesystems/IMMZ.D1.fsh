@@ -1,6 +1,5 @@
 CodeSystem:   IMMZ.D1
-Id: IMMZD1
-Title:        "IMMZ-D1 CodeSystem for Data Elements"
+Title:        "IMMZ.D1 CodeSystem for Data Elements"
 Description:  "CodeSystem for IMMZ.C Data Elements"
 
 * ^experimental = false
@@ -19,5 +18,3 @@ Description:  "CodeSystem for IMMZ.C Data Elements"
 * #DE49 "ART start date" "The date on which the client started or restarted antiretroviral therapy (ART)"
 * #DE19	"Vaccine type" "Vaccine type/category that was administered or was to be administered. Any vaccine code available in the IMMZ.Z Vaccine Library list of codes applies in this data element"
 * #DE20	"Date and time of vaccination" "Represents the visit/encounter date, which is the date and time when the vaccine was administered to the client"
-
-

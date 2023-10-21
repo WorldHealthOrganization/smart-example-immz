@@ -1,7 +1,5 @@
-
 CodeSystem:   IMMZ.C
-Id: IMMZC
-Title:        "IMMZ-C CodeSystem for Data Elements"
+Title:        "IMMZ.C CodeSystem for Data Elements"
 Description:  "CodeSystem for IMMZ.C Data Elements"
 
 * ^experimental = false
@@ -25,5 +23,3 @@ Description:  "CodeSystem for IMMZ.C Data Elements"
 * #DE18 "Contact phone number" "Client's phone number"
 * #DE19 "Administrative area" "The name of the city/municipality/town/village of where the client lives"
 * #DE20 "Active health worker" "Is the client an active and participating health worker. This data element is used mainly for reporting and indicators purposes."
-
-
