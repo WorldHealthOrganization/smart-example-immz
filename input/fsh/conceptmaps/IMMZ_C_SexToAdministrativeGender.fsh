@@ -12,7 +12,7 @@ Usage:        #definition
 * date = "2023-08-09"
 
 * group[+]
-  * source = Canonical(IMMZ-C)
+  * source = Canonical(IMMZ.C)
   * target = $GENDER
   * insert ElementMap(DE6, male, equivalent)
   * insert ElementMap(DE7, female, equivalent)
@@ -21,7 +21,7 @@ Usage:        #definition
 
 * group[+]
   * source = $GENDER
-  * target = Canonical(IMMZ-C)
+  * target = Canonical(IMMZ.C)
   * insert ElementMap(male, DE6, equivalent)
   * insert ElementMap(female, DE7, equivalent)
   * insert ElementMap(unknown, DE8, equivalent)

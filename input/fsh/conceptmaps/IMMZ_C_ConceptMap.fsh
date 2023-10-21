@@ -11,7 +11,7 @@ Usage:        #definition
 * date = "2023-08-04"
 
 * group[+]
-  * source = Canonical(IMMZ-C)
+  * source = Canonical(IMMZ.C)
   * target = $ICD11
   * insert ElementMap(DE6, XX2UQ8, equivalent)
   * insert ElementMap(DE7, XX2V25, equivalent)
@@ -20,14 +20,14 @@ Usage:        #definition
 
 * group[+]
   * source = $ICD11
-  * target = Canonical(IMMZ-C)
+  * target = Canonical(IMMZ.C)
   * insert ElementMap(XX2UQ8, DE6, equivalent)
   * insert ElementMap(XX2V25, DE7, equivalent)
   * insert ElementMap(XX2PX3, DE8, equivalent)
   * insert ElementMap(XX45B7, DE9, equivalent)
 
 * group[+]
-  * source = Canonical(IMMZ-C)
+  * source = Canonical(IMMZ.C)
   * target = $LNC
   * insert ElementMap(DE2, 54125-0, equivalent)
   * insert ElementMap(DE3, 45392-8, relatedto)
@@ -40,7 +40,7 @@ Usage:        #definition
   * element[=].target[=].comment = "The source concept is more specific than the target"
 
 * group[+]
-  * source = Canonical(IMMZ-C)
+  * source = Canonical(IMMZ.C)
   * target = $SCT
   * insert ElementMap(DE2, 371484003, equivalent)
   * insert ElementMap(DE3, 184095009, relatedto)
@@ -59,7 +59,7 @@ Usage:        #definition
 
 * group[+]
   * source = $SCT
-  * target = Canonical(IMMZ-C)
+  * target = Canonical(IMMZ.C)
   * insert ElementMap(248153007, DE6, equivalent)
   * insert ElementMap(248152002, DE7, equivalent)
   * insert ElementMap(772004004, DE8, relatedto)
