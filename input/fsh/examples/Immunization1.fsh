@@ -6,6 +6,6 @@ Description: "Immunization record"
 * expirationDate = "2023-10-01"
 //* extension[administeredProduct].valueReference = Reference(Measlesprod1)
 * extension[administeredProduct].valueCodeableConcept = VaccineProducts#20009060/2
-* patient.reference = "Patient/Patient1"
+* patient.reference = "Patient/P123456"
 * status = #completed
 * occurrenceDateTime = "2023-08-05"
