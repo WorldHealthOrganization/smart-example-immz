@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://smart.who.int/ig/smart-immunizations/Library/IMMZD2DTMeasles",
+  "url": "http://smart.who.int/ig/smart-immunizations-measles/Library/IMMZD2DTMeasles",
   "name": "IMMZD2DTMeasles",
   "relatedArtifact": [ {
     "type": "depends-on",
@@ -16,47 +16,47 @@
   }, {
     "type": "depends-on",
     "display": "Library FHIRHelpers",
-    "resource": "http://smart.who.int/ig/smart-immunizations/Library/FHIRHelpers|4.0.1"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/Library/FHIRHelpers|4.0.1"
   }, {
     "type": "depends-on",
     "display": "Library IMMZCom",
-    "resource": "http://smart.who.int/ig/smart-immunizations/Library/IMMZCommon"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/Library/IMMZCommon"
   }, {
     "type": "depends-on",
     "display": "Library IMMZc",
-    "resource": "http://smart.who.int/ig/smart-immunizations/Library/IMMZConcepts"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/Library/IMMZConcepts"
   }, {
     "type": "depends-on",
     "display": "Library IMMZCon",
-    "resource": "http://smart.who.int/ig/smart-immunizations/Library/IMMZConfig"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/Library/IMMZConfig"
   }, {
     "type": "depends-on",
     "display": "Library IMMZvl",
-    "resource": "http://smart.who.int/ig/smart-immunizations/Library/IMMZVaccineLibrary"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/Library/IMMZVaccineLibrary"
   }, {
     "type": "depends-on",
     "display": "Library FC",
-    "resource": "http://smart.who.int/ig/smart-immunizations/Library/FHIRCommon"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/Library/FHIRCommon"
   }, {
     "type": "depends-on",
     "display": "Library WCom",
-    "resource": "http://smart.who.int/ig/smart-immunizations/Library/WHOCommon"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/Library/WHOCommon"
   }, {
     "type": "depends-on",
     "display": "Library Wcon",
-    "resource": "http://smart.who.int/ig/smart-immunizations/Library/WHOConcepts"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/Library/WHOConcepts"
   }, {
     "type": "depends-on",
     "display": "Code system IMMZ.D4",
-    "resource": "http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D4"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/CodeSystem/IMMZ.D4"
   }, {
     "type": "depends-on",
     "display": "Value set MCV Vaccine",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/IMMZ.A1.DE9"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/IMMZ.A1.DE9"
   }, {
     "type": "depends-on",
     "display": "Value set HIV status",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/HIVstatus-values"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/HIVstatus-values"
   }, {
     "type": "depends-on",
     "display": "Value set HIV status - HIV positive Choices",
@@ -64,11 +64,11 @@
   }, {
     "type": "depends-on",
     "display": "Value set ARV Drugs",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/ARVDrugs-values"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/ARVDrugs-values"
   }, {
     "type": "depends-on",
     "display": "Value set Live Attenuated",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/LiveAttenduatedVaccines"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/LiveAttenduatedVaccines"
   }, {
     "type": "depends-on",
     "display": "Value set Pregnancy Status Pregnant",
@@ -286,7 +286,7 @@
     "mustSupport": [ "code", "status", "value" ],
     "codeFilter": [ {
       "path": "code",
-      "valueSet": "http://smart.who.int/ig/smart-immunizations/ValueSet/HIVstatus-values"
+      "valueSet": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/HIVstatus-values"
     } ]
   }, {
     "type": "Observation",
@@ -311,7 +311,7 @@
     "codeFilter": [ {
       "path": "code",
       "code": [ {
-        "system": "http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D4",
+        "system": "http://smart.who.int/ig/smart-immunizations-measles/CodeSystem/IMMZ.D4",
         "code": "DE165",
         "display": "Severely immunosuppressed"
       } ]
@@ -323,7 +323,7 @@
     "codeFilter": [ {
       "path": "code",
       "code": [ {
-        "system": "http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D4",
+        "system": "http://smart.who.int/ig/smart-immunizations-measles/CodeSystem/IMMZ.D4",
         "code": "DE166",
         "display": "History of anaphylactic reactions"
       } ]
@@ -335,7 +335,7 @@
     "codeFilter": [ {
       "path": "code",
       "code": [ {
-        "system": "http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D4",
+        "system": "http://smart.who.int/ig/smart-immunizations-measles/CodeSystem/IMMZ.D4",
         "code": "DE167",
         "display": "Severe allergic reactions"
       } ]
@@ -347,7 +347,7 @@
     "codeFilter": [ {
       "path": "code",
       "code": [ {
-        "system": "http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D4",
+        "system": "http://smart.who.int/ig/smart-immunizations-measles/CodeSystem/IMMZ.D4",
         "code": "DE168",
         "display": "Symptomatic HIV infection"
       } ]

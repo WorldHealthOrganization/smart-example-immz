@@ -13,38 +13,26 @@ Description: "ICD-11."
 
 
 * #XM28X5 "Measles vaccines"
-  // * ^property[+].code = #child
-  // * ^property[=].valueCode = #XM8L15
-  // * ^property[+].code = #child
-  // * ^property[=].valueCode = #XM9439
-  // * ^property[+].code = #child
-  // * ^property[=].valueCode = #XM8TF3
-  // * ^property[+].code = #child
-  // * ^property[=].valueCode = #XM21H2
-  // * ^property[+].code = #child
-  // * ^property[=].valueCode = #XM4AJ8
   * #XM8L15 "Measles, live attenuated"
-    // * ^property[+].code = #parent
-    // * ^property[=].valueCode = #XM28X5
+    * ^property[+].code = #parent
+    * ^property[=].valueCode = #XM28X5
   * #XM9439 "Measles, combinations with mumps, live attenuated"
-    // * ^property[+].code = #parent
-    // * ^property[=].valueCode = #XM28X5
+    * ^property[+].code = #parent
+    * ^property[=].valueCode = #XM28X5
   * #XM8TF3 "Measles, combinations with mumps and rubella, live attenuated"
-    // * ^property[+].code = #parent
-    // * ^property[=].valueCode = #XM28X5
+    * ^property[+].code = #parent
+    * ^property[=].valueCode = #XM28X5
   * #XM21H2 "Measles, combinations with rubella, live attenuated"
-    // * ^property[+].code = #parent
-    // * ^property[=].valueCode = #XM28X5
+    * ^property[+].code = #parent
+    * ^property[=].valueCode = #XM28X5
   * #XM4AJ8 "Measles, combinations with mumps, rubella and varicella, live attenuated"
-    // * ^property[+].code = #parent
-    // * ^property[=].valueCode = #XM28X5
+    * ^property[+].code = #parent
+    * ^property[=].valueCode = #XM28X5
 
 * #XM1131 "Mumps vaccines"
-  // * ^property[+].code = #child
-  // * ^property[=].valueCode = #XM2340
   * #XM2340 "Mumps, live attenuated"
-    // * ^property[+].code = #parent
-    // * ^property[=].valueCode = #XM1131
+    * ^property[+].code = #parent
+    * ^property[=].valueCode = #XM1131
 
 
 
@@ -76,3 +64,18 @@ Description: "ICD-11."
 * #QC44.0 "Personal history of anaphylaxis"
 * #QC44.2 "Personal history of allergy to drugs, medicaments or biological substances"
 * #1C62.1 "HIV disease clinical stage 2 without mention of tuberculosis or malaria"
+
+
+* #MA14.0 "Laboratory evidence of human immunodeficiency virus"
+
+* #XM8142 "Tuberculosis, live attenuated vaccines"
+* #XM72A0 "Cholera, live attenuated vaccines" 
+* #XM0VX8 "Poliomyelitis oral, monovalent live attenuated"
+* #XM0KZ1 "Poliomyelitis oral, trivalent, live attenuated"
+* #XM4GV0 "Rota virus, live attenuated"
+* #XM9PS9 "Rubella, live attenuated"
+* #XM3B09 "Rubella, combinations with mumps, live attenuated"
+* #XM5V64 "Influenza vaccines, live attenuated"
+* #XM0NS8 "Varicella, live attenuated"
+* #XM3418 "Yellow Fever, live attenuated"
+* #XM5DF6 "COVID-19 vaccines, live attenuated virus"
