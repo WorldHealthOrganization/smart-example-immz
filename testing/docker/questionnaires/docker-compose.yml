@@ -49,7 +49,7 @@ services:
       wget -O resources.json $ig_url/package.db && \
       echo '{\"ig_url\": \"'$ig_url'\", \"server_url\": \"http://localhost:'$server_port'/fhir\"}' > config.json && \
       cd /tmp && \
-      rm -rf fhirservers && \
+      rm -rf smart-ig-starter-kit && \
       git clone https://github.com/WorldHealthOrganization/smart-ig-starter-kit.git && \
       cp -r /tmp/smart-ig-starter-kit/testing/app/* /usr/share/nginx/html/ && \
       if [ -d /tmp/output ] ; then mkdir /usr/share/nginx/html/output/; cp -r /tmp/output/* /usr/share/nginx/html/output/; fi && \
