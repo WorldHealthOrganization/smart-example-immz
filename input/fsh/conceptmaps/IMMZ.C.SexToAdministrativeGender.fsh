@@ -1,4 +1,4 @@
-Instance:     IMMZ.C.SexToAdministrativeGender
+Instance:     IMMZCSexToAdministrativeGender
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ.C sex coding to FHIR Administrative Gender."
 Usage:        #definition
