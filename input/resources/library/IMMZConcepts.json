@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://smart.who.int/ig/smart-immunizations/Library/IMMZConcepts",
+  "url": "http://smart.who.int/ig/smart-immunizations-measles/Library/IMMZConcepts",
   "name": "IMMZConcepts",
   "relatedArtifact": [ {
     "type": "depends-on",
@@ -48,15 +48,15 @@
   }, {
     "type": "depends-on",
     "display": "Code system IMMZ.C",
-    "resource": "http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.C"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/CodeSystem/IMMZ.C"
   }, {
     "type": "depends-on",
     "display": "Code system IMMZ.D1",
-    "resource": "http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D1"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/CodeSystem/IMMZ.D1"
   }, {
     "type": "depends-on",
     "display": "Code system IMMZ.D4",
-    "resource": "http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D4"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/CodeSystem/IMMZ.D4"
   }, {
     "type": "depends-on",
     "display": "Value set WHO ATC",
@@ -64,31 +64,31 @@
   }, {
     "type": "depends-on",
     "display": "Value set Negative Result",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/Negativetestresult-values"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/Negativetestresult-values"
   }, {
     "type": "depends-on",
     "display": "Value set Positive Result",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/PositiveTestResult-values"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/PositiveTestResult-values"
   }, {
     "type": "depends-on",
     "display": "Value set Immunocompromised",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/Immunocompromised-values"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/Immunocompromised-values"
   }, {
     "type": "depends-on",
     "display": "Value set Patient birth weight observation value",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/Birthweight-values"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/Birthweight-values"
   }, {
     "type": "depends-on",
     "display": "Value set PretermBirth",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/Preterm-values"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/Preterm-values"
   }, {
     "type": "depends-on",
     "display": "Value set Live Attenuated",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/LiveAttenduatedVaccines"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/LiveAttenduatedVaccines"
   }, {
     "type": "depends-on",
     "display": "Value set HIV status",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/HIVstatus-values"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/HIVstatus-values"
   }, {
     "type": "depends-on",
     "display": "Value set HIV status - HIV positive Choices",
@@ -100,19 +100,19 @@
   }, {
     "type": "depends-on",
     "display": "Value set ARV Drugs",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/ARVDrugs-values"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/ARVDrugs-values"
   }, {
     "type": "depends-on",
     "display": "Value set MCV Vaccine",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/IMMZ.A1.DE9"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/IMMZ.Z.DE9"
   }, {
     "type": "depends-on",
     "display": "Value set BCG Vaccine",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/IMMZ.A1.DE1"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/IMMZ.A1.DE1"
   }, {
     "type": "depends-on",
     "display": "Value set Cholera Vaccine",
-    "resource": "http://smart.who.int/ig/smart-immunizations/ValueSet/IMMZ.A1.DE2"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/ValueSet/IMMZ.A1.DE2"
   } ],
   "content": [ {
     "contentType": "text/cql",

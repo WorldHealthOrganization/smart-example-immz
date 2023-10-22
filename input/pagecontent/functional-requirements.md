@@ -1,2 +1,3 @@
-# Functional Requirements
-
+---
+---
+{% include fragment-functionalrequirements.liquid %}
