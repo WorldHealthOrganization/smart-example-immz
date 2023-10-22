@@ -33,7 +33,7 @@ services:
       cd /tmp && \
       rm -rf smart-ig-starter-kit && \
       git clone https://github.com/WorldHealthOrganization/smart-ig-starter-kit.git && \
-      cp -r /tmp/smart-ig-starter-kit/testing/app/* /usr/share/nginx/html/ && \
+      cp -r /tmp/smart-ig-starter-kit/testing/cql-app/* /usr/share/nginx/html/ && \
       nginx -g 'daemon off;'"
       
     volumes:
