@@ -38,7 +38,8 @@ services:
     image: nginx:alpine
     container_name: webserver    
     volumes:
-      - ./app:/usr/share/nginx/html
+      - ./nginx-content:/usr/share/nginx/html                         
+      - ../../../output:/tmp/output      
     ports:
       - ${static_server_port:-8087}:80
     command: >-
@@ -51,4 +52,5 @@ services:
       rm -rf fhirservers && \
       git clone https://github.com/WorldHealthOrganization/smart-ig-starter-kit.git && \
       cp -r /tmp/smart-ig-starter-kit/testing/app/* /usr/share/nginx/html/ && \
+      if [ -d /tmp/output ] ; then mkdir /usr/share/nginx/html/output/; cp -r /tmp/output/* /usr/share/nginx/html/output/; fi && \
       nginx -g 'daemon off;'"
