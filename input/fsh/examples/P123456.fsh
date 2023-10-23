@@ -1,5 +1,7 @@
 Instance: patient123456
 InstanceOf: Patient
+Description: "Patient Example - 123456"
+
 Usage: #example
 
 * id = "P123456"
@@ -8,5 +10,5 @@ Usage: #example
   * text = "Test Patient"
   * family = "Patient"
   * given = "Test"
-* gender = #male
-* birthDate = "1993-08-12"
+* gender = #female
+* birthDate = "2023-03-02"

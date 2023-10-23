@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://smart.who.int/ig/smart-immunizations/Library/IMMZConfig",
+  "url": "http://smart.who.int/ig/smart-immunizations-measles/Library/IMMZConfig",
   "name": "IMMZConfig",
   "relatedArtifact": [ {
     "type": "depends-on",
@@ -16,7 +16,7 @@
   }, {
     "type": "depends-on",
     "display": "Library IMMZc",
-    "resource": "http://smart.who.int/ig/smart-immunizations/Library/IMMZConcepts"
+    "resource": "http://smart.who.int/ig/smart-immunizations-measles/Library/IMMZConcepts"
   } ],
   "parameter": [ {
     "name": "Patient",
