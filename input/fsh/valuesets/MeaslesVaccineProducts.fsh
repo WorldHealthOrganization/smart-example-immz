@@ -1,5 +1,5 @@
 ValueSet: VSMeaslesVaccineProducts
 Id: VSMeaslesVaccineProducts        
-Title:     "MeaslesVaccine Type ValueSet"
-Description: "Vaccine type Codes, containing the different types of antigens used in vaccine guidelines."
+Title:     "MeaslesVaccine Products ValueSet"
+Description: "Vaccine Product Codes - representing the codes of the products currently available."
 * codes from system VaccineProducts //where classification = "XM28X5"

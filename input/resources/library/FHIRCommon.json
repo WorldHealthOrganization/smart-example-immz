@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://smart.who.int/ig/smart-immunizations/Library/FHIRCommon",
+  "url": "http://smart.who.int/ig/smart-immunizations-measles/Library/FHIRCommon",
   "version": "4.0.1",
   "name": "FHIRCommon",
   "type": {

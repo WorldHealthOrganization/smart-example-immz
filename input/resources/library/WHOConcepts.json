@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://smart.who.int/ig/smart-immunizations/Library/WHOConcepts",
+  "url": "http://smart.who.int/ig/smart-immunizations-measles/Library/WHOConcepts",
   "name": "WHOConcepts",
   "type": {
     "coding": [ {
