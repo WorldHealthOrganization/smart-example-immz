@@ -47,19 +47,19 @@ Description:  "Data elements for the IMMZ.C Register Client Data Dictionary."
   * ^code[+] = IMMZ.C#DE20
   
 
-Mapping:      IMMZ-C-to-Patient
-Source:       IMMZCRegisterClient
-Target:       "Patient"
-* -> "Patient"
-* uniqueId -> "Patient.identifier.value"
-* name -> "Patient.name.text"
-* firstName -> "Patient.name.given"
-* familyName -> "Patient.name.family"
-* sex -> "Patient.gender"
-* birthDate -> "Patient.birthDate"
-* caregiver -> "Patient.contact"
-* caregiver.name -> "Patient.contact.name.text"
-* caregiver.firstName -> "Patient.contact.name.given"
-* caregiver.familyName -> "Patient.contact.name.family"
-* phone -> "Patient.telecom.value"
-* administrativeArea -> "Patient.address.text"
+// Mapping:      IMMZ-C-to-Patient
+// Source:       IMMZCRegisterClient
+// Target:       "Patient"
+// * -> "Patient"
+// * uniqueId -> "Patient.identifier.value"
+// * name -> "Patient.name.text"
+// * firstName -> "Patient.name.given"
+// * familyName -> "Patient.name.family"
+// * sex -> "Patient.gender"
+// * birthDate -> "Patient.birthDate"
+// * caregiver -> "Patient.contact"
+// * caregiver.name -> "Patient.contact.name.text"
+// * caregiver.firstName -> "Patient.contact.name.given"
+// * caregiver.familyName -> "Patient.contact.name.family"
+// * phone -> "Patient.telecom.value"
+// * administrativeArea -> "Patient.address.text"
