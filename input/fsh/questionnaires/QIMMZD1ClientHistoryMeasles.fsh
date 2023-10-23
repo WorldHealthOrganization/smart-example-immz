@@ -15,7 +15,7 @@ Usage: #definition
 * extension[=].valueCanonical = "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZD1QRToResources"
 
 
-* insert Question(dose0, Indicates if the client has received a birth dose and/or supplementary dose, boolean, false, false)
+* insert Question(dose0, Indicates if the client has received a supplementary dose, boolean, false, false)
 * item[=]
   * code[+] = IMMZ.D1#DE80
 * insert Question(completedPrimarySeries, Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series\, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen., boolean, false, false)
@@ -36,7 +36,7 @@ Usage: #definition
   * code[+] = $ICD11#KA21.4
   * code[+] = $LNC#76517-2
   * code[+] = $SCT#395507008
-* insert Question(severelyImmunosuppressed, The client is known to be severely immunocompromised or immunosuppressed, boolean, false, true)
+* insert Question(severelyImmunosuppressed, The client is known to be severely immunosuppressed, boolean, false, true)
 * item[=] 
   * code[+] = IMMZ.D1#DE92
   * code[+] = $LNC#96381-9
