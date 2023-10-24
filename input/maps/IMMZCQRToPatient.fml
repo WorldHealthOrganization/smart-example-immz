@@ -34,7 +34,7 @@ group QRespToIMMZC (
     item.answer first as answer where item.linkId = 'sex' then {
       answer.valueCoding as coding then {
         coding.code as content -> patient.gender = translate(content, 
-            'http://worldhealthorganization.github.io/smart-immunizations-mini/ConceptMap/IMMZ.C.SexToAdministrativeGender', 
+            'http://worldhealthorganization.github.io/smart-immunizations-measles/ConceptMap/IMMZCSexToAdministrativeGender', 
             'code') "setSex";
       } "processCoding";
     } "firstAnswerForIdentifier2";
