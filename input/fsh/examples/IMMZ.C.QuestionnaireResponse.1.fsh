@@ -39,14 +39,14 @@ Usage: #example
     * linkId = "fullName"
     * text = "Full name of the care giver"
     * answer.valueString = "Mother Patient"
-  * item[+]
-    * linkId = "firstName"
-    * text = "First or given name"
-    * answer.valueString = "Mother"
-  * item[+]
-    * linkId = "familyName"
-    * text = "Family name"
-    * answer.valueString = "Patient"
+  // * item[+]
+  //   * linkId = "firstName"
+  //   * text = "First or given name"
+  //   * answer.valueString = "Mother"
+  // * item[+]
+  //   * linkId = "familyName"
+  //   * text = "Family name"
+  //   * answer.valueString = "Patient"
 // * item[+]
 //   * linkId = "caregiver"
 //   * text = "Care giver name"

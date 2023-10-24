@@ -40,6 +40,6 @@ group NameToHumanName (
   target hname
 ) {
   name.name as fullName -> hname.text = fullName "SetFullName";
-  name.firstName as firstName -> hname.given = firstName "SetFirstName";
-  name.familyName as familyName -> hname.family = familyName "SetFamilyName";
+//  name.firstName as firstName -> hname.given = firstName "SetFirstName";
+//  name.familyName as familyName -> hname.family = familyName "SetFamilyName";
 }
