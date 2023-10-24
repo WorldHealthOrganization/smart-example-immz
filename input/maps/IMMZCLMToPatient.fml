@@ -1,6 +1,7 @@
 map "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZCLMToPatient" = "IMMZCLMToPatient"
 
 uses "http://smart.who.int/ig/smart-immunizations-measles/StructureDefinition/IMMZCRegisterClient" alias IMMZC as source
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias Bundle as target
 uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as target
 
 group IMMZCToPatient (
