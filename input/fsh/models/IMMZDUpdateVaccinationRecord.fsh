@@ -17,15 +17,15 @@ Description:  "Data elements for IMMZ.D Update Vaccination Record."
 
 
 
-* vaccineProduct 1..1 code "Vaccine brand" "The brand or trade name used to refer to the vaccine received"
+* vaccineProduct 1..1 Coding "Vaccine brand" "The brand or trade name used to refer to the vaccine received"
 //  * ^code[+] = #IMMZ.D#DE18 
 * liveVaccine 0..1 boolean "Live attenuated vaccine" "Uses a living but weakened version of the virus or one that's very similar"
 //  * ^code[+] = #IMMZ.D#DE173 
-* vaccineType 0..1 code "Vaccine type" "Vaccine type/category that was administered or was to be administered. Any vaccine code available in the IMMZ.Z Vaccine Library list of codes applies in this data element"
+* vaccineType 0..1 Coding "Vaccine type" "Vaccine type/category that was administered or was to be administered. Any vaccine code available in the IMMZ.Z Vaccine Library list of codes applies in this data element"
 //  * ^code[+] = #IMMZ.D#DE19 
 * dateTime 1..1 dateTime "Date and time of vaccination" "Represents the visit/encounter date, which is the date and time when the vaccine was administered to the client"
 //  * ^code[+] = #IMMZ.D#DE20 
-* countryOfVaccination 1..1 code "Country of vaccination" "The service delivery country where the vaccine administration occurred"
+* countryOfVaccination 1..1 Coding "Country of vaccination" "The service delivery country where the vaccine administration occurred"
 //  * ^code[+] = #IMMZ.D.DE21 
 
 * vaccinationLocation 0..1 string "Vaccination location" "The service delivery location where the vaccine administration occurred"  
