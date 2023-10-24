@@ -1,7 +1,7 @@
-map "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZCQRToLM" = "IMMZCQRToLM"
+map "http://smart.who.int/ig/smart-immunizations/StructureMap/IMMZCQRToLM" = "IMMZCQRToLM"
 
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
-uses "http://smart.who.int/ig/smart-immunizations-measles/StructureDefinition/IMMZCRegisterClient" alias IMMZC as target
+uses "http://smart.who.int/ig/smart-immunizations/StructureDefinition/IMMZCRegisterClient" alias IMMZC as target
 
 group QRespToIMMZC ( source qr : QResp, target immzc : IMMZC) {
   qr.item as item then {
@@ -10,7 +10,9 @@ group QRespToIMMZC ( source qr : QResp, target immzc : IMMZC) {
       answer.value as content -> immzc.uniqueId = content  "SetIdentifier";
     } "FirstAnswerForIdentifier";
 
-    item as pname where item.linkId = 'name' then NameToIMMZC( pname, immzc ) "SetNames";
+    item where item.linkId = 'name' then NameToIMMZC( item, immzc ) "SetNames";
+
+    item where item.linkId = 'caregiver' -> immzc.caregiver as caregiver then NameToIMMZC( item, caregiver ) "SetNames";
 
     item.answer first as answer where item.linkId = 'sex' then {
       answer.value as coding then {
@@ -35,7 +37,7 @@ group QRespToIMMZC ( source qr : QResp, target immzc : IMMZC) {
         coding.display as display -> area.text = display "SetDisplay";
       } "SetCoding";
     } "FirstAnswerForAdministrativeArea";
-
+    
     item.answer first as answer where item.linkId = 'healthWorker' then {
       answer.value as content -> immzc.healthWorker = content  "SetHealthWorker";
     } "FirstAnswerForHealthWorker";
