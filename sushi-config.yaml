@@ -299,5 +299,6 @@ parameters:
     - input/actors
     - input/maps
     - input/resources/device
+    - input/resources/library
   special-url:
     - http://id.who.int/icd11/mms
