@@ -3,7 +3,11 @@ map "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZCLMToP
 uses "http://smart.who.int/ig/smart-immunizations-measles/StructureDefinition/IMMZCRegisterClient" alias IMMZC as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as target
 
-group IMMZCToPatient (source immzc : IMMZC, target patient: Patient) {
+group IMMZCToPatient (
+  source immzc : IMMZC,
+  target patient: Patient
+) {
+
   immzc.uniqueId as id -> patient.identifier as identifier then {
     id -> identifier.value = id "SetIdentifierValue";
   } "SetIdentifier";
@@ -32,10 +36,10 @@ group IMMZCToPatient (source immzc : IMMZC, target patient: Patient) {
 }
 
 group NameToHumanName (
-  source immzc,
+  source name,
   target hname
 ) {
-  immzc.name as fullName -> hname.text = fullName "SetFullName";
-  immzc.firstName as firstName -> hname.given = firstName "SetFirstName";
-  immzc.familyName as familyName -> hname.family = familyName "SetFamilyName";
+  name.name as fullName -> hname.text = fullName "SetFullName";
+//  name.firstName as firstName -> hname.given = firstName "SetFirstName";
+//  name.familyName as familyName -> hname.family = familyName "SetFamilyName";
 }
