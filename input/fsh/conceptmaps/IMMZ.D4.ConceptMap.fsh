@@ -1,4 +1,4 @@
-Instance:     IMMZ.D4.ConceptMap
+Instance:     IMMZD4ConceptMap
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ.D4 Data Dictionary to other codesystems."
 Usage:        #definition

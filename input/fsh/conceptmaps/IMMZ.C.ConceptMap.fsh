@@ -1,5 +1,5 @@
 
-Instance:     IMMZ.C.ConceptMap
+Instance:     IMMZCConceptMap
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ.C Data Dictionary to other codesystems."
 Usage:        #definition
