@@ -1,6 +1,5 @@
 Instance: Example.IMMZ.C.QuestionnaireResponse.1
 InstanceOf: QuestionnaireResponse
-Description: "QuestionnaireResponse Example 1 - Client Registration"
 Usage: #example
 * status = #completed
 * authored = "2023-08-08T19:20:20.913Z"
@@ -39,29 +38,29 @@ Usage: #example
     * linkId = "fullName"
     * text = "Full name of the care giver"
     * answer.valueString = "Mother Patient"
-  // * item[+]
-  //   * linkId = "firstName"
-  //   * text = "First or given name"
-  //   * answer.valueString = "Mother"
-  // * item[+]
-  //   * linkId = "familyName"
-  //   * text = "Family name"
-  //   * answer.valueString = "Patient"
-// * item[+]
-//   * linkId = "caregiver"
-//   * text = "Care giver name"
-//   * item[+]
-//     * linkId = "fullName"
-//     * text = "Full name of the care giver"
-//     * answer.valueString = "Father Patient"
-//   * item[+]
-//     * linkId = "firstName"
-//     * text = "First or given name"
-//     * answer.valueString = "Father"
-//   * item[+]
-//     * linkId = "familyName"
-//     * text = "Family name"
-//     * answer.valueString = "Patient"
+  * item[+]
+    * linkId = "firstName"
+    * text = "First or given name"
+    * answer.valueString = "Mother"
+  * item[+]
+    * linkId = "familyName"
+    * text = "Family name"
+    * answer.valueString = "Patient"
+* item[+]
+  * linkId = "caregiver"
+  * text = "Care giver name"
+  * item[+]
+    * linkId = "fullName"
+    * text = "Full name of the care giver"
+    * answer.valueString = "Father Patient"
+  * item[+]
+    * linkId = "firstName"
+    * text = "First or given name"
+    * answer.valueString = "Father"
+  * item[+]
+    * linkId = "familyName"
+    * text = "Family name"
+    * answer.valueString = "Patient"
 * item[+]
   * linkId = "phone"
   * text = "Client Phone number"

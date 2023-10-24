@@ -1,4 +1,4 @@
-Instance:     IMMZD4ConceptMap
+Instance:     IMMZ.D4.ConceptMap
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ.D4 Data Dictionary to other codesystems."
 Usage:        #definition
@@ -40,7 +40,6 @@ Usage:        #definition
   * insert ElementMap(82810-3, DE162, equivalent)
   * insert ElementMap(96381-9, DE165, relatedto)
   * insert ElementMap(47244-9, DE168, narrower)
-  * element[=].target[=].comment = "The source concept is more specific than the target"
 
 * group[+]
   * source = Canonical(IMMZ.D4)
@@ -59,5 +58,4 @@ Usage:        #definition
   * insert ElementMap(370388006, DE165, equivalent)
   * insert ElementMap(10839421000119100, DE166, equivalent)
   * insert ElementMap(419076005, DE167, narrower)
-  * element[=].target[=].comment = "The source concept is more specific than the target"
   * insert ElementMap(86406008, DE168, equivalent)

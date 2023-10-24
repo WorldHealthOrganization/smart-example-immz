@@ -1,7 +1,5 @@
 Instance: patient654321
 InstanceOf: Patient
-Description: "Patient Example - 654321"
-
 Usage: #example
 
 * id = "P654321"

@@ -1,9 +1,3 @@
-### Package
-
-This is the technical package containing the artifacts in this Implementation Guide:
-
-* [IG Package](package.tgz)
-
 ### Validator Pack
 
 The following file contains all value sets, profiles, extensions, pages, etc. in this Implementation Guide:

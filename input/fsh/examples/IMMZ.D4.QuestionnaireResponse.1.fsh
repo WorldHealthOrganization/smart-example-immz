@@ -1,7 +1,5 @@
 Instance: Example.IMMZ.D4.QuestionnaireResponse.1
 InstanceOf: QuestionnaireResponse
-Description: "QuestionnaireResponse Example 1 - Contraindications - Measles"
-
 Usage: #example
 * status = #completed
 * authored = "2023-10-11"

@@ -1,5 +1,4 @@
-
-Instance:     IMMZCConceptMap
+Instance:     IMMZ.C.ConceptMap
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ.C Data Dictionary to other codesystems."
 Usage:        #definition
@@ -37,7 +36,6 @@ Usage:        #definition
   * insert ElementMap(DE13, 63900-5, wider)
   * insert ElementMap(DE18, 42077-8, equivalent)
   * insert ElementMap(DE19, 56799-0, narrower)
-  * element[=].target[=].comment = "The source concept is more specific than the target"
 
 * group[+]
   * source = Canonical(IMMZ.C)
@@ -55,7 +53,6 @@ Usage:        #definition
   * insert ElementMap(DE15, 184140000, wider)
   * insert ElementMap(DE18, 184103008, equivalent)
   * insert ElementMap(DE19, 184097001, narrower)
-  * element[=].target[=].comment = "The source concept is more specific than the target"
 
 * group[+]
   * source = $SCT
