@@ -4,7 +4,7 @@ Title: "IMMZ.D2.DT.Measles"
 Description: "If the child or patient has not been given MCV1 (at 9 months) and MCV2 (between 15-18 months) vaccination"
 Usage: #definition
 
-* library = "http://smart.who.int/ig/smart-immunizations-measles/Library/IMMZD2DTMeasles"
+* library = "http://smart.who.int/ig/smart-immunizations-measles/Library/IMMZD2DTMeaslesLogic"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable
