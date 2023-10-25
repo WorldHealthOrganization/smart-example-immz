@@ -29,6 +29,7 @@ Usage:        #definition
   * target = $LNC
   * insert ElementMap(DE2, 54125-0, equivalent)
   * insert ElementMap(DE3, 45392-8, relatedto)
+  * insert ElementMap(DE21, 56799-0, relatedto)
   * insert ElementMap(DE4, 45394-4, relatedto)
   * insert ElementMap(DE5, 46098-0, equivalent)
   * insert ElementMap(DE10, 21112-8, equivalent)
@@ -42,6 +43,7 @@ Usage:        #definition
   * target = $SCT
   * insert ElementMap(DE2, 371484003, equivalent)
   * insert ElementMap(DE3, 184095009, relatedto)
+  * insert ElementMap(DE21, 184097001, relatedto)
   * insert ElementMap(DE4, 184096005, relatedto)
   * insert ElementMap(DE5, 184100006, equivalent)
   * insert ElementMap(DE6, 248153007, equivalent)

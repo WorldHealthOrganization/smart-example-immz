@@ -44,6 +44,12 @@ Usage: #definition
     * code[+] = $LNC#45394-4 "Last name"
     * code[+] = $SCT#184096005 "Patient surname (observable entity)"
 
+  * insert Question(address, Address,string,false,false)
+  * item[=]
+    * code[+] = IMMZ.C#DE21
+    * code[+] = $LNC#56799-0 "First name"
+    * code[+] = $SCT#184097001 "Patient address"
+
 
 * insert Question(sex, Sex,choice,true,false)
 * item[=]
