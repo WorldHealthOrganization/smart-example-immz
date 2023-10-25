@@ -30,21 +30,37 @@ Description:  "Data elements for the IMMZ.C Register Client Data Dictionary."
   * ^code[+] = IMMZ.C#DE10
 * caregiver 0..* BackboneElement "Caregiver" "The client's caregiver (person) which could be next of kin (e.g. partner, husband, mother, sibling, etc.)"
   * ^code[+] = IMMZ.C#DE14
-  * name 1..1 string "Caregiver's full name" "The full name of the client's caregiver"
-    * obeys IMMZ-C-name-1
-    * ^code[+] = IMMZ.C#DE15
-  * firstName 0..1 string "Caregiver's first name" "First or given name of the client's caregiver"
+  * firstName 0..1 string "Mother's/Guardian's first name" "First or given name of the client's caregiver"
     * obeys IMMZ-C-name-1
     * ^code[+] = IMMZ.C#DE16
-  * familyName 0..1 string "Caregiver's family name" "Family name or last name of the client's caregiver"
+  * firstName 0..1 string "Mother's/Guardian's middle name" "First or given name of the client's caregiver"
+    * obeys IMMZ-C-name-1
+    * ^code[+] = IMMZ.C#DE16.1
+  * familyName 0..1 string "Mother's last name" "Family name or last name of the client's caregiver"
     * obeys IMMZ-C-name-1
     * ^code[+] = IMMZ.C#DE17
 * phone 1..1 string "Contact phone number" "Client's phone number"
   * ^code[+] = IMMZ.C#DE18
-* administrativeArea 0..1 CodeableConcept "Administrative area" "The name of the city/municipality/town/village of where the client lives"
+  * firstName 0..1 string "Father's/Guardian's first name" "First or given name of the client's caregiver"
+    * obeys IMMZ-C-name-1
+    * ^code[+] = IMMZ.C#DE16
+  * firstName 0..1 string "Father's/Guardian's middle name" "First or given name of the client's caregiver"
+    * obeys IMMZ-C-name-1
+    * ^code[+] = IMMZ.C#DE16.1
+  * familyName 0..1 string "Father's last name" "Family name or last name of the client's caregiver"
+    * obeys IMMZ-C-name-1
+    * ^code[+] = IMMZ.C#DE17
+* administrativeArea 0..1 CodeableConcept "Administrative area" "The name of the county/sub county/ward/CHU of where the client lives"
   * ^code[+] = IMMZ.C#DE19
-* healthWorker 1..1 boolean "Active health worker" "Is the client an active and participating health worker. This data element is used mainly for reporting and indicators purposes."
-  * ^code[+] = IMMZ.C#DE20
+* administrativeArea 0..1 CodeableConcept "County" "The name of the county/sub county/ward/CHU of where the client lives"
+  * ^code[+] = IMMZ.C#DE19.1
+* administrativeArea 0..1 CodeableConcept "Sub county" "The name of the county/sub county/ward/CHU of where the client lives"
+  * ^code[+] = IMMZ.C#DE19.2
+* administrativeArea 0..1 CodeableConcept "Ward" "The name of the county/sub county/ward/CHU of where the client lives"
+  * ^code[+] = IMMZ.C#DE19.3
+* administrativeArea 0..1 CodeableConcept "CHU" "The name of the county/sub county/ward/CHU of where the client lives"
+  * ^code[+] = IMMZ.C#DE19.4
+
   
 
 // Mapping:      IMMZ-C-to-Patient
