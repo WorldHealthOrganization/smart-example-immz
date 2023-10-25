@@ -72,7 +72,7 @@ Usage: #definition
   * item[=]
     * code[+] = IMMZ.C#DE16
 
-  * insert Question(surname, Family name,string,false,false)
+  * insert Question(surname, Surname,string,false,false)
   * item[=]
     * code[+] = IMMZ.C#DE17
 
@@ -82,7 +82,7 @@ Usage: #definition
   * code[+] = $LNC#42077-8 "Patient Phone number"
   * code[+] = $SCT#184103008 "Patient telephone number (observable entity)"
 
-* insert Question(organizationUnit, Administrative area,choice,false,false)
+* insert Question(organizationUnit, Organization unit,choice,false,false)
 * item[=]
   * code[+] = IMMZ.C#DE19
   * code[+] = $LNC#56799-0 "Address"
