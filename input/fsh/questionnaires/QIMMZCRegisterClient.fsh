@@ -25,20 +25,14 @@ Usage: #definition
   * insert Question(firstName, First or given name,string,false,false)
   * item[=]
     * code[+] = IMMZ.C#DE3
-    * code[+] = $LNC#45392-8 "First name"
-    * code[+] = $SCT#184095009 "Patient forename (observable entity)"
 
   * insert Question(middleName, middle name,string,false,false)
   * item[=]
     * code[+] = IMMZ.C#DE3.1
-   // * code[+] = $LNC#45392-8 "Middle name"
-   // * code[+] = $SCT#184095009 "Patient middlename (observable entity)"
 
   * insert Question(familyName, Family name,string,false,false)
   * item[=]
     * code[+] = IMMZ.C#DE4
-    * code[+] = $LNC#45394-4 "Last name"
-    * code[+] = $SCT#184096005 "Patient surname (observable entity)"
 
 
 * insert Question(sex, Sex,choice,true,false)
