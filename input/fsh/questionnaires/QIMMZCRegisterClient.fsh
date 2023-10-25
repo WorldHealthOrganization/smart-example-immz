@@ -89,8 +89,8 @@ Usage: #definition
   * code[+] = $SCT#184097001 "Patient address (observable entity)"
 
 
-* insert Question(healthWorker, Health Worker,boolean,true,false)
+/** insert Question(healthWorker, Health Worker,boolean,true,false)
 * item[=]
-  * code[+] = IMMZ.C#DE20
+  * code[+] = IMMZ.C#DE20*/
 
 

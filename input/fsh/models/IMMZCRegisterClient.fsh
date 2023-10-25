@@ -43,8 +43,8 @@ Description:  "Data elements for the IMMZ.C Register Client Data Dictionary."
   * ^code[+] = IMMZ.C#DE18
 * organizationUnit 0..1 CodeableConcept "Organization unit" "The name of the city/municipality/town/village of where the client lives"
   * ^code[+] = IMMZ.C#DE19
-* healthWorker 1..1 boolean "Active health worker" "Is the client an active and participating health worker. This data element is used mainly for reporting and indicators purposes."
-  * ^code[+] = IMMZ.C#DE20
+/** healthWorker 1..1 boolean "Active health worker" "Is the client an active and participating health worker. This data element is used mainly for reporting and indicators purposes."
+  * ^code[+] = IMMZ.C#DE20*/
   
 
 // Mapping:      IMMZ-C-to-Patient
