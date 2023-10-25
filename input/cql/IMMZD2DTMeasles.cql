@@ -46,11 +46,11 @@ define "Expected Due Date for MCV dose":
 	//when "Needs Zero MCV Dose"
 	//	then Patient.birthDate + 6 months
 	when "No MCV Doses Administered to Patient"
-		then if "High Transmission Setting" then Patient.birthDate + 9 months else Patient.birthDate + 12 months
+		then if "High Transmission Setting" then Patient.birthDate + 6 months else Patient.birthDate + 9 months
 	//when "Second MCV Dose Administered to Patient" is not null and "Needs Supplementary MCV Dose"
 	//	then "Date Second MCV Dose Administered to Patient" + 4 weeks
 	when "First MCV Dose Administered to Patient" is not null
-		then Patient.birthDate + 15 months
+		then Patient.birthDate + 18 months
 	else null
 	end
 
@@ -82,7 +82,7 @@ define "Expiration Date for MCV dose":
 	//end
 	null
 
-define "Overdue Date for MCV dose":
+define "Overdue Date for MCV dose"
 	null
 
 define "Date Last Valid MCV Dose":
