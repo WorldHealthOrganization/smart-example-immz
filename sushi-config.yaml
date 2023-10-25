@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: who.fhir.smart-immunizations-measles
-canonical: http://smart.who.int/ig/smart-immunizations-measles
+canonical: http://moh.kenya.int/ig/smart-immunizations-measles
 name: SMART
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
@@ -16,8 +16,8 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 license: CC-BY-SA-3.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: WHO
-  url: http://who.int
+  name: MOH Kenya
+  url: http://moh.kenya
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
