@@ -6,8 +6,8 @@
 id: zambia.fhir.smart-immunizations-measles
 canonical: http://moh.zambia/ig/smart-immunizations-measles
 name: ZAMBIA
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+# title: Zambia Measles IG
+# description: WHO Smart Guidelines Hackathon - Oct 2023
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -16,9 +16,9 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 license: CC-BY-SA-3.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: WHO
-  url: http://who.int
-  # email: test@example.org
+  name: Zambia
+  url: https://www.moh.gov.zm/
+  email: muliokelar@who.int
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
