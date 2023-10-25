@@ -28,7 +28,7 @@ include IMMZConfig called IMMZCon
 include IMMZIndicatorCommon called IMMZIndCom
 include IMMZVaccineLibrary called IMMZvl
 include FHIRCommon called FC
-include IMMZD2DTMeasles called Measles
+include IMMZD2DTMeaslesLogic called Measles
 // End Skeleton CQL
 parameter "Measurement Period" Interval<Date>
 

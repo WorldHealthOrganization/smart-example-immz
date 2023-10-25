@@ -1,9 +1,9 @@
 /*
- * Library: IMMZD2DTMeasles (IMMZ.D2.DT.Measles)
+ * Library: IMMZD2DTMeaslesLogic (IMMZ.D2.DT.Measles)
  * Rule: If the child or patient has not been given MCV1 (at 9 months) and MCV2 (between 15-18 months) vaccination 
  * Trigger: Patient has never received measles vaccination
  */
-library IMMZD2DTMeasles
+library IMMZD2DTMeaslesLogic
 // Start Skeleton CQL
 using FHIR version '4.0.1'
 include FHIRHelpers version '4.0.1'

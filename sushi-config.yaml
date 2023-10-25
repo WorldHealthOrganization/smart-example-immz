@@ -298,7 +298,7 @@ parameters:
   path-resource: 
     - input/actors
     - input/maps
-    - input/resources/device
-    - input/resources/library
+  path-binary:
+    - input/cql
   special-url:
-    - http://id.who.int/icd11/mms
+    - http://hl7.org/fhir/sid/icd-11/mms
