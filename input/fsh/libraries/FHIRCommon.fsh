@@ -1,6 +1,7 @@
 Instance: FHIRCommon
 InstanceOf: Library
 Title: "FHIRCommon"
+version: '4.0.1'
 Description: "This library defines terminologies and functions commonly used in FHIR-based CQL artifacts"
 Usage: #definition
 * url = "http://smart.who.int/ig/smart-immunizations-measles/Library/FHIRCommon"

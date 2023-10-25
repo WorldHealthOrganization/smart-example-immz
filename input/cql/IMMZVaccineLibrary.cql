@@ -4,7 +4,6 @@ using FHIR version '4.0.1'
 include WHOCommon called WCom
 include WHOConcepts called Wcon
 include FHIRHelpers version '4.0.1'
-include FHIRCommon called FC
 include IMMZConcepts called IMMZc
 include IMMZCommon called IMMZcom
 

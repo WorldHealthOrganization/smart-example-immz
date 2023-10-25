@@ -11,7 +11,6 @@ include IMMZCommon called IMMZCom
 include IMMZConcepts called IMMZc
 include IMMZConfig called IMMZCon
 include IMMZVaccineLibrary called IMMZvl
-include FHIRCommon called FC
 
 parameter "Individual is at high risk of contracting measles" Boolean default false
 parameter "Individual is travelling to a country experiencing measles outbreaks" Boolean default false

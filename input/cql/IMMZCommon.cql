@@ -1,11 +1,11 @@
-library IMMZCommon
+library IMMZCommon version '4.0.1'
 
 using FHIR version '4.0.1'
 
 include WHOCommon called WCom
 include WHOConcepts called Wcon
 include FHIRHelpers version '4.0.1'
-include FHIRCommon called FC
+include FHIRCommon version '4.0.1' called FC
 include IMMZConcepts called IMMZc
 
 
@@ -241,10 +241,15 @@ define function Only(protocols List<FHIR.Immunization.ProtocolApplied>):
  */
 define function ToDate(choice Choice<FHIR.date, FHIR.string>):
   case
+    when choice is null then null//should not happend
 	  when choice is FHIR.date then
     	choice as FHIR.date
-		else
-      Message(null as FHIR.date, true, '1', 'Error', 'Cannot compute a date from a String value')
+		when choice is FHIR.string and ConvertsToDate(choice) then
+      FHIRHelpers.ToDate(choice)
+    when choice is FHIR.string then
+      Message(null as FHIR.date, true, '1', 'Error', 'Cannot compute a date from a the string' + choice)
+    else
+      Message(null as FHIR.date, true, '1', 'Error', 'Cannot compute a datetime from the source' )//should not happend
 	end
 
 /**
@@ -252,10 +257,16 @@ define function ToDate(choice Choice<FHIR.date, FHIR.string>):
  */
 define function ToDateTime(choice Choice<FHIR.dateTime, FHIR.string>):
   case
+    when choice is null then null//should not happend
 	  when choice is FHIR.dateTime then
     	choice as FHIR.dateTime
-		else
-      Message(null as FHIR.dateTime, true, '1', 'Error', 'Cannot compute a date from a String value')
+		when choice is FHIR.string and ConvertsToDateTime(choice) then
+      FHIRHelpers.ToDateTime(choice)
+    when choice is FHIR.string then
+      Message(null as FHIR.dateTime, true, '1', 'Error', 'Cannot compute a datetime from a the string' + choice)
+    else
+      Message(null as FHIR.dateTime, true, '1', 'Error', 'Cannot compute a datetime from the source' )//should not happend
+
 	end
 
 
