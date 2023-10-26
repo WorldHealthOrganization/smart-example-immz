@@ -25,7 +25,7 @@ valueset "Positive Result": 'http://smart.who.int/ig/smart-immunizations-measles
 valueset "Immunocompromised": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/Immunocompromised-values'
 valueset "Patient birth weight observation value": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/Birthweight-values'
 valueset "PretermBirth": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/Preterm-values'
-valueset "Live Attenuated": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/LiveAttenduatedVaccines'
+valueset "Live Attenuated": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/LiveAttenuatedVaccines'
 
 //valueset "Target Disease": 'http://hl7.org/fhir/ValueSet/immunization-target-disease'
 
@@ -37,7 +37,7 @@ valueset "ARV Drugs": 'http://smart.who.int/ig/smart-immunizations-measles/Value
 
 // Vaccine Value Sets
 
-valueset "MCV Vaccine": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/IMMZ.A1.DE9'
+valueset "MCV Vaccine": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/IMMZ.Z.DE9'
 
 // Plugin is complaining about not finding these so that should be resolved, but here until it can be fixed
 valueset "BCG Vaccine": 'http://smart.who.int/ig/smart-immunizations-measles/ValueSet/IMMZ.A1.DE1'

@@ -26,52 +26,59 @@ include IMMZCommon called IMMZCom
 include IMMZConcepts called IMMZc
 include IMMZConfig called IMMZCon
 include IMMZIndicatorCommon called IMMZIndCom
-include IMMZVaccineLibrary called IMMZvl
-include FHIRCommon called FC
-include IMMZD2DTMeaslesLogic called Measles
 // End Skeleton CQL
-parameter "Measurement Period" Interval<Date>
+parameter "Measurement Period" Interval<DateTime> default Interval[@2019-03-01T00:00:00.0, @2019-04-01T00:00:00.0 )
 
 context Patient
 
-/*
-define "MCV Doses Administered to Patient During Measurement Period":
-    Measles."MCV Doses Administered to Patient" I 
-    where IMMZCom.ToDate(I.occurrence) during "Measurement Period"
-*/
+define  getPatientImmunisationMeasles:
+  [Immunization] I
+    where I.status = 'completed'
+	and  I.vaccineCode in IMMZc."MCV Vaccine"
+    sort by date from (occurrence as FHIR.dateTime) desc
 
-define function "Measure Observation" (Patient "Patient"):
-  1
+define  getFirstDose:
+  getPatientImmunisationMeasles I
+    where Coalesce(First(I.protocolApplied pa where pa.doseNumber is not null).doseNumber.value as Integer,1) = 1 
+	sort by date from (occurrence as FHIR.dateTime) desc
+
+define getSecondDose:
+  	 
+  getPatientImmunisationMeasles I
+	 where Coalesce(First(I.protocolApplied pa where pa.doseNumber is not null).doseNumber.value as Integer,1) = 2 
+	 or (   I.occurrence after (First(getFirstDose).occurrence + 4 weeks  ))
+	sort by date from (occurrence as FHIR.dateTime) desc
+
 
 /*
  * Target population for first dose: Any one over 9 (in high transmission area) or 12 (in low transmission area) months old
  */ 
-define "Initial Population 05":
-	Measles."First MCV Dose Administered to Patient" I where IMMZCom.ToDate(I.occurrence) during "Measurement Period"
+define "Measure Population 05":
+	(getFirstDose I where  I.occurrence during "Measurement Period")
+
 
 /*
  * Numerator for first dose: Anyone having received the first dose
  */
-define "Measure Population 05":
-	"Initial Population 05"
+define "Initial Population 05":
+	(getFirstDose)
 
 /*
  * Target population for second dose: Any one over 15 months
  */ 
 define "Initial Population 40":
-	Measles."Second MCV Dose Administered to Patient" I where IMMZCom.ToDate(I.occurrence) during "Measurement Period"
+	(getSecondDose)
 
 /*
  * Numerator for second dose: Anyone having received the first dose
  */
 define "Measure Population 40":
-	"Initial Population 40"
+	(getSecondDose I where ( I.occurrence) during "Measurement Period")
 
 
 /*
  * Combined stratifiers
  */
 define "Stratification":
-		IMMZIndCom."By Administrative Gender Stratifier".code + ':' + IMMZIndCom."Toddler By Age Stratifier".code + ':' + IMMZIndCom."By Geographic Region Stratifier"
-
+		Patient.gender.value 
 
