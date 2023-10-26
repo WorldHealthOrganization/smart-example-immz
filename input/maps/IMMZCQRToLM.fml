@@ -10,7 +10,7 @@ group QRespToIMMZC ( source qr : QResp, target immzc : IMMZC) {
       answer.value as content -> immzc.uniqueId = content  "SetIdentifier";
     } "FirstAnswerForIdentifier";
 
-    item as pname where item.linkId = 'name' then NameToIMMZC( pname, immzc ) "SetNames";
+    item as name where item.linkId = 'name' then NameToIMMZC( name, immzc ) "SetNames";
 
     item.answer first as answer where item.linkId = 'sex' then {
       answer.value as coding then {
