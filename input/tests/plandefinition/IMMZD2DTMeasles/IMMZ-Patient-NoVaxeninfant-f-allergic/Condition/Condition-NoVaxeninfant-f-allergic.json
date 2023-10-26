@@ -6,7 +6,7 @@
     "coding": [
       {
         "code": "DE167",
-        "system": "http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D4",
+        "system": "http://smart.who.int/ig/smart-immunizations-measles/CodeSystem/IMMZ.D4",
         "display": "Severe allergic reactions"
       }
     ]

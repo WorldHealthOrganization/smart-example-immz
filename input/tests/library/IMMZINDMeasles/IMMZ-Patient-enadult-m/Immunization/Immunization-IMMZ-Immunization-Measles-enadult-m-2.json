@@ -10,7 +10,7 @@
   "vaccineCode": {
     "coding": [
       {
-        "code": "386012008",
+        "code": "836382004",
         "system": "http://snomed.info/sct",
         "display": "Measles vaccine (product)"
       }

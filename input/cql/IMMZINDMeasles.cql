@@ -39,48 +39,41 @@ define  getPatientImmunisationMeasles:
 
 define  getFirstDose:
   getPatientImmunisationMeasles I
-    where Coalesce(First(I.protocolApplied pa where pa.doseNumber is not null).doseNumber.value as Integer,1) = 1 sort by IMMZCom.ToDate(occurrence) desc
+    where Coalesce(First(I.protocolApplied pa where pa.doseNumber is not null).doseNumber.value as Integer,1) = 1 
+	sort by date from (occurrence as FHIR.dateTime) desc
 
 define getSecondDose:
   	 
   getPatientImmunisationMeasles I
 	 where Coalesce(First(I.protocolApplied pa where pa.doseNumber is not null).doseNumber.value as Integer,1) = 2 
-	 or (   IMMZCom.ToDate(I.occurrence) after IMMZCom.ToDate(First(getFirstDose).occurrence) + 4 weeks  )
-	sort by IMMZCom.ToDate(occurrence) desc
+	 or (   I.occurrence after (First(getFirstDose).occurrence + 4 weeks  ))
+	sort by date from (occurrence as FHIR.dateTime) desc
 
-/*
-define "MCV Doses Administered to Patient During Measurement Period":
-    Measles."MCV Doses Administered to Patient" I 
-    where IMMZCom.ToDate(I.occurrence) during "Measurement Period"
-*/
-
-define  "Measure Observation":
-  1
 
 /*
  * Target population for first dose: Any one over 9 (in high transmission area) or 12 (in low transmission area) months old
  */ 
 define "Measure Population 05":
-	First(getFirstDose I where IMMZCom.ToDate( I.occurrence) during "Measurement Period")
+	(getFirstDose I where  I.occurrence during "Measurement Period")
 
 
 /*
  * Numerator for first dose: Anyone having received the first dose
  */
 define "Initial Population 05":
-	First(getFirstDose)
+	(getFirstDose)
 
 /*
  * Target population for second dose: Any one over 15 months
  */ 
 define "Initial Population 40":
-	First(getSecondDose)
+	(getSecondDose)
 
 /*
  * Numerator for second dose: Anyone having received the first dose
  */
 define "Measure Population 40":
-	First(getSecondDose I where IMMZCom.ToDate( I.occurrence) during "Measurement Period")
+	(getSecondDose I where ( I.occurrence) during "Measurement Period")
 
 
 /*
