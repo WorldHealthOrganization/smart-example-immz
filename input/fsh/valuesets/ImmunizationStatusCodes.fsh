@@ -4,7 +4,6 @@ ValueSet: ImmunizationStatusCodes
 Id: immunization-status
 Title: "Immunization Status Codes"
 Description: "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the current status of the administered dose of vaccine."
-* ^meta.lastUpdated = "2023-03-26T15:21:02.749+11:00"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #pher
