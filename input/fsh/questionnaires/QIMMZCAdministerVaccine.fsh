@@ -49,9 +49,9 @@ Usage: #definition
     * answerValueSet = Canonical(ImmunizationStatusCodes)
   * insert Question(datetime, Date/Time,dateTime,true,false)
   * insert Question(vaccine-type, Vaccine Type,choice,true,false)
-    * answerValueSet = Canonical(AllVaccineTypes)
   * item[=]
-    * answerValueSet = Canonical(VSMeaslesVaccineProducts)
+    * answerValueSet = Canonical(AllVaccineTypes)
+//    * answerValueSet = Canonical(VSMeaslesVaccineProducts)
   
   * item[+]
     * text = "Administered Product"
