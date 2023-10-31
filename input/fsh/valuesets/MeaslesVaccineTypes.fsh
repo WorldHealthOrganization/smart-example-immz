@@ -7,6 +7,7 @@ Description: "Measles Vaccine type Codes, containing the different types of anti
 
 * codes from system ICD11 where parent = #XM28X5 
 * ICD11#XM28X5
+* ICD11#XM2340
 
 * $LNC#30940-1 "Measles virus+Mumps virus+Rubella virus dose count in combination vaccine"
 
