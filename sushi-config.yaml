@@ -302,3 +302,5 @@ parameters:
     - input/cql
   special-url:
     - http://hl7.org/fhir/sid/icd-11/mms
+    - http://hl7.org/fhir/ValueSet/immunization-status
+    - http://hl7.org/fhir/ValueSet/country
