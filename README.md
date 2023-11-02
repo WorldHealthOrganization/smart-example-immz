@@ -13,6 +13,7 @@ CI-Build: https://worldhealthorganization.github.io/smart-immunizations-measles/
 
 This Implementation Guide contains the specifications for MEASLES vaccination SMART Guidelines.
 
+
 This framework is published under a Creative Commons - IGO [license](LICENSE.md).
 
 ## Changes and feedback
