@@ -2,20 +2,20 @@
 // /// status = draft
 // /// title = "IMMZ.C QuestionnaireResponse to Patient"
 
-map "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZCQRToPatient" = "IMMZCQRToPatient"
+map "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZCQRToPatient" = "IMMZCQRToPatient"
 
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
-uses "http://smart.who.int/ig/smart-immunizations-measles/StructureDefinition/IMMZCRegisterClient" alias IMMZC as source
+uses "http://smart.who.int/smart-immunizations-measles/StructureDefinition/IMMZCRegisterClient" alias IMMZC as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as target
 
-imports "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZCQRToLM"
-imports "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZCLMToPatient"
+imports "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZCQRToLM"
+imports "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZCLMToPatient"
 
 group QRestToIMMZC (
   source qr : QResp,
   target patient: Patient
 ) {
-  qr -> create("http://smart.who.int/ig/smart-immunizations-measles/StructureDefinition/IMMZCRegisterClient") as model 
+  qr -> create("http://smart.who.int/smart-immunizations-measles/StructureDefinition/IMMZCRegisterClient") as model 
   then{
     qr -> model then QRespToIMMZC( qr, model) "QRtoLM";
     qr -> patient then IMMZCToPatient( model, patient ) "LMtoPatient";
@@ -38,7 +38,7 @@ group QRespToIMMZC (
     item.answer first as answer where item.linkId = 'sex' then {
       answer.valueCoding as coding then {
         coding.code as content -> patient.gender = translate(content, 
-            'http://smart.who.int/ig/smart-immunizations-measles/ConceptMap/IMMZCSexToAdministrativeGender', 
+            'http://smart.who.int/smart-immunizations-measles/ConceptMap/IMMZCSexToAdministrativeGender', 
             'code') "setSex";
       } "processCoding";
     } "firstAnswerForIdentifier2";

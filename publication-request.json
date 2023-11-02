@@ -6,7 +6,7 @@
     "version" : "0.1.0",
     "desc" : "First stable release",
     "mode" : "milestone",    
-    "path" : "http://smart.who.int/ig/smart-immunizations-measles/0.1.0",
+    "path" : "http://smart.who.int/smart-immunizations-measles/0.1.0",
     "ci-build": "http://worldhealthorganization.github.io/smart-immunizations-measles",    
     "first": true,
     "status" : "release",

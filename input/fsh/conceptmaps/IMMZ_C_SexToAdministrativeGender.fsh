@@ -3,7 +3,7 @@ InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ.C sex coding to FHIR Administrative Gender."
 Usage:        #definition
 
-* url = "http://smart.who.int/ig/smart-immunizations-measles/ConceptMap/IMMZCSexToAdministrativeGender"
+* url = "http://smart.who.int/smart-immunizations-measles/ConceptMap/IMMZCSexToAdministrativeGender"
 
 * name = "IMMZCSexToAdministrativeGender"
 * title = "ConceptMap to and From IMMZ.C sex to administrative gender"
