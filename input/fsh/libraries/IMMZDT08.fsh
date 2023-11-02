@@ -3,7 +3,7 @@ InstanceOf: Library
 Title: "IMMZDT08"
 Description: "This library defines decision support logic for the IMMZ.DT.08 decision table in the Immunization CPG"
 Usage: #definition
-* url = "http://smart.who.int/ig/smart-immunizations-measles/Library/IMMZDT08"
+* url = "http://smart.who.int/smart-immunizations-measles/Library/IMMZDT08"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable

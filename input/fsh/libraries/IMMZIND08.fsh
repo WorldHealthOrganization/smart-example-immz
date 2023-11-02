@@ -3,7 +3,7 @@ InstanceOf: Library
 Title: "IMMZIND08"
 Description: "This library defines population criteria for the IND.08 indicator in the Immunization CPG"
 Usage: #definition
-* url = "http://smart.who.int/ig/smart-immunizations-measles/Library/IMMZIND08"
+* url = "http://smart.who.int/smart-immunizations-measles/Library/IMMZIND08"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable

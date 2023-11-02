@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: who.fhir.smart-immunizations-measles
-canonical: http://smart.who.int/ig/smart-immunizations-measles
+canonical: http://smart.who.int/smart-immunizations-measles
 name: SMART
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
@@ -161,7 +161,7 @@ menu:
 
 meta:
   profile:
-    - http://smart.who.int/ig/smart-base/ImplementationGuide-SGImplementationGuide
+    - http://smart.who.int/smart-base/ImplementationGuide-SGImplementationGuide
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

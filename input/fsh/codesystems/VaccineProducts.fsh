@@ -4,7 +4,7 @@ Description: "Vaccine Product codes, containing the different available products
 
 * ^property[+].code = #classification
 * ^property[=].type = #code
-* ^property[=].uri = "http://smart.who.int/ig/smart-immunizations-measles#classification"
+* ^property[=].uri = "http://smart.who.int/smart-immunizations-measles#classification"
 
 * #20009060/2 "Serum Institute of India Measles vaccine"
   * ^property[+].code = #classification
