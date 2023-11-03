@@ -11,7 +11,7 @@ Usage: #definition
 * contained[+] = IMMZ.D4.DE161
 
 * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
-* extension[=].valueCanonical = "http://smart.who.int/ig/smart-immunizations-measles/StructureMap/IMMZD4QRToResources"
+* extension[=].valueCanonical = "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZD4QRToResources"
 
 
 //* insert Question(contraindications, Specific situations or medical conditions in which it is advised or recommended to avoid or delay administering a particular vaccine, choice, false, true)
