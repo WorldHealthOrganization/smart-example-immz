@@ -12,7 +12,9 @@
   /* 4. Footer container color */
   --btn-hover-color: #0070A1;
   /* 6. Menu button hover color */
-  --ig-header-color: #f6f7f9 --ig-header-container-color: #86a
+  --ig-header-color: #f6f7f9;
+  
+  --toc-box-bg-color: #f6f7f9;
 }
 
 
@@ -398,6 +400,7 @@ h6 {
 
 body {
   font-family: 'Noto Sans', sans-serif !important;
+  height: fit-content !important
 }
 
 td,
@@ -409,11 +412,12 @@ p {
 
 
 
+
 .container {
   width: 100% !important;
   max-width: none !important;
   /* Reset any max-width that might be applied elsewhere */
-  background-color: #f6f7f9 !important;
+  background-color: var(--toc-box-bg-color) !important;
   color: #000 !important;
   padding: 0 20px
     /* Add 20px padding on all sides */
@@ -429,7 +433,7 @@ p {
 }
 
 body {
-  background-color: #f6f7f9 !important;
+  background-color: var(--toc-box-bg-color) !important;
 }
 
 .nav-collapse,
@@ -467,7 +471,8 @@ body {
 
 
 div.markdown-toc {
-  display: block;
+  float: right; /* or 'float: right;' depending on where you want the TOC to appear */
+  margin-right: 20px; /* This adds space between the TOC and the text wrapping around it */
   background-color: unset;
 }
 
