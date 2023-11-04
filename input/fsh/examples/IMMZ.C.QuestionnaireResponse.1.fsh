@@ -68,7 +68,7 @@ Usage: #example
   * answer.valueString = "406-555-1212"
 * item[+]
   * linkId = "administrativeArea"
-  * text = "Administrative Area"
+  * text = "Administrative area"
   * answer.valueCoding = urn:iso:std:iso:3166:-2#KE-30 "Nairobi City"
 * item[+]
   * linkId = "healthWorker"

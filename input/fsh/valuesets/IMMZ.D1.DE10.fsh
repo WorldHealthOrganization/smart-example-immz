@@ -4,6 +4,7 @@ Description:  "ValueSet for HIV Status for IMMZ.D1.DE10."
 
 * ^status = #active
 * ^name = "IMMZ_D1_DE10"
+* ^experimental = false
 
 * IMMZ.D1#DE11 "HIV-positive"
 * IMMZ.D1#DE12 "HIV-negative"

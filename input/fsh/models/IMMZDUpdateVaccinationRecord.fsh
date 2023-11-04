@@ -67,6 +67,7 @@ ValueSet: IMMZ.D1.DE1VS
 Title:        "IMMZ.D1.DE1 CodeSystem for Immunization status"
 Description:  "CodeSystem for IMMZ.D1.DE1 Immunization status"
 * ^experimental = false
+* ^name = "IMMZD1DE1VS"
 
 * IMMZ.D1.DE1#IMMZ.D.DE2
 * IMMZ.D1.DE1#IMMZ.D.DE3
@@ -103,6 +104,7 @@ ValueSet: IMMZ.D1.DE5VS
 Title:        "IMMZ.D1.DE5 CodeSystem for Reason Not Done"
 Description:  "CodeSystem for IMMZ.D1.DE5 Reason Not Done"
 * ^experimental = false
+* ^name = "IMMZD1DE5VS"
 
 * IMMZ.D1.DE5#IMMZ.D.DE6
 * IMMZ.D1.DE5#IMMZ.D.DE7

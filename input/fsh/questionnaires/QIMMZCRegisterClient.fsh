@@ -82,7 +82,7 @@ Usage: #definition
   * code[+] = $LNC#42077-8 "Patient Phone number"
   * code[+] = $SCT#184103008 "Patient telephone number (observable entity)"
 
-* insert Question(administrativeArea, Administrative area,choice,false,false)
+* insert Question(administrativeArea,Administrative area,choice,false,false)
 * item[=]
   * code[+] = IMMZ.C#DE19
   * code[+] = $LNC#56799-0 "Address"

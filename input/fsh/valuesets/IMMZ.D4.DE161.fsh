@@ -5,6 +5,7 @@ Description:  "ValueSet for Potential Contraindications for IMMZ.D4.DE161."
 
 * ^status = #active
 * ^name = "IMMZ_D4_DE161"
+* ^experimental = false
 
 * IMMZ.D4#DE162 "Currently pregnant"
 * IMMZ.D4#DE165 "Severely immunosuppressed"

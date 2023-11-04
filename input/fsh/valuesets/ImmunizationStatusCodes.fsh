@@ -5,10 +5,6 @@ Id: immunization-status
 Title: "Immunization Status Codes"
 Description: "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the current status of the administered dose of vaccine."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
-* ^extension[=].valueCode = #pher
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-* ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 5
 * ^url = "http://hl7.org/fhir/ValueSet/immunization-status"
@@ -20,7 +16,6 @@ Description: "The value set to instantiate this attribute should be drawn from a
 * ^version = "5.0.0"
 * ^status = #draft
 * ^experimental = false
-* ^publisher = "FHIR Project team"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://hl7.org/fhir"
 * ^jurisdiction = $m49.htm#001 "World"

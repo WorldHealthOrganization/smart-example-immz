@@ -16,7 +16,7 @@ Usage: #definition
 * action[+]
   * title = "Check Contraindication for Measles Immunization"
   * description = "Contraindication for measles immunization"
-  * type = #update
+  * type = $action-type#update
   * condition[+]
     * kind = #applicability
     * expression
