@@ -2,6 +2,9 @@ CodeSystem: VaccineProducts
 Title:     "Vaccine Product codes CodeSet"
 Description: "Vaccine Product codes, containing the different available products."
 
+* ^experimental = true
+* ^caseSensitive = true
+
 * ^property[+].code = #classification
 * ^property[=].type = #code
 * ^property[=].uri = "http://smart.who.int/smart-immunizations-measles#classification"

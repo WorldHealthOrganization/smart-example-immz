@@ -30,7 +30,7 @@
 
                   {% if entry.meta and entry.meta.profile %}
                       {% for profile in entry.meta.profile %}
-                          {% if profile == "http://worldhealthorganization.github.io/smart-base/StructureDefinition/SGPersona" %}
+                          {% if profile == "http://smart.who.int/smart-base/StructureDefinition/SGPersona" %}
                               {% assign profile_includes_string = true %}
                               {% break %}
                           {% endif %}

@@ -5,6 +5,8 @@ Description: "ICD-11."
 
 * ^url = $ICD11
 //* ^hierarchyMeaning = #is-a
+* ^experimental = true
+* ^caseSensitive = true
 
 * ^property[+].code = #parent
 * ^property[=].type = #code
