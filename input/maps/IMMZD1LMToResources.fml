@@ -1,4 +1,6 @@
 map "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZD1LMToResources" = "IMMZD1LMToResources"
+// Immunization - Client History - Transform logical model to resources
+/// namme = "IMMZD1LMToResources"
 
 uses "http://smart.who.int/smart-immunizations-measles/StructureDefinition/IMMZD1ClientHistoryMeasles" alias IMMZD1 as source
 uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias Bundle as target

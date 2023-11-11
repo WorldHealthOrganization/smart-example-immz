@@ -13,7 +13,7 @@
   --btn-hover-color: #0070A1;
   /* 6. Menu button hover color */
   --ig-header-color: #f6f7f9;
-  
+  --toc-box-border: navy;
   --toc-box-bg-color: #f6f7f9;
 }
 
@@ -107,6 +107,7 @@
   margin: 5px;
   padding: 10px;
   border-left-style: solid;
+  display: flow-root;
 }
 
 .stu-note::before {
@@ -472,23 +473,35 @@ body {
 
 div.markdown-toc {
   float: right; /* or 'float: right;' depending on where you want the TOC to appear */
-  margin-right: 20px; /* This adds space between the TOC and the text wrapping around it */
-  background-color: unset;
+  /*margin-right: 20px;*/ /* This adds space between the TOC and the text wrapping around it */
+  /* background-color: unset; */
+  padding: 3px;
+  border: 2px solid var(--toc-box-border);
 }
 
 
+
+.markdown-toc ul {
+  margin: 0px 3px;
+  padding: 0 0 0 15px;
+
+}
 
 
 
 .markdown-toc ul li {
-  border-top: 1px solid #b2b2b2;
+  border-top: 1px solid var(--toc-box-border);
   line-height: 1.5;
-  margin: 3px;
+  margin-bottom: -4px;
+  margin-top: -4px; /* Overlap borders between items */  
   padding: 7px;
   list-style-type: none;
 }
 
-
+/* Add a bottom border to the last item */
+.markdown-toc ul li:last-child {
+  border-bottom: 1px solid var(--toc-box-border);
+}
 
 
 

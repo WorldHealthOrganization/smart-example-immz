@@ -1,4 +1,6 @@
 map "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZD4QRToResources" = "IMMZD4QRToResources"
+// Immunization - Administer Vaccine - Extract QuestionnaireResponse to resources
+/// namme = "IMMZD4QRToResources"
 
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
 uses "http://smart.who.int/smart-immunizations-measles/StructureDefinition/IMMZD4CheckContraindicationsMeasles" alias IMMZD4 as source

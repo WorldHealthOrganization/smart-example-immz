@@ -1,4 +1,6 @@
 map "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZCQRToPatient" = "IMMZCQRToPatient"
+// Immunization Client Registry - Extract QuestionnaireResponse to Patient resources
+/// namme = "IMMZCQRToPatient"
 
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
 uses "http://smart.who.int/smart-immunizations-measles/StructureDefinition/IMMZCRegisterClient" alias IMMZC as source
