@@ -11,6 +11,8 @@ Usage: #definition
 * status = #active
 * contained[+] = VSMeaslesVaccineProducts
 * contained[+] = ImmunizationStatusCodes
+* contained[+] = AllVaccineTypes
+
 * extension.url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext"
 * extension.valueExpression.language = #application/x-fhir-query
 * extension.valueExpression.expression = "Encounter"
@@ -51,8 +53,7 @@ Usage: #definition
   * insert Question(vaccine-type, Vaccine Type,choice,true,false)
   * item[=]
     * answerValueSet = "#AllVaccineTypes"
-//    * answerValueSet = Canonical(VSMeaslesVaccineProducts)
-  
+
   * item[+]
     * text = "Administered Product"
     * linkId = "administered-product"
