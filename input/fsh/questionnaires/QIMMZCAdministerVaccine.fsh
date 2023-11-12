@@ -46,11 +46,11 @@ Usage: #definition
 
   * insert Question(status, Status,choice,true,false)
   * item[=]
-    * answerValueSet = Canonical(ImmunizationStatusCodes)
+    * answerValueSet = "#ImmunizationStatusCodes"
   * insert Question(datetime, Date/Time,dateTime,true,false)
   * insert Question(vaccine-type, Vaccine Type,choice,true,false)
   * item[=]
-    * answerValueSet = Canonical(AllVaccineTypes)
+    * answerValueSet = "#AllVaccineTypes"
 //    * answerValueSet = Canonical(VSMeaslesVaccineProducts)
   
   * item[+]
@@ -61,7 +61,7 @@ Usage: #definition
 
     * insert Question(product-code, Product Code,choice,true,false)
     * item[=]
-      * answerValueSet = Canonical(VSMeaslesVaccineProducts)
+      * answerValueSet = "#VSMeaslesVaccineProducts"
     * insert Question(product-lotnr, Lot or batch number,string,false,false)
     * item[=]
 
