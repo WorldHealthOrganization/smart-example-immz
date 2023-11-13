@@ -48,7 +48,7 @@ Usage: #definition
 
   * insert Question(status, Status,choice,true,false)
   * item[=]
-    * answerValueSet = "#ImmunizationStatusCodes"
+    * answerValueSet = "#immunization-status"
   * insert Question(datetime, Date/Time,dateTime,true,false)
   * insert Question(vaccine-type, Vaccine Type,choice,true,false)
   * item[=]
