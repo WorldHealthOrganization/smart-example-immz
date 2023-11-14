@@ -4,7 +4,7 @@ Title: "IMMZ.D2.DT.Measles.Contraindication"
 Description: "Check contraindications for Measles vaccine"
 Usage: #definition
 
-* library = "http://smart.who.int/smart-immunizations-measles/Library/IMMZD2DTMeasles"
+* library = "http://smart.who.int/immunizations-measles/Library/IMMZD2DTMeasles"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable

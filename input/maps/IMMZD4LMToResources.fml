@@ -1,8 +1,8 @@
-map "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZD4LMToResources" = "IMMZD4LMToResources"
+map "http://smart.who.int/immunizations-measles/StructureMap/IMMZD4LMToResources" = "IMMZD4LMToResources"
 // Immunization - Administer Vaccine - Transform logical model to resources
 /// namme = "IMMZD4LMToResources"
 
-uses "http://smart.who.int/smart-immunizations-measles/StructureDefinition/IMMZD4CheckContraindicationsMeasles" alias IMMZD4 as source
+uses "http://smart.who.int/immunizations-measles/StructureDefinition/IMMZD4CheckContraindicationsMeasles" alias IMMZD4 as source
 uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias Bundle as target
 
 group IMMZD4ToBundle (source immz : IMMZD4, target bundle: Bundle) {

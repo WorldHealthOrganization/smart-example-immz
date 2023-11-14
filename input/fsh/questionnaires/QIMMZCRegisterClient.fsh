@@ -11,7 +11,7 @@ Usage: #definition
 //* contained[+] = YesNoUnknown
 
 * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
-* extension[=].valueCanonical = "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZCQRToPatient"
+* extension[=].valueCanonical = "http://smart.who.int/immunizations-measles/StructureMap/IMMZCQRToPatient"
 
 
 //Header

@@ -3,7 +3,7 @@ InstanceOf: Library
 Title: "IMMZVaccineLibrary"
 Description: "This library defines logic and mappings for the use of vaccines in the Immunization CPG"
 Usage: #definition
-* url = "http://smart.who.int/smart-immunizations-measles/Library/IMMZVaccineLibrary"
+* url = "http://smart.who.int/immunizations-measles/Library/IMMZVaccineLibrary"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable

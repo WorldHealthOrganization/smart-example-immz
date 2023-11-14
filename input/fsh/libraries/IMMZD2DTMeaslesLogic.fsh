@@ -3,7 +3,7 @@ InstanceOf: Library
 Title: "IMMZD2DTMeaslesLogic"
 Description: "This library defines decision support logic for the D2.DT.Measles decision table in the Immunization CPG"
 Usage: #definition
-* url = "http://smart.who.int/smart-immunizations-measles/Library/IMMZD2DTMeaslesLogic"
+* url = "http://smart.who.int/immunizations-measles/Library/IMMZD2DTMeaslesLogic"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable

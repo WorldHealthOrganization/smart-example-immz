@@ -3,14 +3,14 @@ InstanceOf: http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cv-measure-cq
 Title: "IMMZIND40"
 
 * description = "IMMZ.IND.40 Measles indicator for second dose."
-* url = "http://smart.who.int/smart-immunizations-measles/Measure/IMMZIND40"
+* url = "http://smart.who.int/immunizations-measles/Measure/IMMZIND40"
 * version = "0.1.0"
 * status = #draft
 * experimental = false
 * date = "2023-10-05"
 * name = "IMMZIND40"
 * publisher = "World Health Organization (WHO)"
-* library = "http://smart.who.int/smart-immunizations-measles/Library/IMMZINDMeasles"
+* library = "http://smart.who.int/immunizations-measles/Library/IMMZINDMeasles"
 * scoring = $measure-scoring#continuous-variable "Continuous Variable"
 * group[+]
   * population[initialPopulation]

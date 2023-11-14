@@ -3,7 +3,7 @@ InstanceOf: Library
 Title: "IMMZCommon"
 Description: "This library defines common terminologies and functions used throughout the Immunization CPG"
 Usage: #definition
-* url = "http://smart.who.int/smart-immunizations-measles/Library/IMMZCommon"
+* url = "http://smart.who.int/immunizations-measles/Library/IMMZCommon"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable

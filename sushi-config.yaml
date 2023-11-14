@@ -3,8 +3,8 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: who.fhir.smart-immunizations-measles
-canonical: http://smart.who.int/smart-immunizations-measles
+id: smart.who.int.immunization-measles
+canonical: http://smart.who.int/immunizations-measles
 name: SMART
 title: WHO SMART Guidelines - Measles Immunization
 description: WHO SMART Guidelines - Measles Immunization (Demonstration specification)

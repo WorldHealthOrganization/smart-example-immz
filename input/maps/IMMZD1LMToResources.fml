@@ -1,8 +1,8 @@
-map "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZD1LMToResources" = "IMMZD1LMToResources"
+map "http://smart.who.int/immunizations-measles/StructureMap/IMMZD1LMToResources" = "IMMZD1LMToResources"
 // Immunization - Client History - Transform logical model to resources
 /// namme = "IMMZD1LMToResources"
 
-uses "http://smart.who.int/smart-immunizations-measles/StructureDefinition/IMMZD1ClientHistoryMeasles" alias IMMZD1 as source
+uses "http://smart.who.int/immunizations-measles/StructureDefinition/IMMZD1ClientHistoryMeasles" alias IMMZD1 as source
 uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias Bundle as target
 
 group IMMZD1ToBundle (source immz : IMMZD1, target bundle: Bundle) {
@@ -15,7 +15,7 @@ group IMMZD1ToBundle (source immz : IMMZD1, target bundle: Bundle) {
       patient -> obs.subject = patient "SetPatient";
       content -> obs.code  = create('CodeableConcept') as code then {
         content -> code.coding = create('Coding') as coding then {
-          content -> coding.system = 'http://smart.who.int/smart-immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
+          content -> coding.system = 'http://smart.who.int/immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
           content -> coding.code = 'DE80' "SetObsCode";
         } "SetObsCoding";
       } "SetObsCode";
@@ -26,7 +26,7 @@ group IMMZD1ToBundle (source immz : IMMZD1, target bundle: Bundle) {
       patient -> obs.subject = patient "SetPatient";
       content -> obs.code  = create('CodeableConcept') as code then {
         content -> code.coding = create('Coding') as coding then {
-          content -> coding.system = 'http://smart.who.int/smart-immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
+          content -> coding.system = 'http://smart.who.int/immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
           content -> coding.code = 'DE8' "SetObsCode";
         } "SetObsCoding";
       } "SetObsCode";
@@ -37,7 +37,7 @@ group IMMZD1ToBundle (source immz : IMMZD1, target bundle: Bundle) {
       patient -> obs.subject = patient "SetPatient";
       content -> obs.code  = create('CodeableConcept') as code then {
         content -> code.coding = create('Coding') as coding then {
-          content -> coding.system = 'http://smart.who.int/smart-immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
+          content -> coding.system = 'http://smart.who.int/immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
           content -> coding.code = 'DE81' "SetObsCode";
         } "SetObsCoding";
       } "SetObsCode";
@@ -48,7 +48,7 @@ group IMMZD1ToBundle (source immz : IMMZD1, target bundle: Bundle) {
       patient -> obs.subject = patient "SetPatient";
       content -> obs.code  = create('CodeableConcept') as code then {
         content -> code.coding = create('Coding') as coding then {
-          content -> coding.system = 'http://smart.who.int/smart-immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
+          content -> coding.system = 'http://smart.who.int/immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
           content -> coding.code = 'DE10' "SetObsCode";
         } "SetObsCoding";
       } "SetObsCode";
@@ -62,7 +62,7 @@ group IMMZD1ToBundle (source immz : IMMZD1, target bundle: Bundle) {
       patient -> obs.subject = patient "SetPatient";
       content -> obs.code  = create('CodeableConcept') as code then {
         content -> code.coding = create('Coding') as coding then {
-          content -> coding.system = 'http://smart.who.int/smart-immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
+          content -> coding.system = 'http://smart.who.int/immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
           content -> coding.code = 'DE15' "SetObsCode";
         } "SetObsCoding";
       } "SetObsCode";
@@ -73,7 +73,7 @@ group IMMZD1ToBundle (source immz : IMMZD1, target bundle: Bundle) {
       patient -> obs.subject = patient "SetPatient";
       content -> obs.code  = create('CodeableConcept') as code then {
         content -> code.coding = create('Coding') as coding then {
-          content -> coding.system = 'http://smart.who.int/smart-immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
+          content -> coding.system = 'http://smart.who.int/immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
           content -> coding.code = 'DE92' "SetObsCode";
         } "SetObsCoding";
       } "SetObsCode";
@@ -84,7 +84,7 @@ group IMMZD1ToBundle (source immz : IMMZD1, target bundle: Bundle) {
       patient -> obs.subject = patient "SetPatient";
       content -> obs.code  = create('CodeableConcept') as code then {
         content -> code.coding = create('Coding') as coding then {
-          content -> coding.system = 'http://smart.who.int/smart-immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
+          content -> coding.system = 'http://smart.who.int/immunizations-measles/CodeSystem/IMMZ.D1' "SetObsSystem";
           content -> coding.code = 'DE49' "SetObsCode";
         } "SetObsCoding";
       } "SetObsCode";

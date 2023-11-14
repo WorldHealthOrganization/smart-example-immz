@@ -1,9 +1,9 @@
-map "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZCQRToLM" = "IMMZCQRToLM"
+map "http://smart.who.int/immunizations-measles/StructureMap/IMMZCQRToLM" = "IMMZCQRToLM"
 // Immunization Client Registry - Extract QuestionnaireResponse to Logical Model
 /// namme = "IMMZCQRToLM"
 
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
-uses "http://smart.who.int/smart-immunizations-measles/StructureDefinition/IMMZCRegisterClient" alias IMMZC as target
+uses "http://smart.who.int/immunizations-measles/StructureDefinition/IMMZCRegisterClient" alias IMMZC as target
 
 group QRespToIMMZC ( source qr : QResp, target immzc : IMMZC) {
   qr.item as item then {

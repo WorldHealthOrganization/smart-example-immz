@@ -3,7 +3,7 @@ InstanceOf: Library
 Title: "WHOConcepts"
 Description: "This library defines common concepts used throughout WHO SMART Guidelines content"
 Usage: #definition
-* url = "http://smart.who.int/smart-immunizations-measles/Library/WHOConcepts"
+* url = "http://smart.who.int/immunizations-measles/Library/WHOConcepts"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable
