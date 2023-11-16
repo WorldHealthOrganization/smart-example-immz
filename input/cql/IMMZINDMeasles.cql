@@ -34,11 +34,11 @@ parameter "Measurement Period" Interval<Date>
 
 context Patient
 
-/*
+
 define "MCV Doses Administered to Patient During Measurement Period":
     Measles."MCV Doses Administered to Patient" I 
     where IMMZCom.ToDate(I.occurrence) during "Measurement Period"
-*/
+
 
 define function "Measure Observation" (Patient "Patient"):
   1

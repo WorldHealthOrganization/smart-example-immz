@@ -27,7 +27,7 @@ Description:  "Data elements for IMMZ.D Update Vaccination Record."
 //  * ^code[+] = #IMMZ.D#DE20 
 * countryOfVaccination 1..1 Coding "Country of vaccination" "The service delivery country where the vaccine administration occurred"
 //  * ^code[+] = #IMMZ.D.DE21 
-* countryOfVaccination from CountryValueSet
+* countryOfVaccination from SGCountryValueSet
 
 * vaccinationLocation 0..1 string "Vaccination location" "The service delivery location where the vaccine administration occurred"  
 //  * ^code[+] = #IMMZ.D.DE22 

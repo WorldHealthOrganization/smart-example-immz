@@ -10,7 +10,7 @@ Usage: #definition
 
 * status = #active
 * contained[+] = VSMeaslesVaccineProducts
-* contained[+] = ImmunizationStatusCodes
+* contained[+] = SGImmunizationStatusCodes
 * contained[+] = AllVaccineTypes
 
 * extension.url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext"
@@ -48,12 +48,14 @@ Usage: #definition
 
   * insert Question(status, Status,choice,true,false)
   * item[=]
-    * answerValueSet = "#immunization-status"
+    * answerValueSet = "#SGImmunizationStatusCodes"
   * insert Question(datetime, Date/Time,dateTime,true,false)
   * insert Question(vaccine-type, Vaccine Type,choice,true,false)
   * item[=]
     * answerValueSet = "#AllVaccineTypes"
-
+  // * item[=]
+  //   * answerValueSet = "#VSMeaslesVaccineProducts"
+  
   * item[+]
     * text = "Administered Product"
     * linkId = "administered-product"
