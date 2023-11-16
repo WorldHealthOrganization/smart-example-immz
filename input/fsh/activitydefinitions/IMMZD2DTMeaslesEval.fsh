@@ -26,4 +26,4 @@ Usage: #definition
   * expression
     * description = "Measles Code"
     * language = #text/cql
-    * expression = "Code { system: 'http://hl7.org/fhir/sid/icd-11/mms', code: 'XM28X5' }"
+    * expression = "Code { system: 'http://id.who.int/icd/release/11/mms', code: 'XM28X5' }"

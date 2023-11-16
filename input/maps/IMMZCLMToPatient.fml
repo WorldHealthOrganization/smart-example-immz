@@ -1,6 +1,5 @@
 map "http://smart.who.int/immunizations-measles/StructureMap/IMMZCLMToPatient" = "IMMZCLMToPatient"
 // Immunization Client Registry - Transform Logical Model to Patient resources
-/// namme = "IMMZCLMToPatient"
 
 uses "http://smart.who.int/immunizations-measles/StructureDefinition/IMMZCRegisterClient" alias IMMZC as source
 uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias Bundle as target
