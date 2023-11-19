@@ -1,7 +1,7 @@
 Instance: HealthWorker
 InstanceOf: ActorDefinition
 Usage: #example
-* meta.profile = "http://worldhealthorganization.github.io/smart-base/StructureDefinition/SGPersona"
+* meta.profile = "http://smart.who.int/smart-base/StructureDefinition/SGPersona"
 * type = #person
 * status = #draft
 * identifier.value = "HW"

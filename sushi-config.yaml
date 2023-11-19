@@ -3,17 +3,17 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: who.fhir.smart-immunizations-measles
-canonical: http://smart.who.int/smart-immunizations-measles
+id: smart.who.int.immunization-measles
+canonical: http://smart.who.int/immunizations-measles
 name: SMART
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+title: WHO SMART Guidelines - Measles Immunization
+description: WHO SMART Guidelines - Measles Immunization (Demonstration specification)
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-license: CC-BY-SA-3.0-IGO # https://www.hl7.org/fhir/valueset-spdx-license.html
+license: CC-BY-SA-3.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: WHO
@@ -297,5 +297,10 @@ parameters:
   produce-jekyll-data: true
   path-resource: 
     - input/actors
-#    - input/maps
-
+    - input/maps
+  path-binary:
+    - input/cql
+  special-url:
+    - http://id.who.int/icd/release/11/mms
+    - http://hl7.org/fhir/ValueSet/immunization-status
+    - http://hl7.org/fhir/ValueSet/country

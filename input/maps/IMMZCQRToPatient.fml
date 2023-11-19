@@ -1,88 +1,25 @@
-// /// name = "IMMZCQRToPatient"
-// /// status = draft
-// /// title = "IMMZ.C QuestionnaireResponse to Patient"
-
-map "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZCQRToPatient" = "IMMZCQRToPatient"
+map "http://smart.who.int/immunizations-measles/StructureMap/IMMZCQRToPatient" = "IMMZCQRToPatient"
+// Immunization Client Registry - Extract QuestionnaireResponse to Patient resources
 
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
-uses "http://smart.who.int/smart-immunizations-measles/StructureDefinition/IMMZCRegisterClient" alias IMMZC as source
-uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as target
+uses "http://smart.who.int/immunizations-measles/StructureDefinition/IMMZCRegisterClient" alias IMMZC as source
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" as target
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
 
-imports "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZCQRToLM"
-imports "http://smart.who.int/smart-immunizations-measles/StructureMap/IMMZCLMToPatient"
+imports "http://smart.who.int/immunizations-measles/StructureMap/IMMZCQRToLM"
+imports "http://smart.who.int/immunizations-measles/StructureMap/IMMZCLMToPatient"
 
 group QRestToIMMZC (
   source qr : QResp,
-  target patient: Patient
+  target bundle: Bundle
 ) {
-  qr -> create("http://smart.who.int/smart-immunizations-measles/StructureDefinition/IMMZCRegisterClient") as model 
-  then{
-    qr -> model then QRespToIMMZC( qr, model) "QRtoLM";
-    qr -> patient then IMMZCToPatient( model, patient ) "LMtoPatient";
-  } "QRtoPatient";
+  qr -> bundle.id = uuid() "ruleBundleId";
+  qr -> bundle.type = 'collection' "ruleBundleType";
+  qr -> bundle.entry as entry, entry.resource = create('Patient') as patient,
+    create("http://smart.who.int/immunizations-measles/StructureDefinition/IMMZCRegisterClient") as model
+      then{
+        qr -> model then QRespToIMMZC( qr, model) "QRtoLM";
+        qr -> patient then IMMZCToPatient( model, patient ) "LMtoPatient";
+        qr -> patient.active = true "rulePatientActive";
+      } "QRtoPatient";
 }
-
-/*
-group QRespToIMMZC (
-  source qr : QResp,
-  target patient : Patient
-) {
-  qr.item as item then {
-
-    item.answer first as answer where item.linkId = 'uniqueId' -> patient.identifier as identifier then {
-      answer.valueString as content -> identifier.value = content  "set identifier";
-    } "firstAnswerForIdentifier";
-
-    item as name where item.linkId = 'name' -> patient.name as pname then NameToHumanName( name, pname ) "setNames";
-
-    item.answer first as answer where item.linkId = 'sex' then {
-      answer.valueCoding as coding then {
-        coding.code as content -> patient.gender = translate(content, 
-            'http://smart.who.int/smart-immunizations-measles/ConceptMap/IMMZCSexToAdministrativeGender', 
-            'code') "setSex";
-      } "processCoding";
-    } "firstAnswerForIdentifier2";
-  
-    item.answer first as answer where item.linkId = 'birthDate' then {
-      answer.valueDate as content -> patient.birthDate = content "set birthDate";
-    } "firstAnswerForBirthDate";
-
-    item as caregiver where item.linkId = 'caregiver' -> patient.contact as contact, contact.name as hname 
-      then NameToHumanName( caregiver, hname ) "set caregiver";
-
-    item.answer first as answer where item.linkId = 'phone' -> patient.telecom as telecom then {
-       answer.valueString as content -> telecom.value = content, telecom.system = 'phone' "setPhone";
-     } "firstAnswerForPhone";
-
-    item.answer first as answer where item.linkId = 'administrativeArea' -> patient.address as address then {
-      answer.valueCoding first as coding -> address then {
-        coding.code as content -> address.text = content "setAddressToCode";
-        coding.display as content -> address.text = content "setAddressToDisplay";
-      } "setAddressText";
-    } "firstAnswerForAdministrativeArea";
-
-  } "processItems";
-
-}
-
-group NameToHumanName( 
-  source name,
-  target hname
-) {
-  name.item as item then {
-
-    item.answer first as answer where item.linkId = 'fullName' then {
-      answer.valueString as content -> hname.text = content "set full name";
-    } "firstAnswerForFullName";
-
-    item.answer first as answer where item.linkId = 'firstName' then {
-      answer.valueString as content -> hname.given = content "set first name";
-    } "firstAnswerForFirstName";
-
-    item.answer first as answer where item.linkId = 'familyName' then {
-      answer.valueString as content -> hname.family = content "set family name";
-    } "firstAnswerForFamilyName";
-
-  } "processNameItems";
-}
-*/
