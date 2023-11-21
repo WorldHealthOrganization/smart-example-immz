@@ -34,10 +34,10 @@ Usage: #example
   * answer.valueDate = "2023-03-02"
 * item[+]
   * linkId = "caregiver"
-  * text = "Care giver name"
+  * text = "Caregiver name"
   * item[+]
     * linkId = "fullName"
-    * text = "Full name of the care giver"
+    * text = "Full name of the caregiver"
     * answer.valueString = "Mother Patient"
   // * item[+]
   //   * linkId = "firstName"
