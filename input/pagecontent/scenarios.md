@@ -8,7 +8,7 @@ As examples, the scenarios identify: key data elements that need to be recorded 
 
 ### 3.1 User Scenario for Routine Vaccination Clinic
 **User personas**
-- Caregiver (mother): Ruth
+- Care giver (mother): Ruth
 - Child: Esther
 - health worker: Lucy
 

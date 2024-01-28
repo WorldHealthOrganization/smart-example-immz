@@ -1,5 +1,4 @@
-
-Instance:     IMMZCConceptMap
+Instance:     IMMZ.C.ConceptMap
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ.C Data Dictionary to other codesystems."
 Usage:        #definition
@@ -37,7 +36,18 @@ Usage:        #definition
   * insert ElementMap(DE13, 63900-5, wider)
   * insert ElementMap(DE18, 42077-8, equivalent)
   * insert ElementMap(DE19, 56799-0, narrower)
-  * element[=].target[=].comment = "The source concept is more specific than the target"
+
+* group[+]
+  * source = $LNC
+  * target = Canonical(IMMZ.C)
+  * insert ElementMap(54125-0, DE2, equivalent)
+  * insert ElementMap(45392-8, DE3, relatedto)
+  * insert ElementMap(45394-4, DE4, relatedto)
+  * insert ElementMap(46098-0, DE5, equivalent)
+  * insert ElementMap(21112-8, DE10, equivalent)
+  * insert ElementMap(63900-5, DE13, narrower)
+  * insert ElementMap(42077-8, DE18, equivalent)
+  * insert ElementMap(56799-0, DE19, wider)
 
 * group[+]
   * source = Canonical(IMMZ.C)
@@ -55,12 +65,20 @@ Usage:        #definition
   * insert ElementMap(DE15, 184140000, wider)
   * insert ElementMap(DE18, 184103008, equivalent)
   * insert ElementMap(DE19, 184097001, narrower)
-  * element[=].target[=].comment = "The source concept is more specific than the target"
 
 * group[+]
   * source = $SCT
   * target = Canonical(IMMZ.C)
+  * insert ElementMap(371484003, DE2, equivalent)
+  * insert ElementMap(184095009, DE3, relatedto)
+  * insert ElementMap(184096005, DE4, relatedto)
+  * insert ElementMap(184100006, DE5, equivalent)
   * insert ElementMap(248153007, DE6, equivalent)
   * insert ElementMap(248152002, DE7, equivalent)
   * insert ElementMap(772004004, DE8, relatedto)
   * insert ElementMap(15867007, DE9, equivalent)
+  * insert ElementMap(184099003, DE10, equivalent)
+  * insert ElementMap(184140000, DE14, narrower)
+  * insert ElementMap(184140000, DE15, narrower)
+  * insert ElementMap(184103008, DE18, equivalent)
+  * insert ElementMap(184097001, DE19, wider)

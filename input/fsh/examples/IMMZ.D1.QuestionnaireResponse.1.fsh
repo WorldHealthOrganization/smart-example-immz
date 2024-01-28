@@ -1,7 +1,5 @@
 Instance: Example.IMMZ.D1.QuestionnaireResponse.1
 InstanceOf: QuestionnaireResponse
-Description: "QuestionnaireResponse Example 1 - Client History  - Measles"
-
 Usage: #example
 * status = #completed
 * authored = "2023-10-18T19:20:20.913Z"
@@ -9,7 +7,10 @@ Usage: #example
 * subject = Reference(patient123456)
 
 * item[+]
-  * linkId = "dose0"
+  * linkId = "birth"
+  * answer.valueBoolean = false
+* item[+]
+  * linkId = "booster"
   * answer.valueBoolean = false
 * item[+]
   * linkId = "completedPrimarySeries"
@@ -19,6 +20,12 @@ Usage: #example
   * answer.valueCoding = IMMZ.D1#DE12
 * item[+]
   * linkId = "pretermBirth"
+  * answer.valueBoolean = false
+* item[+]
+  * linkId = "immunocompromised"
+  * answer.valueBoolean = false
+* item[+]
+  * linkId = "OnART"
   * answer.valueBoolean = false
 * item[+]
   * linkId = "severelyImmunosuppressed"

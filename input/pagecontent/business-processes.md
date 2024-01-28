@@ -189,3 +189,32 @@ Objective: The objective is to correctly locate or identify a client’s immuniz
   </div> 
   <br/>  
   
+#### G. Defaulter Tracing
+
+Objective: The objective is to identify those who are overdue for a follow-up dose and/or vaccination as part of their immunization schedule to come in for vaccination. There is a significant amount of variability in how this follow-up is done currently. This process flow assumes the client is registered and has started an initial dose. This also assumes that there are no automated reminders sent by the system and that follow up is done by the health worker, or that electronic reminders have already been sent, but the client has not arrived for their vaccine. (See Client reminder workflow for automated reminders). This process may also be done as a part of a “catch-up campaign” where coverage in an area has fallen below certain thresholds and a large number of clients are overdue for vaccinations. These campaigns may include broader advertising and the addition of extra outreach sessions or pop- up clinics.  
+
+  <div> 
+    <img src="immz-g-defaulter-tracing-business-process.png" alt="IMMZ.G Defaulter tracing business process" style="width:85%"/>
+  </div> 
+  <br/> 
+  
+#### H. Resolve Duplicate Client Records
+
+  <div> 
+    <img src="immz-h-resolve-duplicate-client-records-business-process.png" alt="IMMZ.H Resolve duplicate client records business process" style="width:85%"/>
+  </div> 
+  <br/>
+
+#### I. Resolve Duplicate Vaccine Events
+
+  <div> 
+    <img src="immz-i-resolve-duplicate-vaccine-events-business-process.png" alt="IMMZ.I Resolve duplicate vaccine events business process" style="width:85%"/>
+  </div> 
+  <br/>
+
+#### J. Report Generation
+
+  <div> 
+    <img src="immz-j-report-generation-business-process.png" alt="IMMZ.J Report generation business process" style="width:85%"/> 
+  </div>
+  <br/>

@@ -1,10 +1,9 @@
 ValueSet:     IMMZ.Z.DE9
-Title:        "IMMZ.Z.DE10 ValueSet for Measles Vaccines"
-Description:  "ValueSet for Measles Vaccines for IMMZ.Z.DE9."
+Title:        "IMMZ.Z.DE9 ValueSet for Measles Vaccines"
+Description:  "Vaccine terminology codes for measles."
 
 * ^status = #active
 * ^name = "IMMZ_Z_DE9"
-* ^experimental = false
 
 * $ICD11#XM28X5	"Measles vaccines"
 * $ICD11#XM8L15	"Measles, live attenuated"
