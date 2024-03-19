@@ -29,6 +29,7 @@ dependencies:
   hl7.fhir.uv.sdc: 3.0.0
   hl7.fhir.uv.cpg: current
   hl7.fhir.us.cqfmeasures: current
+  hl7.fhir.extensions.r5: 4.0.1
 
 #
 #
