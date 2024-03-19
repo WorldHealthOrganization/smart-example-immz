@@ -1,6 +1,6 @@
 Alias: $restful-interaction = http://hl7.org/fhir/restful-interaction
 
-Instance: testscript-example-search
+Instance: testscript-evaluate-measure-ind-08
 InstanceOf: TestScript
 Usage: #example
 * url = "http://smart.who.int/immunizations/TestScript/testscript-smart-immunizations-measles-ind08-d2"
@@ -8,12 +8,11 @@ Usage: #example
   * system = "urn:ietf:rfc:3986"
   * value = "urn:oid:2.16.840.1.113883.4.642.12.3"
 * version = "1.0"
-* name = "TestScriptExampleSearch"
-* title = "TestScript Example Search"
+* name = "TestScriptEvaluateIND08"
+* title = "TestScript - Evaluate Measure - IND08"
 * status = #draft
 * experimental = true
 * date = "2017-01-18"
-* publisher = "HL7"
 
 * description = "TestScript for Measles IND 08"
 
