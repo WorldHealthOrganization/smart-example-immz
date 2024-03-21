@@ -1,4 +1,4 @@
-# This workflow reuses the openHIE GitHub action for building IGs
+# This workflow reuses the WHO GitHub action for building IGs
 # Change log:
 # v0.1.0
 # 2021-06-18: publish default branches to / , other branches branches/<branch>
