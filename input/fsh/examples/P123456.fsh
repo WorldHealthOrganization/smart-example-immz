@@ -11,4 +11,4 @@ Usage: #example
   * family = "Patient"
   * given = "Test"
 * gender = #female
-* birthDate = "2023-03-02"
+* birthDate = "2022-02-02"

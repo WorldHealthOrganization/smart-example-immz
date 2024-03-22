@@ -1,6 +1,6 @@
-Instance: Immunization1
+Instance: Immunization2
 InstanceOf: SGImmunization
-Description: "Immunization record - 1st MMMR vaccine"
+Description: "Immunization record - 2nd MMR vaccine"
 * vaccineCode = $ICD11#XM8TF3
 * lotNumber = "lot123"
 * expirationDate = "2024-06-30"
@@ -9,5 +9,5 @@ Description: "Immunization record - 1st MMMR vaccine"
 * patient.reference = "Patient/P123456"
 * status = #completed
 * location.display = "Vaccination site"
-* occurrenceDateTime = "2023-02-05"
+* occurrenceDateTime = "2023-06-02"
 * protocolApplied.doseNumberPositiveInt = 1
