@@ -1,4 +1,4 @@
-Instance: TestDataBundle-ind08
+Instance: TestDataBundle-ind40
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
