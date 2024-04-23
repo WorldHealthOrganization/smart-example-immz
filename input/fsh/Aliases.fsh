@@ -9,3 +9,6 @@ Alias: $library-type = http://terminology.hl7.org/CodeSystem/library-type
 Alias: $measure-scoring = http://terminology.hl7.org/CodeSystem/measure-scoring
 Alias: $measure-population = http://terminology.hl7.org/CodeSystem/measure-population
 Alias: $action-type = http://terminology.hl7.org/CodeSystem/action-type
+Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: $condition-category = http://terminology.hl7.org/ValueSet/condition-category
