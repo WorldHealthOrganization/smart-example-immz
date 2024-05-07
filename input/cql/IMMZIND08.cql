@@ -26,6 +26,7 @@ include IMMZCommon called IMMZCom
 include IMMZConcepts called IMMZc
 include IMMZConfig called IMMZCon
 include IMMZIndicatorCommon called IMMZIndCom
+include IMMZINDMeasles called IMMZIndMeasles
 include IMMZVaccineLibrary called IMMZvl
 include FHIRCommon called FC
 // End Skeleton CQL
@@ -38,13 +39,13 @@ context Patient
  * Numerator Computation: COUNT immunization events WHERE administered product is a Measles vaccine (IMMZ.A1.DE9) during reporting period
  */
 define "measure-population":
-	exists(IMMZIndCom."MCV Doses Administered to Patient During Measurement Period")
+	exists(IMMZIndMeasles."MCV Doses Administered to Patient During Measurement Period")
 
 /*
  * Disaggregator: Dose Sequence (1, 2)
  */
 define "Dose Sequence  Stratifier":
-	IMMZIndCom."MCV Doses Administered to Patient During Measurement Period" I
+	IMMZIndMeasles."MCV Doses Administered to Patient During Measurement Period" I
 	return (singleton from I.protocolApplied).doseNumber
 
 /*

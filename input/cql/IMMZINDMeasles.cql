@@ -46,26 +46,26 @@ define function "Measure Observation" (Patient "Patient"):
 /*
  * Target population for first dose: Any one over 9 (in high transmission area) or 12 (in low transmission area) months old
  */ 
-define "Initial Population 05":
+define "Initial Population 12":
 	Measles."First MCV Dose Administered to Patient" I where IMMZCom.ToDate(I.occurrence) during "Measurement Period"
 
 /*
  * Numerator for first dose: Anyone having received the first dose
  */
-define "Measure Population 05":
-	"Initial Population 05"
+define "Measure Population 12":
+	"Initial Population 12"
 
 /*
  * Target population for second dose: Any one over 15 months
  */ 
-define "Initial Population 40":
+define "Initial Population 13":
 	Measles."Second MCV Dose Administered to Patient" I where IMMZCom.ToDate(I.occurrence) during "Measurement Period"
 
 /*
  * Numerator for second dose: Anyone having received the first dose
  */
-define "Measure Population 40":
-	"Initial Population 40"
+define "Measure Population 13":
+	"Initial Population 13"
 
 
 /*

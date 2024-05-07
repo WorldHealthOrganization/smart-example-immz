@@ -12,5 +12,5 @@ codesystem "ICF": 'http://hl7.org/fhir/sid/icf-nl'
 codesystem "Extended Codes CodeSystem codes": 'http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes'
 
 // ValuSets
-valueset "Pregnancy Status Pregnant": 'http://fhir.org/guides/who/core/ValueSet/pregnancystatus-values'
+valueset "Pregnancy Status Pregnant": 'http://smart.who.int/immunizations-measles/ValueSet/pregnancystatus-values'
 valueset "Adverse Events": 'http://hl7.org/fhir/ValueSet/adverse-event-type'
