@@ -1,5 +1,5 @@
 CodeSystem: VaccineProducts
-Title:     "Vaccine Product codes CodeSet"
+Title: "Vaccine Product codes CodeSet"
 Description: "Vaccine Product codes, containing the different available products."
 
 * ^experimental = true

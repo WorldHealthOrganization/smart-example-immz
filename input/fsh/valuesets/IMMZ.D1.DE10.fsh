@@ -6,6 +6,6 @@ Description:  "ValueSet for HIV Status for IMMZ.D1.DE10."
 * ^name = "IMMZ_D1_DE10"
 * ^experimental = false
 
-* IMMZ.D1#DE11 "HIV-positive"
-* IMMZ.D1#DE12 "HIV-negative"
-* IMMZ.D1#DE13 "Unknown"
+* IMMZConcepts#D1.DE11 "HIV-positive"
+* IMMZConcepts#D1.DE12 "HIV-negative"
+* IMMZConcepts#D1.DE13 "Unknown"

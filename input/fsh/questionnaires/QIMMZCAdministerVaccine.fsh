@@ -1,9 +1,8 @@
-Instance: AdministerVaccine
+Instance: QIMMZCAdministerVaccine
 InstanceOf: sdc-questionnaire-extr-smap
 Title: "Administer Vaccine"
 Description: "Questionnaire for registering the events leading to and including the administration of a vaccine"
 Usage: #definition
-* version = "2023"
 * subjectType = #Patient
 * language = #en
 * title = "Administer Vaccine"

@@ -12,4 +12,4 @@ Usage: #example
 * item[+]
   * linkId = "contraindications"
   * text = "Contraindications"
-  * answer.valueCoding = IMMZ.D4#DE167 "Severe allergic reactions"
+  * answer.valueCoding = IMMZConcepts#D4.DE167 "Severe allergic reactions"

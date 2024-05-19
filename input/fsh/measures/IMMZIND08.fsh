@@ -1,41 +1,40 @@
-Instance: IMMZIND05
+Instance: IMMZIND08
 InstanceOf: http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cv-measure-cqfm
-Title: "IMMZIND05"
+Title: "IMMZIND08"
+* extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis].valueCode = #boolean
 
-* description = "IMMZ.IND.05 Measles indicator for first dose."
-* url = "http://smart.who.int/immunizations-measles/Measure/IMMZIND05"
-* version = "0.1.0"
+* description = "IMMZ.IND.08 Immunization coverage for Measles containing vaccine (Estimated Denominator)"
+* url = "http://smart.who.int/immunizations-measles/Measure/IMMZIND08"
 * status = #draft
 * experimental = false
 * date = "2023-10-05"
-* name = "IMMZIND05"
+* name = "IMMZIND08"
 * publisher = "World Health Organization (WHO)"
 * library = "http://smart.who.int/immunizations-measles/Library/IMMZINDMeasles"
 * scoring = $measure-scoring#continuous-variable "Continuous Variable"
 * group[+]
   * population[initialPopulation]
-    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis].valueCode = #boolean
-    * id = "IMMZ.IND.05.IP"
+    * id = "IMMZ.IND.08.IP"
     * description = "Initial Population"
     * code = $measure-population#initial-population "Initial Population"
-    * criteria.language = #text/cql
-    * criteria.expression = "Initial Population 05"
+    * criteria.language = #text/cql-indicator
+    * criteria.expression = "Initial Population"
   * population[measurePopulation]
     * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis].valueCode = #boolean
-    * id = "IMMZ.IND.05.MP"
+    * id = "IMMZ.IND.08.MP"
     * description = "Measure Population"
     * code = $measure-population#measure-population "Measure Population"
-    * criteria.language = #text/cql
-    * criteria.expression = "Measure Population 05"
+    * criteria.language = #text/cql-identifier
+    * criteria.expression = "Measure Population"
   * population[measureObservation]
     * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference].valueString = "measure-population"
     * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod].valueCode = #count
-    * id = "IMMZ.IND.05.MO"
+    * id = "IMMZ.IND.08.MO"
     * description = "Measure Observation"
     * code = $measure-population#measure-observation
     * criteria.language = #text/cql
-    * criteria.expression = "Measure Observation 05"
+    * criteria.expression = "Measure Observation"
   * stratifier[+]
-    * id = "IMMZ.IND.05.S"
+    * id = "IMMZ.IND.08.S"
     * criteria.language = #text/cql
     * criteria.expression = "Stratification"

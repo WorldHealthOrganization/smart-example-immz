@@ -16,53 +16,78 @@
  * 
  * References: WHO Immunization Facility Analysis Guide (1), WHO / UNICEF Joint Reporting Form (3 - elements 4240 and 4260 )
  */
-
 library IMMZIND08
 
-// Start Skeleton CQL
+/*
+NOTE: This is an estimated denominator measure, meaning that all we are contributing from the site perspective is a count
+towards the numerator, actual processing of this data to determine a proportion measure would be done by downstream analytics
+
+For this reason, this measure is modeled as a continuous variable measure where the contribution from each patient is the count of events (1)
+*/
+
 using FHIR version '4.0.1'
+
 include FHIRHelpers version '4.0.1'
-include IMMZCommon called IMMZCom
-include IMMZConcepts called IMMZc
-include IMMZConfig called IMMZCon
-include IMMZIndicatorCommon called IMMZIndCom
-include IMMZVaccineLibrary called IMMZvl
 include FHIRCommon called FC
-// End Skeleton CQL
+
+include IMMZCommon called Common
+include IMMZConcepts called Concepts
+include IMMZConfig called Config
+include IMMZIndicatorElements called Elements
+include IMMZVaccineLibrary called VaccineLibrary
+
 parameter "Measurement Period" Interval<Date>
 
 context Patient
 
 /*
+ * As defined by Member States
+ */
+define "Initial Population":
+  true
+
+define "Measure Population":
+  exists Elements."MCV Doses Administered to Patient During Measurement Period"
+
+/*
  * Numerator: Number of administrations of vaccinations containing a Measles component during reporting period
  * Numerator Computation: COUNT immunization events WHERE administered product is a Measles vaccine (IMMZ.A1.DE9) during reporting period
+ * NOTE: Modeled as a Continuous Variable measure because this is an estimated denominator proportion measure
  */
-define "measure-population":
-	exists(IMMZIndCom."MCV Doses Administered to Patient During Measurement Period")
+define function "Measure Observation"(Patient "Patient"):
+  1
 
 /*
  * Disaggregator: Dose Sequence (1, 2)
  */
-define "Dose Sequence  Stratifier":
-	IMMZIndCom."MCV Doses Administered to Patient During Measurement Period" I
+define "Dose Sequence Stratifier":
+	Elements."MCV Doses Administered to Patient During Measurement Period" I
 	return (singleton from I.protocolApplied).doseNumber
 
 /*
  * Disaggregator: Age Group (<24H of Birth, < 2 weeks)
  */
 define "Age Group Stratifier":
-	IMMZIndCom."Infant By Age Stratifier"
+	Elements."Infant By Age Stratifier"
 
 /*
  * Disaggregator: Geographic Region
  */
 define "Geographic Region Stratifier":
-	IMMZIndCom."By Geographic Region Stratifier"
+	Elements."By Geographic Region Stratifier"
 
 /*
  * Disaggregator: Administrative Gender (or Biological Sex)
  */
 define "Administrative Gender Stratifier":
-	IMMZIndCom."By Administrative Gender Stratifier"
+	Elements."By Administrative Gender Stratifier"
+
+/*
+ * Combined stratifiers
+ */
+define "Stratification":
+  Elements."By Administrative Gender Stratifier".code 
+    + ':' + Elements."Toddler By Age Stratifier".code 
+	+ ':' + Elements."By Geographic Region Stratifier"
 
 /* End of IMMZ.IND.08 */

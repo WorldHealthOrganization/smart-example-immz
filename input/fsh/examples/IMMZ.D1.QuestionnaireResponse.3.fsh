@@ -19,7 +19,7 @@ Usage: #example
   * answer.valueDate = "2023-01-01"
 * item[+]
   * linkId = "hivStatus"
-  * answer.valueCoding = IMMZ.D1#DE11
+  * answer.valueCoding = IMMZConcepts#D1.DE11
 * item[+]
   * linkId = "pretermBirth"
   * answer.valueBoolean = false

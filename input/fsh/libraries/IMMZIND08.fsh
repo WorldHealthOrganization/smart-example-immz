@@ -7,7 +7,6 @@ Usage: #definition
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable
-* version = "0.1.0"
 * name = "IMMZIND08"
 * status = #draft
 * experimental = false

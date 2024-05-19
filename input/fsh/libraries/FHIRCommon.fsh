@@ -3,11 +3,11 @@ InstanceOf: Library
 Title: "FHIRCommon"
 Description: "This library defines terminologies and functions commonly used in FHIR-based CQL artifacts"
 Usage: #definition
-* url = "http://smart.who.int/immunizations-measles/Library/FHIRCommon"
+* url = "http://fhir.org/guides/cqf/common/Library/FHIRCommon"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable
-* version = "0.1.0"
+* version = "4.0.1"
 * name = "FHIRCommon"
 * status = #draft
 * experimental = false

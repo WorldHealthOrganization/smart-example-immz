@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: smart.who.int.immunizations-measles
 canonical: http://smart.who.int/immunizations-measles
-name: SMART
+name: ImmunizationsMeasles
 title: WHO SMART Guidelines - Measles Immunization
 description: WHO SMART Guidelines - Measles Immunization (Demonstration specification)
 status: draft # draft | active | retired | unknown

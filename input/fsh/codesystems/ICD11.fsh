@@ -1,5 +1,4 @@
 CodeSystem: ICD11
-Id: ICD11        
 Title:     "ICD-11"
 Description: "ICD-11."
 

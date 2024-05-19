@@ -1,15 +1,15 @@
-Instance: IMMZConfig
+Instance: IMMZElements
 InstanceOf: Library
-Title: "IMMZConfig"
-Description: "This library defines configuration points for the Immunization CPG"
+Title: "IMMZElements"
+Description: "This library defines context-independent elements used throughout the Immunization CPG"
 Usage: #definition
-* url = "http://smart.who.int/immunizations-measles/Library/IMMZConfig"
+* url = "http://smart.who.int/immunizations-measles/Library/IMMZElements"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable
-* name = "IMMZConfig"
+* name = "IMMZElements"
 * status = #draft
 * experimental = false
 * publisher = "World Health Organization (WHO)"
 * type = $library-type#logic-library
-* content.id = "ig-loader-IMMZConfig.cql"
+* content.id = "ig-loader-IMMZElements.cql"

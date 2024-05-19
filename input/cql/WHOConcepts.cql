@@ -9,8 +9,12 @@ codesystem "CIEL": 'http://hl7.org/fhir/sid/ciel'
 codesystem "ICD-11": 'http://id.who.int/icd/release/11/mms'
 codesystem "ICHI": 'https://mitel.dimi.uniud.it/ichi/#http://id.who.int/ichi'
 codesystem "ICF": 'http://hl7.org/fhir/sid/icf-nl'
-codesystem "Extended Codes CodeSystem codes": 'http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes'
 
 // ValuSets
 valueset "Pregnancy Status Pregnant": 'http://fhir.org/guides/who/core/ValueSet/pregnancystatus-values'
 valueset "Adverse Events": 'http://hl7.org/fhir/ValueSet/adverse-event-type'
+
+code "Pregnancy status": '82810-3' from "LOINC" display 'Pregnancy status'
+code "Pregnant": 'LA15173-0' from "LOINC" display 'Pregnant'
+code "Not pregnant": 'LA26683-5' from "LOINC" display 'Not pregnant'
+code "Unknown": 'LA4489-6' from "LOINC" display 'Unknown'

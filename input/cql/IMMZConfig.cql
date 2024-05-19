@@ -1,8 +1,6 @@
 library IMMZConfig
-using FHIR version '4.0.1'
-include IMMZConcepts called IMMZc
 
-context Patient 
+using FHIR version '4.0.1'
 
 define "High incidence of TB and/or high leprosy burden": true
 define "Polio-endemic country with high risk of spread": true
