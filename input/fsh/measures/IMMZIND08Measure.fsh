@@ -1,6 +1,6 @@
-Instance: IMMZIND08
+Instance: IMMZIND08Measure
 InstanceOf: http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cv-measure-cqfm
-Title: "IMMZIND08"
+Title: "IMMZ.IND.08 Immunization coverage for Measles containing vaccine (Estimated Denominator)"
 * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis].valueCode = #boolean
 
 * description = "IMMZ.IND.08 Immunization coverage for Measles containing vaccine (Estimated Denominator)"
@@ -10,7 +10,7 @@ Title: "IMMZIND08"
 * date = "2023-10-05"
 * name = "IMMZIND08"
 * publisher = "World Health Organization (WHO)"
-* library = "http://smart.who.int/immunizations-measles/Library/IMMZINDMeasles"
+* library = "http://smart.who.int/immunizations-measles/Library/IMMZIND08"
 * scoring = $measure-scoring#continuous-variable "Continuous Variable"
 * group[+]
   * population[initialPopulation]
