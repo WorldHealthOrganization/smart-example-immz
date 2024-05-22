@@ -1,4 +1,4 @@
-Instance: IMMZIND13Measure
+Instance: IMMZIND13
 InstanceOf: http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm
 Title: "IMMZ.IND.13 Measles indicator for second dose"
 
@@ -10,7 +10,7 @@ Title: "IMMZ.IND.13 Measles indicator for second dose"
 * date = "2023-10-13"
 * name = "IMMZIND13"
 * publisher = "World Health Organization (WHO)"
-* library = "http://smart.who.int/immunizations-measles/Library/IMMZIND13"
+* library = "http://smart.who.int/immunizations-measles/Library/IMMZIND13Logic"
 * scoring = $measure-scoring#proportion "Proportion"
 * group[+]
   * population[initialPopulation]

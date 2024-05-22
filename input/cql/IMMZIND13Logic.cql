@@ -1,5 +1,5 @@
 /*
- * Library: IMMZ.IND.13
+ * Library: IMMZ.IND.13 Logic
  * Immunization coverage for Measles and rubella containing vaccine, 2nd dose
  * The percentage in the target population who have received second dose of measles and rubella vaccine during reporting period
  * 
@@ -16,7 +16,7 @@
  * 
  * References: WHO Immunization facility analysis guide;WHO Handbook on immunization data
  */
-library IMMZIND08
+library IMMZIND08Logic
 
 /*
 NOTE: This is an estimated denominator measure, meaning that all we are contributing from the site perspective is a count
