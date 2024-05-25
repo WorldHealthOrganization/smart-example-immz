@@ -3,7 +3,6 @@ library IMMZEncounterElements
 using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
-include FHIRCommon called FC
 
 include WHOConcepts
 include WHOCommon called WC
@@ -13,7 +12,7 @@ include IMMZConcepts called Concepts
 include IMMZCommon called Common
 include IMMZElements called Elements
 
-parameter AsOf Date default Today()
+parameter Today Date default Today()
 parameter EncounterId String
 
 context Patient
@@ -23,19 +22,19 @@ context Patient
  */
 define "MCV Dose":
   Elements."MCV Dose" MCV
-    where MCV.occurrence.toInterval() on or before AsOf
+    where MCV.occurrence.toInterval() on or before Today
 
 define "MCV Primary Series Dose":
   Elements."MCV Primary Series Dose" MCV
-    where MCV.occurrence.toInterval() on or before AsOf
+    where MCV.occurrence.toInterval() on or before Today
 
 define "MCV Supplementary Dose":
   Elements."MCV Supplementary Dose" MCV
-    where MCV.occurrence.toInterval() on or before AsOf
+    where MCV.occurrence.toInterval() on or before Today
 
 define "MCV Dose 0 Dose":
   Elements."MCV Dose 0 Dose" MCV
-    where MCV.occurrence.toInterval() on or before AsOf
+    where MCV.occurrence.toInterval() on or before Today
 
 /*
  * Contraindications
@@ -55,11 +54,11 @@ define "Currently Pregnant":
 define "Currently Pregnant Observation":
   Elements."Currently Pregnant Observation" O
     where O.encounter.references(EncounterId)
-      or O.effective.toInterval() starts 9 months on or before day of AsOf
+      or O.effective.toInterval() starts 9 months on or before day of Today
 
 define "Currently Pregnant Condition":
   Elements."Currently Pregnant Condition" C
-    where C.prevalenceInterval() includes AsOf
+    where C.prevalenceInterval() includes Today
 
 // TODO: Should this be related to the mother's record?
 //Total number of births including abortions, stillbirths and live births.
@@ -79,7 +78,7 @@ define "Patient Mother's Pregnancy Outcome Observation Value":
 define "Preterm Births Observation":
   Elements."Preterm Births Observation" O
     where O.encounter.references(EncounterId)
-      or O.effective.toInterval() on or before AsOf
+      or O.effective.toInterval() on or before Today
 
 define "Preterm":
   Last(
@@ -92,7 +91,7 @@ define "Preterm":
 define "Preterm Birth":
   Elements."Preterm Birth" O
     where O.encounter.references(EncounterId)
-      or O.effective.toInterval() on or before AsOf
+      or O.effective.toInterval() on or before Today
 
 // TODO: How does/should this relate to the encounter?
 //@dataElement Adverse Event:
@@ -109,7 +108,7 @@ define "Allergy = True":
 
 define "Active Confirmed Allergy":
   Elements."Active Confirmed Allergy" A
-    where A.onset.toInterval() starts on or before AsOf
+    where A.onset.toInterval() starts on or before Today
 
 /* 
  * @dataElement Immunocompromised = True
@@ -119,7 +118,7 @@ define "Immunocompromised = True":
 
 define "Immunocompromised Condition":
   Elements."Immunocompromised Condition" C
-    where C.prevalenceInterval() starts on or before AsOf
+    where C.prevalenceInterval() starts on or before Today
 
 /**
  * @dataElement All Doses Administered to Patient to patient ordered newest to oldest
@@ -137,11 +136,11 @@ define "Severely Immunosuppressed":
 define "Severely Immunosuppressed Observation":
   Elements."Severely Immunosuppressed Observation" O
     where O.encounter.references(EncounterId)
-      or O.effective.toInterval() starts on or before AsOf
+      or O.effective.toInterval() starts on or before Today
 
 define "Severely Immunosuppressed Condition":
   Elements."Severely Immunosuppressed Condition" C
-    where C.prevalenceInterval() starts on or before AsOf
+    where C.prevalenceInterval() starts on or before Today
 
 define "History Of Anaphylactic Reactions":
   exists "History Of Anaphylactic Reactions Condition"
@@ -149,11 +148,11 @@ define "History Of Anaphylactic Reactions":
 define "History Of Anaphylactic Reactions Observation":
   Elements."History Of Anaphylactic Reactions Observation" O
     where O.encounter.references(EncounterId)
-      or O.effective.toInterval() starts on or before AsOf
+      or O.effective.toInterval() starts on or before Today
 
 define "History Of Anaphylactic Reactions Condition":
   Elements."History Of Anaphylactic Reactions Condition" C
-    where C.prevalenceInterval() starts on or before AsOf
+    where C.prevalenceInterval() starts on or before Today
 
 define "Severe Allergic Reactions":
   exists "Severe Allergic Reactions Observation"
@@ -162,11 +161,11 @@ define "Severe Allergic Reactions":
 define "Severe Allergic Reactions Observation":
   Elements."Severe Allergic Reactions Observation" O
     where O.encounter.references(EncounterId)
-      or O.effective.toInterval() starts on or before AsOf
+      or O.effective.toInterval() starts on or before Today
 
 define "Severe Allergic Reactions Condition":
   Elements."Severe Allergic Reactions Condition" C
-    where C.prevalenceInterval() starts on or before AsOf
+    where C.prevalenceInterval() starts on or before Today
 
 define "Symptomatic HIV Infection":
   exists "Symptomatic HIV Infection Observation"
@@ -175,11 +174,11 @@ define "Symptomatic HIV Infection":
 define "Symptomatic HIV Infection Observation":
   Elements."Symptomatic HIV Infection Observation" O
     where O.encounter.references(EncounterId)
-      or O.effective.toInterval() starts on or before AsOf
+      or O.effective.toInterval() starts on or before Today
 
 define "Symptomatic HIV Infection Condition":
   Elements."Symptomatic HIV Infection Condition" C
-    where C.prevalenceInterval() starts on or before AsOf
+    where C.prevalenceInterval() starts on or before Today
 
 /******************************
  * Test Results
@@ -188,7 +187,7 @@ define "Symptomatic HIV Infection Condition":
 define "Patient Birth Weight Observation":
   Elements."Patient Birth Weight Observation" O
     where O.encounter.references(EncounterId)
-      or O.effective.toInterval() on or before AsOf
+      or O.effective.toInterval() on or before Today
 
 define "Patient Birth Weight Observation Value":
   Last(
@@ -200,19 +199,19 @@ define "Patient Birth Weight Observation Value":
  * @dataElement Patient age in years
  */
 define "Current Patient Age In Years":
-  AgeInYearsAt(AsOf)
+  AgeInYearsAt(Today)
 
 /** 
  * @dataElement Patient age in weeks
  */
 define "Current Patient Age In Weeks":
-  AgeInWeeksAt(AsOf)
+  AgeInWeeksAt(Today)
 
 /** 
  * @dataElement Patient age in months
  */
 define "Current Patient Age In Months":
-  AgeInMonthsAt(AsOf)
+  AgeInMonthsAt(Today)
 
 /** 
  * @dataElement Patient biological sex used for deciding vaccine eligibility
@@ -224,7 +223,7 @@ define "Patient Biological Sex":
 
 define "HAART Medication Administration":
   Elements."HAART Medication Administration" A
-    where A.effective.toInterval() starts less than 12 months before AsOf
+    where A.effective.toInterval() starts less than 12 months before Today
   
 define "Patient HAART Treatment Start Date":
   Last(
@@ -233,7 +232,7 @@ define "Patient HAART Treatment Start Date":
   ).effective.toInterval().low
 
 define "Patient HAART Treatment Started 6 to 12 Months Ago":
-  "Patient HAART Treatment Start Date" between AsOf - 12 months and AsOf - 6 months
+  "Patient HAART Treatment Start Date" between Today - 12 months and Today - 6 months
 
 /**
  * @dataElement The patient has a medication record which indicates that they are receiving ARV
@@ -253,11 +252,11 @@ define "HIV Status":
 define "HIV Status Observation":
   Elements."HIV Status Observation" O
     where O.encounter.references(EncounterId)
-      or O.effective.toInterval() starts on or before AsOf
+      or O.effective.toInterval() starts on or before Today
 
 define "Live vaccine dose":
   Elements."Live vaccine dose" V
-    where V.occurrence.toInterval() starts on or before AsOf
+    where V.occurrence.toInterval() starts on or before Today
 
 /*
   @dataElement Date and time of last live attenuated vaccine
@@ -268,7 +267,7 @@ define "Live Attenuated Vaccines":
 define "Date of Latest Live Attenuated Vaccine":
   Last(
     "Live Attenuated Vaccines" V
-      where V.occurrence.toInterval() starts on or before AsOf
+      where V.occurrence.toInterval() starts on or before Today
       sort by start of occurrence.toInterval()
   ).occurrence as FHIR.dateTime
 

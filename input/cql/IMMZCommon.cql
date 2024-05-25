@@ -12,6 +12,13 @@ define function Only(protocols List<FHIR.Immunization.ProtocolApplied>):
   singleton from protocols
 
 /**
+ * @description Fetches a singleton protocol applied from an immunization
+ * @comment The protocol list from the immunization
+ */
+define fluent function only(protocols List<FHIR.Immunization.ProtocolApplied>):
+  singleton from protocols
+
+/**
  * @description Takes the date choice of a date/string choice (for Immunization date)
  */
 define function ToDate(choice Choice<FHIR.date, FHIR.string>):

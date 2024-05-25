@@ -12,6 +12,9 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * publisher = "World Health Organization (WHO)"
+* relatedArtifact[+]
+  * type = #citation
+  * citation = "WHO recommendations for routine immunization - summary tables (March 2023)"
 * action[+]
   * title = "Check Immunizations"
   * description = "Check immunization plan definitions to see what is required."

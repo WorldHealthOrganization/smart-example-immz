@@ -28,7 +28,6 @@ For this reason, this measure is modeled as a continuous variable measure where 
 using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
-include FHIRCommon called FC
 
 include IMMZCommon called Common
 include IMMZConcepts called Concepts

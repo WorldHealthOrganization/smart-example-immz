@@ -13,7 +13,13 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * publisher = "World Health Organization (WHO)"
+* relatedArtifact[+]
+  * type = #citation
+  * citation = "WHO recommendations for routine immunization - summary tables (March 2023)"
 * action[+]
+  * extension[+]
+    * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale"
+    * valueMarkdown = "While vaccines are universally recommended, some clients may have contraindications to particular vaccines.<br/>Additional contraindications may be included in WHO position papers for the vaccine - Measles vaccines: WHO position paper (April 2017)."
   * title = "Check Contraindication for Measles Immunization"
   * description = "Contraindication for measles immunization"
   * type = $action-type#update
@@ -25,6 +31,9 @@ Usage: #definition
       * expression = "MCV Dose Contraindicated"
   * definitionCanonical = Canonical(IMMZD2DTMeaslesCIMR)
 * action[+]
+  * extension[+]
+    * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale"
+    * valueMarkdown = "While vaccines are universally recommended, some clients may have contraindications to particular vaccines.<br/>Additional contraindications may be included in WHO position papers for the vaccine - Measles vaccines: WHO position paper (April 2017)."
   * title = "Evaluate Contraindication for Measles"
   * description = "Provide further evaluation for measles contraindication"
   * condition[+]

@@ -13,6 +13,9 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * publisher = "World Health Organization (WHO)"
+* relatedArtifact[+]
+  * type = #citation
+  * citation = "WHO recommendations for routine immunization - summary tables (March 2023)"
 * action[+]
   * title = "Immunize patient for Measles"
   * condition[+]
@@ -21,7 +24,10 @@ Usage: #definition
       * language = #text/cql-identifier
       * expression = "Measles Routine Immunization Schedule Incomplete"
   * action[+]
-    * title = "No Primary Series Doses Administered"
+    * extension[+]
+      * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale"
+      * valueMarkdown = "In countries with ongoing transmission in which the risk of measles mortality remains high, MCV1 should be given at age 9 months.<br/>As a general rule, live vaccines should be given either simultaneously or at intervals of 4 weeks. An exception to this rule is OPV, which can be given at any time before or after measles vaccination without interference in the response to either vaccine."
+    * title = "Provide primary series measles vaccination (MCV1)"
     * condition[+]
       * kind = #applicability
       * expression
@@ -53,7 +59,10 @@ Usage: #definition
           * expression = "Client Is Due For MCV1"
       * definitionCanonical = Canonical(IMMZD2DTMeaslesMR)
   * action[+]
-    * title = "Number Of Primary Series Doses Administered = 1"
+    * extension[+]
+      * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale"
+      * valueMarkdown = "In countries with ongoing transmission in which the risk of measles mortality remains high, MCV2 should be given between 15-18 months. The minimum interval between MCV1 and MCV2 is 4 weeks.<br/>As a general rule, live vaccines should be given either simultaneously or at intervals of 4 weeks. An exception to this rule is OPV, which can be given at any time before or after measles vaccination without interference in the response to either vaccine."
+    * title = "Provide primary series measles vaccination (MCV2)"
     * condition[+]
       * kind = #applicability
       * expression
@@ -85,7 +94,10 @@ Usage: #definition
           * expression = "Client Is Due For MCV2"
       * definitionCanonical = Canonical(IMMZD2DTMeaslesMR)
   * action[+]
-    * title = "Number Of Primary Series Doses Administered = 2"
+    * extension[+]
+      * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale"
+      * valueMarkdown = "An additional dose of MCV should be administered to HIV-infected children receiving HAART following immune reconstitution. If CD4+ T lymphocyte counts are monitored, an additional dose of MCV should be administered when immune reconstitution has been achieved, e.g. when the CD4+ T lymphocyte count reaches 20–25%. Where CD4+ T lymphocyte monitoring is not available, children should receive an additional dose of MCV 6–12 months after initiation of HAART."
+    * title = "Measles primary series is complete"
     * description = "Measles primary series is complete. Two measles primary series doses were administered. Check if a measles supplementary dose is appropriate for the client."
     * condition[+]
       * kind = #applicability

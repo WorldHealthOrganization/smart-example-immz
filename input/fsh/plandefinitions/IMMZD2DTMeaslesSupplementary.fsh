@@ -13,6 +13,9 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * publisher = "World Health Organization (WHO)"
+* relatedArtifact[+]
+  * type = #citation
+  * citation = "WHO recommendations for routine immunization - summary tables (March 2023)"
 * action[+]
   * title = "Immunize patient for Measles"
   * condition[+]
@@ -21,7 +24,10 @@ Usage: #definition
       * language = #text/cql-identifier
       * expression = "Measles Routine Immunization Schedule Complete"
   * action[+]
-    * title = "No Supplementary Dose Administered"
+    * extension[+]
+      * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale"
+      * valueMarkdown = "An additional dose of MCV should be administered to HIV-infected children receiving HAART following immune reconstitution. If CD4+ T lymphocyte counts are monitored, an additional dose of MCV should be administered when immune reconstitution has been achieved, e.g. when the CD4+ T lymphocyte count reaches 20–25%. Where CD4+ T lymphocyte monitoring is not available, children should receive an additional dose of MCV 6–12 months after initiation of HAART.<br/>As a general rule, live vaccines should be given either simultaneously or at intervals of 4 weeks. An exception to this rule is OPV, which can be given at any time before or after measles vaccination without interference in the response to either vaccine"
+    * title = "Consider supplementary dose"
     * condition[+]
       * kind = #applicability
       * expression

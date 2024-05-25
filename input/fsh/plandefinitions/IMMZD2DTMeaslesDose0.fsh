@@ -13,6 +13,9 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * publisher = "World Health Organization (WHO)"
+* relatedArtifact[+]
+  * type = #citation
+  * citation = "WHO recommendations for routine immunization - summary tables (March 2023)"
 * action[+]
   * title = "Immunize patient for Measles"
   * condition[+]
@@ -21,7 +24,10 @@ Usage: #definition
       * language = #text/cql-identifier
       * expression = "Measles Routine Immunization Schedule Incomplete"
   * action[+]
-    * title = "No MCV0 Doses Administered"
+    * extension[+]
+      * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale"
+      * valueMarkdown = "Note: The countries should apply the national immunization policy for MCV0 dose and adjust this logic accordingly.<br/>A supplementary dose of MCV (recorded as MCV0) should be considered for infants known to be exposed (i.e. born to an HIV-infected woman) or soon after diagnosis of HIV infection in children older than 6 months who are not receiving HAART and for whom the risk of measles is high, with the aim of providing partial protection until they are revaccinated after immune reconstitution with HAART.<br/>In the following situations, a supplementary dose of MCV should be given to infants from 6 months of age:<br/>* (1) during a measles outbreak as part of intensified service delivery;<br/>* (2) during campaigns in settings where the risk of measles among infants < 9 months of age remains high (e.g. in endemic countries experiencing regular outbreaks);<br/>* (3) for internally displaced populations and refugees, and populations in conflict zones;<br/>* (4) for individual infants at high risk of contracting measles (e.g. contacts of known measles cases or in settings with increased risk of exposure during outbreaks such as day-care facilities);<br/>* (5)for infants travelling to countries experiencing measles outbreaks;<br/>* (6) infants known to be HIV-infected or exposed (i.e. born to an HIV-infected woman).<br/>In areas where there is a high incidence of both HIV infection and measles, an initial dose of MCV may be offered as early as age 6 months (recorded as MCV0). The 2 routine doses of MCV (MCV1 and MCV2) should then be administered to these children according to the national immunization schedule.<br/>As a general rule, live vaccines should be given either simultaneously or at intervals of 4 weeks. An exception to this rule is OPV, which can be given at any time before or after measles vaccination without interference in the response to either vaccine."
+    * title = "Consider MCV0 Dose"
     * condition[+]
       * kind = #applicability
       * expression

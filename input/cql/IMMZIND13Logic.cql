@@ -16,7 +16,7 @@
  * 
  * References: WHO Immunization facility analysis guide;WHO Handbook on immunization data
  */
-library IMMZIND08Logic
+library IMMZIND13Logic
 
 /*
 NOTE: This is an estimated denominator measure, meaning that all we are contributing from the site perspective is a count
@@ -29,8 +29,8 @@ a measles containing vaccine.
 using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
-include FHIRCommon called FC
 
+include WHOCommon called WC
 include IMMZCommon called Common
 include IMMZConcepts called Concepts
 include IMMZConfig called Config
