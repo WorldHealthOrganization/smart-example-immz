@@ -1,15 +1,15 @@
-Instance: IMMZD2DTMeaslesCI
+Instance: IMMZD5DTMeaslesCI
 InstanceOf: http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition
-Title: "IMMZ.D2.DT.Measles.Contraindication"
+Title: "IMMZ.D5.DT.Measles.Contraindication"
 Description: "Check contraindications for Measles vaccine"
 Usage: #definition
 
-* library = "http://smart.who.int/immunizations-measles/Library/IMMZD2DTMeasles"
+* library = "http://smart.who.int/immunizations-measles/Library/IMMZD5DTMeaslesCILogic"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable
-* version = "0.1.0"
-* name = "IMMZD2DTMeaslesContraindication"
+* url = "http://smart.who.int/immunizations-measles/PlanDefinition/IMMZD5DTMeaslesCI"
+* name = "IMMZD5DTMeaslesContraindication"
 * status = #draft
 * experimental = false
 * publisher = "World Health Organization (WHO)"
