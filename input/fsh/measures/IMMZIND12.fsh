@@ -3,31 +3,37 @@ InstanceOf: http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-me
 Title: "IMMZ.IND.12 Measles indicator for first dose"
 
 * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis].valueCode = #boolean
-* description = "IMMZ.IND.12 Measles indicator for first dose"
+* description = "The percentage in the target population who have received one dose of measles and rubella vaccine during reporting period"
 * url = "http://smart.who.int/immunizations-measles/Measure/IMMZIND12"
 * status = #draft
 * experimental = false
 * date = "2023-10-12"
 * name = "IMMZIND12"
 * publisher = "World Health Organization (WHO)"
+* relatedArtifact[+]
+  * type = #citation
+  * citation = "WHO Immunization facility analysis guide"
+* relatedArtifact[+]
+  * type = #citation
+  * citation = "WHO Handbook on immunization data"
 * library = "http://smart.who.int/immunizations-measles/Library/IMMZIND12Logic"
 * scoring = $measure-scoring#proportion "Proportion"
 * group[+]
   * population[initialPopulation]
     * id = "IMMZ.IND.12.IP"
-    * description = "Initial Population"
+    * description = "Number in target group"
     * code = $measure-population#initial-population "Initial Population"
     * criteria.language = #text/cql-identifier
     * criteria.expression = "Initial Population"
   * population[denominator]
     * id = "IMMZ.IND.12.DEN"
-    * description = "Denominator"
+    * description = "Number in target group"
     * code = $measure-population#denominator "Denominator"
     * criteria.language = #text/cql-identifier
     * criteria.expression = "Denominator"
   * population[numerator]
     * id = "IMMZ.IND.12.NUM"
-    * description = "Numerator"
+    * description = "Number of measles and rubella doses (1st dose) administered through routine services during reporting period"
     * code = $measure-population#numerator "Numerator"
     * criteria.language = #text/cql-identifier
     * criteria.expression = "Numerator"
