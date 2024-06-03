@@ -26,9 +26,9 @@ publisher:
 #
 dependencies:
   hl7.terminology: 5.5.0
-  hl7.fhir.uv.extensions: 5.1.0-cibuild
-  hl7.fhir.uv.cql: 1.0.0-snapshot
-  hl7.fhir.uv.crmi: 1.0.0-snapshot
+  hl7.fhir.uv.extensions: 5.1.0
+  hl7.fhir.uv.cql: 1.0.0
+  hl7.fhir.uv.crmi: 1.0.0
   hl7.fhir.uv.sdc: 3.0.0
   hl7.fhir.uv.cpg: current
   hl7.fhir.us.cqfmeasures: current
