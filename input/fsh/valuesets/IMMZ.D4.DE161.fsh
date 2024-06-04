@@ -2,7 +2,9 @@
 ValueSet:     IMMZ.D4.DE161
 Title:        "IMMZ.D4.DE161 ValueSet for Potential Contraindications"
 Description:  "ValueSet for Potential Contraindications for IMMZ.D4.DE161."
-
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
 * ^status = #active
 * ^name = "IMMZ_D4_DE161"
 * ^experimental = false

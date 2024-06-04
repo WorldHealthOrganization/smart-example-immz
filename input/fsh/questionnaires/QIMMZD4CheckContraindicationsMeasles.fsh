@@ -3,6 +3,8 @@ InstanceOf: sdc-questionnaire-extr-smap
 Title: "Check Contraindications Questionnaire"
 Description: "Immunization - Check Contraindications Questionnaire"
 Usage: #definition
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire"
 * status = #draft
 * subjectType = #Patient
 * language = #en

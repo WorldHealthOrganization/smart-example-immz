@@ -6,6 +6,8 @@ Severity:     #error
 Logical: IMMZCRegisterClient
 Title: "IMMZ.C Register Client"
 Description:  "Data elements for the IMMZ.C Register Client Data Dictionary."
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * ^status = #active
 

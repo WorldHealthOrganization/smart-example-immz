@@ -2,6 +2,9 @@ ValueSet: Birthweightvalues
 Id: Birthweight-values
 Title: "Birthweight valueset"
 Description: "Codes representing Birthweight values"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
 * ^status = #draft
 * ^experimental = false
 * ^immutable = true

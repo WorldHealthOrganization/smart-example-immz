@@ -5,6 +5,9 @@ Id: Negativetestresult-values
 Title: "Negative Test Results"
 Description: "Codes representing negative test result values"
 //don't touch status, experimental, immutable
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
 * ^status = #draft
 * ^experimental = false
 * ^immutable = true

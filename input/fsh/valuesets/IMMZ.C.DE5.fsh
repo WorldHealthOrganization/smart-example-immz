@@ -2,6 +2,9 @@ ValueSet:     IMMZ.C.DE5
 Title:        "IMMZ.C.DE5 ValueSet for Sex"
 Description:  "ValueSet for Sex for IMMZ.C.DE5."
 
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
 * ^status = #active
 * ^experimental = false
 * ^name = "IMMZ_C_DE5"

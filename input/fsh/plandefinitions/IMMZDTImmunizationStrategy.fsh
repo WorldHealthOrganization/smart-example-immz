@@ -3,6 +3,8 @@ InstanceOf: http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategydefinitio
 Title: "IMMZ.DT.Immunization Strategy"
 Description: "Provide vaccinations according to the recommended schedule"
 Usage: #definition
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableplandefinition"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableplandefinition"
 
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"

@@ -30,10 +30,9 @@ dependencies:
   hl7.fhir.uv.cql: 1.0.0
   hl7.fhir.uv.crmi: 1.0.0
   hl7.fhir.uv.sdc: 3.0.0
-  hl7.fhir.uv.cpg: current
+  hl7.fhir.uv.cpg: 2.0.0-ballot
   hl7.fhir.us.cqfmeasures: current
   fhir.cqf.common: 4.0.1
-  who.base: dev
 
 #
 #
@@ -166,7 +165,10 @@ menu:
 
 meta:
   profile:
-    - http://smart.who.int/smart-base/ImplementationGuide-SGImplementationGuide
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide
+    - http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableguideline
+#    - http://smart.who.int/smart-base/ImplementationGuide-SGImplementationGuide
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

@@ -4,6 +4,9 @@ ValueSet: LiveAttenuatedVaccines
 Id: LiveAttenuatedVaccines
 Title: "Set of live attenuated vaccines"
 Description: "Codes representing live attenuated vaccines"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
 //don't touch status, experimental, immutable
 * ^status = #draft
 * ^experimental = false

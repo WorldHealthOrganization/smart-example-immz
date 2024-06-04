@@ -3,6 +3,10 @@ InstanceOf: Library
 Title: "IMMZElements"
 Description: "This library defines context-independent elements used throughout the Immunization CPG"
 Usage: #definition
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary"
+* meta.profile[+] = "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library"
+* meta.profile[+] = "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
 * url = "http://smart.who.int/immunizations-measles/Library/IMMZElements"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"

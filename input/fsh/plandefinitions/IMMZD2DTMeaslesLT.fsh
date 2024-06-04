@@ -3,6 +3,8 @@ InstanceOf: http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdef
 Title: "IMMZ.D2.DT.Measles Low Transmission"
 Description: "If the child or patient has not been given MCV1 (at 12 months) and MCV2 (between 15-18 months) vaccination"
 Usage: #definition
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableplandefinition"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableplandefinition"
 
 * library = "http://smart.who.int/immunizations-measles/Library/IMMZD2DTMeaslesLTLogic"
 * extension[+]

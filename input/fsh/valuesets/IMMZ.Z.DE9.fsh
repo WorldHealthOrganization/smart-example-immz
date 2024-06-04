@@ -1,7 +1,9 @@
 ValueSet:     IMMZ.Z.DE9
 Title:        "IMMZ.Z.DE10 ValueSet for Measles Vaccines"
 Description:  "ValueSet for Measles Vaccines for IMMZ.Z.DE9."
-
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
 * ^status = #active
 * ^name = "IMMZ_Z_DE9"
 * ^experimental = false

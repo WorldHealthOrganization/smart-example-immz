@@ -2,6 +2,8 @@ Instance:     IMMZConceptsToAdministrativeGender
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ.C sex coding to FHIR Administrative Gender."
 Usage:        #definition
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableconceptmap"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableconceptmap"
 
 * name = "IMMZConceptsToAdministrativeGender"
 * title = "ConceptMap to and from Immunization Concepts to administrative gender"

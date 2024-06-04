@@ -2,6 +2,8 @@ Instance:     IMMZConceptsToSNOMED
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ Concepts to SNOMED"
 Usage:        #definition
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableconceptmap"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableconceptmap"
 
 * name = "IMMZConceptsToSNOMED"
 * title = "ConceptMap to and from SNOMED"

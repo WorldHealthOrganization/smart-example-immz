@@ -2,6 +2,8 @@ Instance:     IMMZConceptsToICD11
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ Concepts to ICD-11"
 Usage:        #definition
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableconceptmap"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableconceptmap"
 
 * name = "IMMZConceptsToICD11"
 * title = "ConceptMap to and from ICD-11"

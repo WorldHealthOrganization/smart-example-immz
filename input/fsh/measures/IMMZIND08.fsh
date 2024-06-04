@@ -1,6 +1,8 @@
 Instance: IMMZIND08
 InstanceOf: http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cv-measure-cqfm
 Title: "IMMZ.IND.08 Immunization coverage for Measles containing vaccine (Estimated Denominator)"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablemeasure"
 * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis].valueCode = #boolean
 
 * description = "IMMZ.IND.08 Immunization coverage for Measles containing vaccine (Estimated Denominator)"

@@ -3,6 +3,8 @@ InstanceOf: sdc-questionnaire-extr-smap
 Title: "Administer Vaccine"
 Description: "Questionnaire for registering the events leading to and including the administration of a vaccine"
 Usage: #definition
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire"
 * subjectType = #Patient
 * language = #en
 * title = "Administer Vaccine"

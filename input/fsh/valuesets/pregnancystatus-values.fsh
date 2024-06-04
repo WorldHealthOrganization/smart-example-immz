@@ -4,7 +4,9 @@ ValueSet: PregnancyStatusValues
 Id: pregnancystatus-values
 Title: "Pregnancy status values"
 Description: "Codes representing possible values for the Pregnancy status element"
-* ^version = "0.1.0"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2023-10-12T09:43:25-04:00"

@@ -3,6 +3,8 @@ InstanceOf: http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdef
 Title: "IMMZ.D5.DT.Measles.Contraindication"
 Description: "Check contraindications for Measles vaccine"
 Usage: #definition
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableplandefinition"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableplandefinition"
 
 * library = "http://smart.who.int/immunizations-measles/Library/IMMZD5DTMeaslesCILogic"
 * extension[+]

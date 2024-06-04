@@ -1,6 +1,8 @@
 Logical: IMMZDUpdateVaccinationRecord
 Title: "IMMZ.D Update Vaccination Record"
 Description: "Data elements for IMMZ.D Update Vaccination Record."
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * ^status = #active
 

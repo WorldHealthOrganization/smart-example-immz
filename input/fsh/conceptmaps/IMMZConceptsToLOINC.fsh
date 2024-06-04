@@ -2,6 +2,8 @@ Instance:     IMMZConceptsToLOINC
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from IMMZ Concepts to LOINC"
 Usage:        #definition
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableconceptmap"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableconceptmap"
 
 * name = "IMMZConceptsToLOINC"
 * title = "ConceptMap to and from LOINC"

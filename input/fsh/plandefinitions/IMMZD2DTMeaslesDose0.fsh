@@ -3,6 +3,8 @@ InstanceOf: http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdef
 Title: "IMMZ.D2.DT.Measles MCV Dose 0"
 Description: "If the child or patient has not been given MCV0 between 6 and 9 months"
 Usage: #definition
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableplandefinition"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableplandefinition"
 
 * library = "http://smart.who.int/immunizations-measles/Library/IMMZD2DTMeaslesDose0Logic"
 * extension[+]

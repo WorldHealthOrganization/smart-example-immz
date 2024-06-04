@@ -1,7 +1,8 @@
 CodeSystem: ICD11
 Title:     "ICD-11"
 Description: "ICD-11."
-
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"
 * ^url = $ICD11
 //* ^hierarchyMeaning = #is-a
 * ^experimental = true

@@ -1,7 +1,8 @@
 Instance: IMMZIND13
 InstanceOf: http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm
 Title: "IMMZ.IND.13 Measles indicator for second dose"
-
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure"
+* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablemeasure"
 * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis].valueCode = #boolean
 * description = "The percentage in the target population who have received second dose of measles and rubella vaccine during reporting period"
 * url = "http://smart.who.int/immunizations-measles/Measure/IMMZIND13"

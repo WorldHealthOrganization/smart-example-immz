@@ -2,6 +2,9 @@ ValueSet: Immunocompromisedvalues
 Id: Immunocompromised-values
 Title: "Immunocompromised valueset"
 Description: "Codes representing Immunocompromised values"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
 * ^status = #draft
 * ^experimental = false
 * ^immutable = true
