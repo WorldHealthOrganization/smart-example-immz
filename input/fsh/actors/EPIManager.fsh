@@ -7,5 +7,5 @@ Usage: #example
 * identifier.value = "EPIM"
 * name = "EPIManager"
 * title = "Expanded Programme on Immunization (EPI) Manager"
-* experimental = false
+* experimental = true
 * description = "Responsible for: developing annual and multi-annual plans; immunization communication and mobilization; management of logistics, the cold chain, and vaccines; monitoring, supervision and evaluation of immunization services; and coordination of EPI activities at the national and subnational levels."

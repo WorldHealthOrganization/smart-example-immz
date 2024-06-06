@@ -13,7 +13,7 @@ Usage: #definition
 * url = "http://smart.who.int/immunizations-measles/PlanDefinition/IMMZD2DTMeaslesOT"
 * name = "IMMZD2DTMeaslesOT"
 * status = #draft
-* experimental = false
+* experimental = true
 * publisher = "World Health Organization (WHO)"
 * relatedArtifact[+]
   * type = #citation
@@ -60,6 +60,18 @@ Usage: #definition
           * language = #text/cql-identifier
           * expression = "Client Is Due For MCV1"
       * definitionCanonical = Canonical(IMMZD2DTMeaslesMR)
+      * dynamicValue[+]
+        * path = "dispenseRequest.validityPeriod.start"
+        * expression
+          * description = "Due date of the dose"
+          * language = #text/cql-identifier
+          * expression = "MCV1 Schedule Date"
+      * dynamicValue[+]
+        * path = "dispenseRequest.validityPeriod.end"
+        * expression
+          * description = "Expiration date for MCV dose"
+          * language = #text/cql-identifier
+          * expression = "MCV1 Expiration Date"
   * action[+]
     * extension[+]
       * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale"
@@ -95,6 +107,18 @@ Usage: #definition
           * language = #text/cql-identifier
           * expression = "Client Is Due For MCV2"
       * definitionCanonical = Canonical(IMMZD2DTMeaslesMR)
+      * dynamicValue[+]
+        * path = "dispenseRequest.validityPeriod.start"
+        * expression
+          * description = "Due date of the dose"
+          * language = #text/cql-identifier
+          * expression = "MCV2 Schedule Date"
+      * dynamicValue[+]
+        * path = "dispenseRequest.validityPeriod.end"
+        * expression
+          * description = "Expiration date for MCV dose"
+          * language = #text/cql-identifier
+          * expression = "MCV2 Expiration Date"
   * action[+]
     * extension[+]
       * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale"

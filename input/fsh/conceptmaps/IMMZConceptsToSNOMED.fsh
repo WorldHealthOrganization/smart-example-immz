@@ -8,7 +8,7 @@ Usage:        #definition
 * name = "IMMZConceptsToSNOMED"
 * title = "ConceptMap to and from SNOMED"
 * status = #active
-* experimental = false
+* experimental = true
 
 * group[+]
   * source = Canonical(IMMZConcepts)

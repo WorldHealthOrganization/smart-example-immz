@@ -13,7 +13,7 @@ Usage: #definition
 * url = "http://smart.who.int/immunizations-measles/PlanDefinition/IMMZD2DTMeaslesDose0"
 * name = "IMMZD2DTMeaslesDose0"
 * status = #draft
-* experimental = false
+* experimental = true
 * publisher = "World Health Organization (WHO)"
 * relatedArtifact[+]
   * type = #citation
@@ -60,6 +60,18 @@ Usage: #definition
           * language = #text/cql-identifier
           * expression = "Client Is Due For MCV0"
       * definitionCanonical = Canonical(IMMZD2DTMeaslesMR)
+      * dynamicValue[+]
+        * path = "dispenseRequest.validityPeriod.start"
+        * expression
+          * description = "Due date of the dose"
+          * language = #text/cql-identifier
+          * expression = "MCV0 Schedule Date"
+      * dynamicValue[+]
+        * path = "dispenseRequest.validityPeriod.end"
+        * expression
+          * description = "Expiration date for MCV dose"
+          * language = #text/cql-identifier
+          * expression = "MCV0 Expiration Date"
   * action[+]
     * title = "MCV0 Dose Administered"
     * description = "MCV0 was administered. Check measles routine immunization schedule."

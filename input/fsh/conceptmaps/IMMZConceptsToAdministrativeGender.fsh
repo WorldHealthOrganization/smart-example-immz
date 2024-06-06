@@ -8,21 +8,21 @@ Usage:        #definition
 * name = "IMMZConceptsToAdministrativeGender"
 * title = "ConceptMap to and from Immunization Concepts to administrative gender"
 * status = #active
-* experimental = false
+* experimental = true
 
 * group[+]
   * source = Canonical(IMMZConcepts)
   * target = $GENDER
-  * insert ElementMap(DE6, male, equivalent)
-  * insert ElementMap(DE7, female, equivalent)
-  * insert ElementMap(DE8, unknown, equivalent)
-  * insert ElementMap(DE9, other, wider)
+  * insert ElementMap(C.DE6, male, equivalent)
+  * insert ElementMap(C.DE7, female, equivalent)
+  * insert ElementMap(C.DE8, unknown, equivalent)
+  * insert ElementMap(C.DE9, other, wider)
 
 * group[+]
   * source = $GENDER
   * target = Canonical(IMMZConcepts)
-  * insert ElementMap(male, DE6, equivalent)
-  * insert ElementMap(female, DE7, equivalent)
-  * insert ElementMap(unknown, DE8, equivalent)
-  * insert ElementMap(other, DE9, narrower)
+  * insert ElementMap(male, C.DE6, equivalent)
+  * insert ElementMap(female, C.DE7, equivalent)
+  * insert ElementMap(unknown, C.DE8, equivalent)
+  * insert ElementMap(other, C.DE9, narrower)
   * element[=].target[=].comment = "The source concept is more specific than the target"

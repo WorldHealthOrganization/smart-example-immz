@@ -3,7 +3,7 @@ Title: "Immunizations Concepts CodeSystem"
 Description: "This code system defines concepts used in SMART Immunizations"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = false
 * #C.DE1 "Unique identifier" "Unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID)."
 * #C.DE2 "Name" "The full name of the client"

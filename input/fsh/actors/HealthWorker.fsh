@@ -7,5 +7,5 @@ Usage: #example
 * identifier.value = "HW"
 * name = "HealthcareWorker"
 * title = "Healthcare Worker"
-* experimental = false
+* experimental = true
 * description = "Health workers facilitate education sessions, administers immunizations, provide counselling when needed, record stock movements, and compiles/generates reports."

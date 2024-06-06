@@ -97,6 +97,12 @@ define fluent function mostRecent(immunizations List<Immunization>):
       sort by start of occurrence.toInterval()
   )
 
+define fluent function mostRecent(medicationRequests List<MedicationRequest>):
+  Last(
+    medicationRequests MR
+      sort by authoredOn
+  )
+
 define fluent function lowest(observations List<Observation>):
   First(
     observations O

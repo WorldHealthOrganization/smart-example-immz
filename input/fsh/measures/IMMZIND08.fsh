@@ -8,9 +8,10 @@ Title: "IMMZ.IND.08 Immunization coverage for Measles containing vaccine (Estima
 * description = "IMMZ.IND.08 Immunization coverage for Measles containing vaccine (Estimated Denominator)"
 * url = "http://smart.who.int/immunizations-measles/Measure/IMMZIND08"
 * status = #draft
-* experimental = false
+* experimental = true
 * date = "2023-10-05"
 * name = "IMMZIND08"
+* title = "IMMZ.IND.08 Immunization coverage for Measles containing vaccine (Estimated Denominator)"
 * publisher = "World Health Organization (WHO)"
 * library = "http://smart.who.int/immunizations-measles/Library/IMMZIND08Logic"
 * scoring = $measure-scoring#continuous-variable "Continuous Variable"
@@ -19,7 +20,7 @@ Title: "IMMZ.IND.08 Immunization coverage for Measles containing vaccine (Estima
     * id = "IMMZ.IND.08.IP"
     * description = "Initial Population"
     * code = $measure-population#initial-population "Initial Population"
-    * criteria.language = #text/cql-indicator
+    * criteria.language = #text/cql-identifier
     * criteria.expression = "Initial Population"
   * population[measurePopulation]
     * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis].valueCode = #boolean
@@ -34,9 +35,9 @@ Title: "IMMZ.IND.08 Immunization coverage for Measles containing vaccine (Estima
     * id = "IMMZ.IND.08.MO"
     * description = "Measure Observation"
     * code = $measure-population#measure-observation
-    * criteria.language = #text/cql
+    * criteria.language = #text/identifier
     * criteria.expression = "Measure Observation"
   * stratifier[+]
     * id = "IMMZ.IND.08.S"
-    * criteria.language = #text/cql
+    * criteria.language = #text/identifier
     * criteria.expression = "Stratification"

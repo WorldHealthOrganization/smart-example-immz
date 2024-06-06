@@ -6,7 +6,7 @@ Description: "Vaccine type Codes, containing the different types of antigens use
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 
 * codes from system ICD11 where parent = #XM28X5 

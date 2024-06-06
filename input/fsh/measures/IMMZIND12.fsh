@@ -7,9 +7,10 @@ Title: "IMMZ.IND.12 Measles indicator for first dose"
 * description = "The percentage in the target population who have received one dose of measles and rubella vaccine during reporting period"
 * url = "http://smart.who.int/immunizations-measles/Measure/IMMZIND12"
 * status = #draft
-* experimental = false
+* experimental = true
 * date = "2023-10-12"
 * name = "IMMZIND12"
+* title = "IMMZ.IND.12 Measles indicator for first dose"
 * publisher = "World Health Organization (WHO)"
 * relatedArtifact[+]
   * type = #citation

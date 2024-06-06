@@ -6,6 +6,7 @@ Usage: #definition
 * meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire"
 * meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire"
 * status = #draft
+* experimental = true
 * subjectType = #Patient
 * language = #en
 * contained[+] = IMMZ.C.DE5

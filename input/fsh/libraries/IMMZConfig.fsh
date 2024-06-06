@@ -13,7 +13,7 @@ Usage: #definition
   * valueCode = #computable
 * name = "IMMZConfig"
 * status = #draft
-* experimental = false
+* experimental = true
 * publisher = "World Health Organization (WHO)"
 * type = $library-type#logic-library
 * content.id = "ig-loader-IMMZConfig.cql"

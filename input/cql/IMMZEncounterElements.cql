@@ -36,6 +36,13 @@ define "MCV Dose 0 Dose":
   Elements."MCV Dose 0 Dose" MCV
     where MCV.occurrence.toInterval() on or before Today
 
+define "MCV Immunization Proposal":
+  Elements."MCV Immunization Proposal" MCV
+    where MCV.authoredOn on or before Today
+
+define "Most Recent MCV Immunization Proposal":
+  "MCV Immunization Proposal".mostRecent()
+
 /*
  * Contraindications
  */

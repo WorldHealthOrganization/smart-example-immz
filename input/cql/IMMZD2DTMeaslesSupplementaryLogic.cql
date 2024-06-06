@@ -52,6 +52,12 @@ define "MCV Supplementary Dose Status":
   else
     'Complete'
 
+define "MCV Supplementary Schedule Date":
+  null as Date
+
+define "MCV Supplementary Expiration Date":
+  null as Date
+
 define "MCV Supplementary Dose Due Date":
   if "MCV Supplementary Dose Status" = 'Eligible' then
     WC.LatestOf({

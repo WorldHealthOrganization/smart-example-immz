@@ -9,6 +9,7 @@ name: ImmunizationsMeasles
 title: WHO SMART Guidelines - Measles Immunization
 description: WHO SMART Guidelines - Measles Immunization (Demonstration specification)
 status: draft # draft | active | retired | unknown
+experimental: true
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
@@ -30,7 +31,7 @@ dependencies:
   hl7.fhir.uv.cql: 1.0.0
   hl7.fhir.uv.crmi: 1.0.0
   hl7.fhir.uv.sdc: 3.0.0
-  hl7.fhir.uv.cpg: 2.0.0-ballot
+  hl7.fhir.uv.cpg: current
   hl7.fhir.us.cqfmeasures: current
   fhir.cqf.common: 4.0.1
 
@@ -311,3 +312,7 @@ parameters:
     - http://id.who.int/icd/release/11/mms
     - http://hl7.org/fhir/ValueSet/immunization-status
     - http://hl7.org/fhir/ValueSet/country
+    - http://smart.who.int/immunizations-measles/Library/WHOCommon
+    - http://smart.who.int/immunizations-measles/Library/WHOConcepts
+    - http://smart.who.int/immunizations-measles/Library/WHOElements
+    - http://smart.who.int/base-clinical/Library/WHOEncounterElements

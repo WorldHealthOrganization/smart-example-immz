@@ -8,7 +8,7 @@ Usage:        #definition
 * name = "IMMZConceptsToLOINC"
 * title = "ConceptMap to and from LOINC"
 * status = #active
-* experimental = false
+* experimental = true
 
 * group[+]
   * source = Canonical(IMMZConcepts)

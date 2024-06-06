@@ -5,6 +5,7 @@ Description: "Data elements for IMMZ.D Update Vaccination Record."
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * ^status = #active
+* ^experimental = true
 
 * immunizatioEventStatus 1..1 code "The current status of the individual immunization event"
   * ^code[+] = IMMZConcepts#D.DE1

@@ -43,6 +43,10 @@ define "MCV Dose 0 Dose":
         where Protocol.series = 'dose 0'
     )
 
+define "MCV Immunization Proposal":
+  [MedicationRequest: medication in Concepts."MCV Vaccine"] MCV
+    where MCV.intent = 'proposal'
+
 //TODO: Check patient is alive
 
 // Givens:

@@ -10,6 +10,7 @@ Usage: #definition
 * title = "Administer Vaccine"
 
 * status = #active
+* experimental = true
 * contained[+] = VSMeaslesVaccineProducts
 * contained[+] = SGImmunizationStatusCodes
 * contained[+] = AllVaccineTypes

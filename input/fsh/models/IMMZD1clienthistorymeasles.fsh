@@ -3,6 +3,7 @@ Title: "IMMZ.D1 Capture Client History for Measles"
 Description: "Data elements for the IMMZ.D1 Capture Client History Data Dictionary for Measles."
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
+* ^experimental = true
 * patient 1..1 Reference "Patient" "The patient who is being checked for contraindications."
 * dose0 0..1 boolean "Dose 0 administered" "Indicates if the client has received a birth dose and/or supplementary dose"
   * ^code[+] = IMMZConcepts#D1.DE80

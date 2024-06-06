@@ -47,3 +47,5 @@ define "Measles Routine Immunization Schedule Incomplete":
 define "Number Of Supplementary Doses Administered":
   Count(Elements."MCV Supplementary Dose")
 
+define "Draft Medication Request ID for MCV dose":
+  Elements."Most Recent MCV Immunization Proposal".id

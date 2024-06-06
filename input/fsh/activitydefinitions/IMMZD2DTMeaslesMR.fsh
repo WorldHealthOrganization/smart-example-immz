@@ -4,13 +4,13 @@ Title: "IMMZ.D2.DT.Measles.MR"
 Description: "Provide measles immunization"
 Usage: #definition
 
-* library = "http://smart.who.int/immunizations-measles/Library/IMMZD2DTMeasles"
+* library = "http://smart.who.int/immunizations-measles/Library/IMMZD2DTMeaslesLogic"
 * extension[+]
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
   * valueCode = #computable
 * name = "IMMZD2DTMeaslesMedicationRequest"
 * status = #draft
-* experimental = false
+* experimental = true
 * date = 2023-10-03
 * publisher = "World Health Organization (WHO)"
 * contact[+]
@@ -31,15 +31,3 @@ Usage: #definition
   * expression
     * language = #text/cql
     * expression = "'proposal'"
-* dynamicValue[+]
-  * path = "dispenseRequest.validityPeriod.start"
-  * expression
-    * description = "Due date of the dose"
-    * language = #text/cql-identifier
-    * expression = "Schedule Due Date for MCV dose"
-* dynamicValue[+]
-  * path = "dispenseRequest.validityPeriod.end"
-  * expression
-    * description = "Expiration date for MCV dose"
-    * language = #text/cql-identifier
-    * expression = "Expiration Date for MCV dose"

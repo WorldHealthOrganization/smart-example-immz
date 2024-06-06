@@ -13,7 +13,7 @@ Usage: #definition
 * url = "http://smart.who.int/immunizations-measles/PlanDefinition/IMMZD5DTMeaslesCI"
 * name = "IMMZD5DTMeaslesContraindication"
 * status = #draft
-* experimental = false
+* experimental = true
 * publisher = "World Health Organization (WHO)"
 * relatedArtifact[+]
   * type = #citation

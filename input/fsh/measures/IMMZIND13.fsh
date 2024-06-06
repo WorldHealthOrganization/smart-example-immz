@@ -7,9 +7,10 @@ Title: "IMMZ.IND.13 Measles indicator for second dose"
 * description = "The percentage in the target population who have received second dose of measles and rubella vaccine during reporting period"
 * url = "http://smart.who.int/immunizations-measles/Measure/IMMZIND13"
 * status = #draft
-* experimental = false
+* experimental = true
 * date = "2023-10-13"
 * name = "IMMZIND13"
+* title = "IMMZ.IND.13 Measles indicator for second dose"
 * publisher = "World Health Organization (WHO)"
 * relatedArtifact[+]
   * type = #citation

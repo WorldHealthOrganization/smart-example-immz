@@ -1,10 +1,12 @@
 library IMMZVaccineLibrary
+
 using FHIR version '4.0.1'
+
+include FHIRHelpers version '4.0.1'
+include fhir.cqf.common.FHIRCommon called FC
 
 include WHOCommon called WCom
 include WHOConcepts called Wcon
-include FHIRHelpers version '4.0.1'
-include FHIRCommon called FC
 include IMMZConcepts called IMMZc
 include IMMZCommon called IMMZcom
 

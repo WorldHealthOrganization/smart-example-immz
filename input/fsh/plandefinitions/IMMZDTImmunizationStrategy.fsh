@@ -12,7 +12,7 @@ Usage: #definition
 * url = "http://smart.who.int/immunizations-measles/PlanDefinition/IMMZDTImmunizationStrategy"
 * name = "IMMZDTImmunizationStrategy"
 * status = #draft
-* experimental = false
+* experimental = true
 * publisher = "World Health Organization (WHO)"
 * relatedArtifact[+]
   * type = #citation

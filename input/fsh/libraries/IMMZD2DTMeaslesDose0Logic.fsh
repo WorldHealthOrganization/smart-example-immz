@@ -13,7 +13,7 @@ Usage: #definition
   * valueCode = #computable
 * name = "IMMZD2DTMeaslesDose0Logic"
 * status = #draft
-* experimental = false
+* experimental = true
 * publisher = "World Health Organization (WHO)"
 * type = $library-type#logic-library
 * content.id = "ig-loader-IMMZD2DTMeaslesDose0Logic.cql"

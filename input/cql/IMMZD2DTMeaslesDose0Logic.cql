@@ -53,10 +53,16 @@ define "MCV0 Status":
   else
     'Complete'
 
+define "MCV0 Schedule Date":
+  Patient.birthDate + 6 months
+
+define "MCV0 Expiration Date":
+  Patient.birthDate + 9 months
+
 define "MCV0 Due Date":
   if "MCV0 Status" = 'Needed' then
     WC.LatestOf({
-        Patient.birthDate + 6 months,
+        "MCV0 Schedule Date",
         Logic."Date Last Live Vaccine Administered" + 4 weeks,
         Today
     })

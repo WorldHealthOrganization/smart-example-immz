@@ -13,7 +13,7 @@ Usage: #definition
 * url = "http://smart.who.int/immunizations-measles/PlanDefinition/IMMZD2DTMeaslesSupplementary"
 * name = "IMMZD2DTMeaslesSupplementary"
 * status = #draft
-* experimental = false
+* experimental = true
 * publisher = "World Health Organization (WHO)"
 * relatedArtifact[+]
   * type = #citation
@@ -52,6 +52,18 @@ Usage: #definition
           * language = #text/cql-identifier
           * expression = "Client Is Due For Supplementary Dose"
       * definitionCanonical = Canonical(IMMZD2DTMeaslesMR)
+      * dynamicValue[+]
+        * path = "dispenseRequest.validityPeriod.start"
+        * expression
+          * description = "Due date of the dose"
+          * language = #text/cql-identifier
+          * expression = "MCV Supplementary Schedule Date"
+      * dynamicValue[+]
+        * path = "dispenseRequest.validityPeriod.end"
+        * expression
+          * description = "Expiration date for MCV dose"
+          * language = #text/cql-identifier
+          * expression = "MCV Supplementary Expiration Date"
   * action[+]
     * title = "Supplementary Dose Administered"
     * description = "Measles immunization schedule is complete. Measles supplementary dose was administered."

@@ -8,7 +8,7 @@ Usage:        #definition
 * name = "IMMZConceptsToICD11"
 * title = "ConceptMap to and from ICD-11"
 * status = #active
-* experimental = false
+* experimental = true
 
 * group[+]
   * source = Canonical(IMMZConcepts)

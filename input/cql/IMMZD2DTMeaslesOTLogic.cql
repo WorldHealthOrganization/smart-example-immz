@@ -63,6 +63,9 @@ define "MCV1 Status":
 define "MCV1 Schedule Date":
   Patient.birthDate + 9 months
 
+define "MCV1 Expiration Date":
+  Patient.birthDate + 15 months
+
 define "MCV1 Due Date":
   if "MCV1 Status" = 'Needed' then
     WC.LatestOf({
@@ -81,6 +84,9 @@ define "MCV2 Status":
 
 define "MCV2 Schedule Date":
   Patient.birthDate + 15 months
+
+define "MCV2 Expiration Date":
+  null as Date
 
 define "MCV2 Due Date":
   if "MCV2 Status" = 'Needed' then
