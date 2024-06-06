@@ -4,14 +4,13 @@ Title: "IMMZ.D2.DT.Measles.Eval"
 Description: "Provide measles immunization"
 Usage: #definition
 
-* library = "http://smart.who.int/immunizations-measles/Library/IMMZD2DTMeasles"
+* library = "http://smart.who.int/immunizations-measles/Library/IMMZD2DTMeaslesLogic"
 * extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+  * url = "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"
   * valueCode = #computable
-* version = "0.1.0"
 * name = "IMMZD2DTMeaslesContraindicationEvaluation"
 * status = #draft
-* experimental = false
+* experimental = true
 * date = 2023-10-03
 * publisher = "World Health Organization (WHO)"
 * contact[+]

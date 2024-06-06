@@ -5,10 +5,11 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: smart.who.int.immunizations-measles
 canonical: http://smart.who.int/immunizations-measles
-name: SMART
+name: ImmunizationsMeasles
 title: WHO SMART Guidelines - Measles Immunization
 description: WHO SMART Guidelines - Measles Immunization (Demonstration specification)
 status: draft # draft | active | retired | unknown
+experimental: true
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
@@ -25,10 +26,14 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  who.base: dev
+  hl7.terminology: 5.5.0
+  hl7.fhir.uv.extensions.r4: 5.1.0
+  hl7.fhir.uv.cql: 1.0.0
+  hl7.fhir.uv.crmi: 1.0.0
   hl7.fhir.uv.sdc: 3.0.0
   hl7.fhir.uv.cpg: current
   hl7.fhir.us.cqfmeasures: current
+  fhir.cqf.common: 4.0.1
 
 #
 #
@@ -161,7 +166,10 @@ menu:
 
 meta:
   profile:
-    - http://smart.who.int/smart-base/ImplementationGuide-SGImplementationGuide
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide
+    - http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableguideline
+#    - http://smart.who.int/smart-base/ImplementationGuide-SGImplementationGuide
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
@@ -295,6 +303,8 @@ meta:
 
 parameters:
   produce-jekyll-data: true
+  path-expansion-params:
+    - ../../input/_resources/exp-params.json
   path-resource: 
     - input/actors
     - input/maps
@@ -304,3 +314,7 @@ parameters:
     - http://id.who.int/icd/release/11/mms
     - http://hl7.org/fhir/ValueSet/immunization-status
     - http://hl7.org/fhir/ValueSet/country
+    - http://smart.who.int/base-clinical/Library/WHOCommon
+    - http://smart.who.int/base-clinical/Library/WHOConcepts
+    - http://smart.who.int/base-clinical/Library/WHOElements
+    - http://smart.who.int/base-clinical/Library/WHOEncounterElements

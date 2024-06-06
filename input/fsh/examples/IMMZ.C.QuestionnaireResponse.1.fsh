@@ -27,7 +27,7 @@ Usage: #example
 * item[+]
   * linkId = "sex"
   * text = "Sex"
-  * answer.valueCoding = IMMZ.C#DE7 "Female"
+  * answer.valueCoding = IMMZConcepts#C.DE7 "Female"
 * item[+]
   * linkId = "birthDate"
   * text = "Birth Date"

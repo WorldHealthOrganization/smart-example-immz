@@ -5,8 +5,11 @@ Id: HIVstatus-values
 Title: "HIV status values"
 Description: "Codes representing HIV status values"
 //don't touch status, experimental, immutable
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
 * ^status = #draft
-* ^experimental = false
+* ^experimental = true
 * ^immutable = true
 //fill in codes, check AL_CodeSystems.fsh for the short names of the codesystem
 * $SCT#278977008 "Human immunodeficiency virus status (observable entity)"

@@ -12,44 +12,45 @@ codesystem "ICHI": 'https://mitel.dimi.uniud.it/ichi/#http://id.who.int/ichi'
 codesystem "ICF": 'http://hl7.org/fhir/sid/icf-nl'
 codesystem "Extended Codes CodeSystem codes": 'http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes'
 
-codesystem "IMMZ.C": 'http://smart.who.int/smart-immunizations-measles/CodeSystem/IMMZ.C'
-codesystem "IMMZ.D1": 'http://smart.who.int/smart-immunizations-measles/CodeSystem/IMMZ.D1'
-codesystem "IMMZ.D4": 'http://smart.who.int/smart-immunizations-measles/CodeSystem/IMMZ.D4'
+codesystem "IMMZConcepts": 'http://smart.who.int/immunizations-measles/CodeSystem/IMMZConcepts'
 
 //WHO ATC IPS Valueset
 valueset "WHO ATC": 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips'
 
 // General use ValueSets 
-valueset "Negative Result": 'http://smart.who.int/smart-immunizations-measles/ValueSet/Negativetestresult-values'
-valueset "Positive Result": 'http://smart.who.int/smart-immunizations-measles/ValueSet/PositiveTestResult-values'
-valueset "Immunocompromised": 'http://smart.who.int/smart-immunizations-measles/ValueSet/Immunocompromised-values'
-valueset "Patient birth weight observation value": 'http://smart.who.int/smart-immunizations-measles/ValueSet/Birthweight-values'
-valueset "PretermBirth": 'http://smart.who.int/smart-immunizations-measles/ValueSet/Preterm-values'
-valueset "Live Attenuated": 'http://smart.who.int/smart-immunizations-measles/ValueSet/LiveAttenduatedVaccines'
+valueset "Negative Result": 'http://smart.who.int/immunizations-measles/ValueSet/Negativetestresult-values'
+valueset "Positive Result": 'http://smart.who.int/immunizations-measles/ValueSet/PositiveTestResult-values'
+valueset "Immunocompromised": 'http://smart.who.int/immunizations-measles/ValueSet/Immunocompromised-values'
+valueset "Patient birth weight observation": 'http://smart.who.int/immunizations-measles/ValueSet/Birthweight-values'
+valueset "PretermBirth": 'http://smart.who.int/immunizations-measles/ValueSet/Preterm-values'
+valueset "Live Attenuated": 'http://smart.who.int/immunizations-measles/ValueSet/LiveAttenduatedVaccines'
 
 //valueset "Target Disease": 'http://hl7.org/fhir/ValueSet/immunization-target-disease'
 
-valueset "HIV status": 'http://smart.who.int/smart-immunizations-measles/ValueSet/HIVstatus-values'
+valueset "HIV status": 'http://smart.who.int/immunizations-measles/ValueSet/HIVstatus-values'
 valueset "HIV status - HIV positive Choices": 'http://fhir.org/guides/who/anc-cds/ValueSet/anc-b9-de46'
 valueset "HIV status - HIV negative Choices": 'http://fhir.org/guides/who/anc-cds/ValueSet/anc-b9-de47'
 
-valueset "ARV Drugs": 'http://smart.who.int/smart-immunizations-measles/ValueSet/ARVDrugs-values'
+valueset "ARV Drugs": 'http://smart.who.int/immunizations-measles/ValueSet/ARVDrugs-values'
 
 // Vaccine Value Sets
 
-valueset "MCV Vaccine": 'http://smart.who.int/smart-immunizations-measles/ValueSet/IMMZ.Z.DE9'
+valueset "MCV Vaccine": 'http://smart.who.int/immunizations-measles/ValueSet/IMMZ.Z.DE9'
 
 // Plugin is complaining about not finding these so that should be resolved, but here until it can be fixed
-valueset "BCG Vaccine": 'http://smart.who.int/smart-immunizations-measles/ValueSet/IMMZ.Z.DE1'
-valueset "Cholera Vaccine": 'http://smart.who.int/smart-immunizations-measles/ValueSet/IMMZ.Z.DE2'
-
-
+valueset "BCG Vaccine": 'http://smart.who.int/immunizations-measles/ValueSet/IMMZ.Z.DE1'
+valueset "Cholera Vaccine": 'http://smart.who.int/immunizations-measles/ValueSet/IMMZ.Z.DE2'
 
 code "Adverse Event Severity": '246112005' from "SNOMED-CT" display 'Severity (attribute)'
 code "Adverse Event Manifestation": '246112005' from "SNOMED-CT" display 'Severity (attribute)'
 
-code "Currently Pregnant": 'DE161' from "IMMZ.D4" display 'Currently Pregnant'
-code "Severely immunosuppressed": 'DE165' from "IMMZ.D4" display 'Severely immunosuppressed' 
-code "History of anaphylactic reactions": 'DE166' from "IMMZ.D4" display 'History of anaphylactic reactions'
-code "Severe allergic reactions": 'DE167' from "IMMZ.D4" display 'Severe allergic reactions'
-code "Symptomatic HIV infection": 'DE168' from "IMMZ.D4" display 'Symptomatic HIV infection'
+code "Potential contraindications": 'D4.DE161' from "IMMZConcepts" display 'Potential contraindications'
+code "Currently pregnant": 'D4.DE162' from "IMMZConcepts" display 'Currently pregnant'
+code "Severely immunosuppressed": 'D4.DE165' from "IMMZConcepts" display 'Severely immunosuppressed' 
+code "History of anaphylactic reactions": 'D4.DE166' from "IMMZConcepts" display 'History of anaphylactic reactions'
+code "Severe allergic reactions": 'D4.DE167' from "IMMZConcepts" display 'Severe allergic reactions'
+code "Symptomatic HIV infection": 'D4.DE168' from "IMMZConcepts" display 'Symptomatic HIV infection'
+
+code "[#] Births total": '11640-0' from "LOINC" display 'Pregnancy outcome'
+code "[#] Births.preterm": '11637-6' from "LOINC" display 'Preterm'
+

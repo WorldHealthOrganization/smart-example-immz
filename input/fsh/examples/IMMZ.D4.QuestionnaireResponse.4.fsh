@@ -10,16 +10,16 @@ Usage: #example
 * item[+]
   * linkId = "contraindications"
   * text = "Contraindications"
-  * answer.valueCoding = IMMZ.D4#DE162 "Currently pregnant"
+  * answer.valueCoding = IMMZConcepts#D4.DE162 "Currently pregnant"
 * item[+]
   * linkId = "contraindications"
   * text = "Contraindications"
-  * answer.valueCoding = IMMZ.D4#DE167 "Severe allergic reactions"
+  * answer.valueCoding = IMMZConcepts#D4.DE167 "Severe allergic reactions"
 * item[+]
   * linkId = "contraindications"
   * text = "Contraindications"
-  * answer.valueCoding = IMMZ.D4#DE168 "Symptomatic HIV infection"
+  * answer.valueCoding = IMMZConcepts#D4.DE168 "Symptomatic HIV infection"
 * item[+]
   * linkId = "contraindications"
   * text = "Contraindications"
-  * answer.valueCoding = IMMZ.D4#DE165 "Severely immunosuppressed"
+  * answer.valueCoding = IMMZConcepts#D4.DE165 "Severely immunosuppressed"

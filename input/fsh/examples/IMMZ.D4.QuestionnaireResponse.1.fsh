@@ -11,4 +11,4 @@ Usage: #example
 * item[+]
   * linkId = "contraindications"
   * text = "Contraindications"
-  * answer.valueCoding = IMMZ.D4#DE162 "Currently pregnant"
+  * answer.valueCoding = IMMZConcepts#D4.DE162 "Currently pregnant"

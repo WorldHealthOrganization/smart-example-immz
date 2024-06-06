@@ -16,7 +16,7 @@ Usage: #example
   * answer.valueBoolean = false
 * item[+]
   * linkId = "hivStatus"
-  * answer.valueCoding = IMMZ.D1#DE12
+  * answer.valueCoding = IMMZConcepts#D1.DE12
 * item[+]
   * linkId = "pretermBirth"
   * answer.valueBoolean = false
