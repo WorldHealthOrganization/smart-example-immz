@@ -9,7 +9,7 @@ Usage: #definition
 * meta.profile[+] = "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
 * url = "http://smart.who.int/immunizations-measles/Library/IMMZConfig"
 * extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+  * url = "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"
   * valueCode = #computable
 * name = "IMMZConfig"
 * status = #draft

@@ -9,7 +9,7 @@ Usage: #definition
 * meta.profile[+] = "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
 * url = "http://smart.who.int/base-clinical/Library/WHOCommon"
 * extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+  * url = "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"
   * valueCode = #computable
 * version = "0.1.0"
 * name = "WHOCommon"

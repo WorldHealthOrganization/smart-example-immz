@@ -7,7 +7,7 @@ Usage: #definition
 * meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableplandefinition"
 
 * extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+  * url = "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"
   * valueCode = #computable
 * url = "http://smart.who.int/immunizations-measles/PlanDefinition/IMMZDTImmunizationStrategy"
 * name = "IMMZDTImmunizationStrategy"

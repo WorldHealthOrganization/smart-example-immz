@@ -35,9 +35,9 @@ Title: "IMMZ.IND.08 Immunization coverage for Measles containing vaccine (Estima
     * id = "IMMZ.IND.08.MO"
     * description = "Measure Observation"
     * code = $measure-population#measure-observation
-    * criteria.language = #text/identifier
+    * criteria.language = #text/cql-identifier
     * criteria.expression = "Measure Observation"
   * stratifier[+]
     * id = "IMMZ.IND.08.S"
-    * criteria.language = #text/identifier
+    * criteria.language = #text/cql-identifier
     * criteria.expression = "Stratification"

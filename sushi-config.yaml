@@ -27,7 +27,7 @@ publisher:
 #
 dependencies:
   hl7.terminology: 5.5.0
-  hl7.fhir.uv.extensions: 5.1.0
+  hl7.fhir.uv.extensions.r4: 5.1.0
   hl7.fhir.uv.cql: 1.0.0
   hl7.fhir.uv.crmi: 1.0.0
   hl7.fhir.uv.sdc: 3.0.0
@@ -303,6 +303,8 @@ meta:
 
 parameters:
   produce-jekyll-data: true
+  path-expansion-params:
+    - ../../input/_resources/exp-params.json
   path-resource: 
     - input/actors
     - input/maps
@@ -312,7 +314,7 @@ parameters:
     - http://id.who.int/icd/release/11/mms
     - http://hl7.org/fhir/ValueSet/immunization-status
     - http://hl7.org/fhir/ValueSet/country
-    - http://smart.who.int/immunizations-measles/Library/WHOCommon
-    - http://smart.who.int/immunizations-measles/Library/WHOConcepts
-    - http://smart.who.int/immunizations-measles/Library/WHOElements
+    - http://smart.who.int/base-clinical/Library/WHOCommon
+    - http://smart.who.int/base-clinical/Library/WHOConcepts
+    - http://smart.who.int/base-clinical/Library/WHOElements
     - http://smart.who.int/base-clinical/Library/WHOEncounterElements

@@ -5,12 +5,12 @@ Description: "This library defines terminologies and functions commonly used in 
 Usage: #definition
 * url = "http://fhir.org/guides/cqf/common/Library/FHIRCommon"
 * extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+  * url = "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"
   * valueCode = #computable
 * version = "4.0.1"
 * name = "FHIRCommon"
 * status = #draft
-* experimental = false
+* experimental = true
 * publisher = "World Health Organization (WHO)"
 * type = $library-type#logic-library
 * content.id = "ig-loader-FHIRCommon.cql"

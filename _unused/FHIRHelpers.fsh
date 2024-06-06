@@ -5,12 +5,12 @@ Description: "This library defines functions to convert between FHIR data types 
 Usage: #definition
 * url = "http://fhir.org/guides/cqf/common/Library/FHIRHelpers"
 * extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+  * url = "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"
   * valueCode = #computable
 * version = "4.0.1"
 * name = "FHIRHelpers"
 * status = #draft
-* experimental = false
+* experimental = true
 * publisher = "World Health Organization (WHO)"
 * type = $library-type#logic-library
 * content.id = "ig-loader-FHIRHelpers.cql"

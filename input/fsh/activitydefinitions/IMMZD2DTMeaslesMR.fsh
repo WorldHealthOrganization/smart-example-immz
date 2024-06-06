@@ -6,7 +6,7 @@ Usage: #definition
 
 * library = "http://smart.who.int/immunizations-measles/Library/IMMZD2DTMeaslesLogic"
 * extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+  * url = "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"
   * valueCode = #computable
 * name = "IMMZD2DTMeaslesMedicationRequest"
 * status = #draft
