@@ -18,7 +18,7 @@ Instance: Scenario1
 InstanceOf: ExampleScenario
 Title: "SMART Immunization Guidelines - Measles"
 Usage: #definition
-* status = #draft
+* status = #active
 * purpose = "Purpose: this serves to demonstrate the comprehensive usage of the SMART Guidelines for Immunization, by applying to a concrete scenario for Measles."
 
 * insert ESActor(HCW,person,Healthcare Worker,Healthcare Worker)

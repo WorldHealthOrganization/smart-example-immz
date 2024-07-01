@@ -8,7 +8,7 @@ canonical: http://smart.who.int/immunizations-measles
 name: ImmunizationsMeasles
 title: WHO SMART Guidelines - Measles Immunization
 description: WHO SMART Guidelines - Measles Immunization (Demonstration specification)
-status: draft # draft | active | retired | unknown
+status: active # draft | active | retired | unknown
 experimental: true
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html

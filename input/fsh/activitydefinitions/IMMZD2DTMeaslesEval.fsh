@@ -9,7 +9,7 @@ Usage: #definition
   * url = "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"
   * valueCode = #computable
 * name = "IMMZD2DTMeaslesContraindicationEvaluation"
-* status = #draft
+* status = #active
 * experimental = true
 * date = 2023-10-03
 * publisher = "World Health Organization (WHO)"

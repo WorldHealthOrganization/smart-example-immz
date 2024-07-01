@@ -8,7 +8,7 @@ Description: "Codes representing negative test result values"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 * ^immutable = true
 //fill in codes, check AL_CodeSystems.fsh for the short names of the codesystem
