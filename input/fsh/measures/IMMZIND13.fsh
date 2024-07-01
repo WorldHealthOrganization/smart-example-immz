@@ -6,7 +6,7 @@ Title: "IMMZ.IND.13 Measles indicator for second dose"
 * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis].valueCode = #boolean
 * description = "The percentage in the target population who have received second dose of measles and rubella vaccine during reporting period"
 * url = "http://smart.who.int/immunizations-measles/Measure/IMMZIND13"
-* status = #draft
+* status = #active
 * experimental = true
 * date = "2023-10-13"
 * name = "IMMZIND13"

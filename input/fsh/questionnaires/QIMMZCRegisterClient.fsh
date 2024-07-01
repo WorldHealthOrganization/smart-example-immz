@@ -5,7 +5,7 @@ Description: "Immunization - Client Registration Questionnaire"
 Usage: #definition
 * meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire"
 * meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire"
-* status = #draft
+* status = #active
 * experimental = true
 * subjectType = #Patient
 * language = #en

@@ -12,7 +12,7 @@ Usage: #definition
   * url = "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"
   * valueCode = #computable
 * name = "IMMZD2DTMeaslesDose0Logic"
-* status = #draft
+* status = #active
 * experimental = true
 * publisher = "World Health Organization (WHO)"
 * type = $library-type#logic-library

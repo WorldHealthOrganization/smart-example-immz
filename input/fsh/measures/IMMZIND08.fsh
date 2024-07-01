@@ -7,7 +7,7 @@ Title: "IMMZ.IND.08 Immunization coverage for Measles containing vaccine (Estima
 
 * description = "IMMZ.IND.08 Immunization coverage for Measles containing vaccine (Estimated Denominator)"
 * url = "http://smart.who.int/immunizations-measles/Measure/IMMZIND08"
-* status = #draft
+* status = #active
 * experimental = true
 * date = "2023-10-05"
 * name = "IMMZIND08"

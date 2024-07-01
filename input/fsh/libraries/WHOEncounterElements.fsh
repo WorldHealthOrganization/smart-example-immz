@@ -13,7 +13,7 @@ Usage: #definition
   * valueCode = #computable
 * version = "0.1.0"
 * name = "WHOEncounterElements"
-* status = #draft
+* status = #active
 * experimental = true
 * publisher = "World Health Organization (WHO)"
 * type = $library-type#logic-library

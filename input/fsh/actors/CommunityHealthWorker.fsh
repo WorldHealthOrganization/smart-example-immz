@@ -3,7 +3,7 @@ InstanceOf: ActorDefinition
 Usage: #example
 * meta.profile = "http://smart.who.int/smart-base/StructureDefinition/SGPersona"
 * type = #person
-* status = #draft
+* status = #active
 * identifier.value = "CommunityHealthWorker"
 * name = "CommunityHealthWorker"
 * title = "Community Health Worker"
