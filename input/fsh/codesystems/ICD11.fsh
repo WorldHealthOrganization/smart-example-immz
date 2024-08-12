@@ -7,6 +7,7 @@ Description: "ICD-11."
 * ^hierarchyMeaning = #is-a
 * ^experimental = true
 * ^caseSensitive = true
+* ^content = #fragment
 
 * ^property[+].code = #parent
 * ^property[=].type = #code
