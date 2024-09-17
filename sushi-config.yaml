@@ -21,6 +21,11 @@ publisher:
   url: http://who.int
   # email: test@example.org
 
+
+meta:
+  profile:
+    - http://smart.who.int/base/StructureDefinition/SGImplementationGuide
+
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
