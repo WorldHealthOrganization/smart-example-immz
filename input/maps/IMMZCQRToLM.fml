@@ -1,4 +1,4 @@
-map "http://smart.who.int/immunizations-measles/StructureMap/IMMZCQRToLM" = "IMMZCQRToLM"
+map "http://smart.who.int/immunizations-measles/StructureMap/IMMZCQRToLM" = IMMZCQRToLM
 // Immunization Client Registry - Extract QuestionnaireResponse to Logical Model
 
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
@@ -11,7 +11,7 @@ group QRespToIMMZC ( source qr : QResp, target immzc : IMMZC) {
       answer.value as content -> immzc.uniqueId = content  "SetIdentifier";
     } "FirstAnswerForIdentifier";
 
-    item as name where item.linkId = 'name' then NameToIMMZC( name, immzc ) "SetNames";
+    item as name where (item.linkId = 'name') then NameToIMMZC( name, immzc ) "SetNames";
 
     item.answer first as answer where (item.linkId = 'sex') then {
       answer.value as coding then {
