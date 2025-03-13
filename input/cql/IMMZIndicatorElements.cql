@@ -19,22 +19,22 @@ codesystem "ISO-8601-Derived Periods": 'http://ohie.org/CodeSystem/iso-8601-deri
 
 // Age Groups for Vaccines for infants
 code "P0Y--P1Y": 'P0Y--P1Y' from "ISO-8601-Derived Periods" display '< 1 year'
-code "P1Y--P9999Y": 'P1Y--P9999Y' from "ISO-8601-Derived Periods" display '> 1 year'
+code "P1Y--P9999Y": 'P1Y--P9999Y' from "ISO-8601-Derived Periods" display '>= 1 year'
 
 // Age Groups for Vaccines for Toddlers
 code "P0Y--P2Y": 'P0Y--P2Y' from "ISO-8601-Derived Periods" display '< 2 years'
 code "P1Y--P2Y": 'P1Y--P2Y' from "ISO-8601-Derived Periods" display '1 year'
-code "P2Y--P9999Y": 'P2Y--P9999Y' from "ISO-8601-Derived Periods" display '> 2 years'
+code "P2Y--P9999Y": 'P2Y--P9999Y' from "ISO-8601-Derived Periods" display '>= 2 years'
 
 // Age groups for newborns
 code "PT0H--PT24H": 'PT0H--PT24H' from "ISO-8601-Derived Periods" display 'Within 24H of Birth'
 code "PT24H--P2W": 'PT24H--P2W' from "ISO-8601-Derived Periods" display '< 2 Weeks'
-code "P2W--P9999Y": 'P2W--P9999Y' from "ISO-8601-Derived Periods" display '> 2 Weeks'
+code "P2W--P9999Y": 'P2W--P9999Y' from "ISO-8601-Derived Periods" display '>= 2 Weeks'
 
 // Age groups for adolescent
 code "P0Y--P9Y": 'P0Y--P9Y' from "ISO-8601-Derived Periods" display '< 9 years'
-code "P9Y--P14Y": 'P9Y--P14Y' from "ISO-8601-Derived Periods" display '9 - 14 years'
-code "P15Y--P9999Y": 'P15Y--P9999Y' from "ISO-8601-Derived Periods" display '> 15 years'
+code "P9Y--P14Y": 'P9Y--P15Y' from "ISO-8601-Derived Periods" display '9 - 14 years'
+code "P15Y--P9999Y": 'P15Y--P9999Y' from "ISO-8601-Derived Periods" display '>= 15 years'
 
 // RCV Startifiers
 code "P0M--P9M": 'P0M--P9M' from "ISO-8601-Derived Periods" display '< 9 months'
@@ -46,7 +46,7 @@ code "P0M--P12M": 'P0M--P12M' from "ISO-8601-Derived Periods" display '< 12 mont
 code "P12M--P18M": 'P12M--P18M' from "ISO-8601-Derived Periods" display '12 - 18 months'
 code "P18M--P36M": 'P18M--P36M' from "ISO-8601-Derived Periods" display '18 - 36 months'
 code "P36M--P12Y": 'P36M--P12Y' from "ISO-8601-Derived Periods" display '36 months - 12 years'
-code "P12Y--P9999Y": 'P12Y--P9999Y' from "ISO-8601-Derived Periods" display '> 12 years'
+code "P12Y--P9999Y": 'P12Y--P9999Y' from "ISO-8601-Derived Periods" display '>= 12 years'
 
 // Influenza Age Groups
 code "P1Y--P15Y": 'P1Y--P15Y' from "ISO-8601-Derived Periods" display '1 year - 15 years'
