@@ -21,7 +21,7 @@ Title: "IMMZ.IND.12 Measles indicator for first dose"
 * library = "http://smart.who.int/immunizations-measles/Library/IMMZIND12Logic"
 * scoring = $measure-scoring#ratio "Ratio"
 * group[+]
-  * population[demnominator-initialPopulation]
+  * population[denominator-initialPopulation]
     * id = "IMMZ.IND.12.IP"
     * description = "Locations in target group, as defined by Member State, but defaulted based on locations with encounters"
     * code = $measure-population#initial-population "Initial Population"
@@ -29,12 +29,15 @@ Title: "IMMZ.IND.12 Measles indicator for first dose"
     * criteria.expression = "Denominator Initial Population"
   * population[denominator]
     * id = "IMMZ.IND.12.DEN"
+    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference].valueString = "denominator-initialPopulation"
     * description = "Locations in target group, as defined by Member State, but defaulted based on locations with encounters"
     * code = $measure-population#denominator "Denominator"
     * criteria.language = #text/cql-identifier
     * criteria.expression = "Denominator"
   * population[denominator-observation]
     * id = "IMMZ.IND.12.NUMOBS"
+    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference].valueString = "denominator-initialPopulation"
+    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod].valueCode = #sum
     * description = "Number in target group, as defined by Member State, but defaulted to number of patients with encounters at each location"
     * code = $measure-population#measure-observation "Measure Observation"
     * criteria.language = #text/cql-identifier
@@ -47,12 +50,15 @@ Title: "IMMZ.IND.12 Measles indicator for first dose"
     * criteria.expression = "Numerator Initial Population"
   * population[numerator]
     * id = "IMMZ.IND.12.NUM"
+    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference].valueString = "numerator-initialPopulation"
     * description = "Patients with measles and rubella doses (1st dose) administered through routine services during reporting period"
     * code = $measure-population#numerator "Numerator"
     * criteria.language = #text/cql-identifier
     * criteria.expression = "Numerator"
   * population[numerator-observation]
     * id = "IMMZ.IND.12.NUMOBS"
+    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference].valueString = "numerator-initialPopulation"
+    * extension[http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod].valueCode = #sum
     * description = "Number of measles and rubella doses (1st dose) administered through routine services during reporting period"
     * code = $measure-population#measure-observation "Measure Observation"
     * criteria.language = #text/cql-identifier
