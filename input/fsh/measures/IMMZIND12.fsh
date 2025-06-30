@@ -19,26 +19,44 @@ Title: "IMMZ.IND.12 Measles indicator for first dose"
   * type = #citation
   * citation = "WHO Handbook on immunization data"
 * library = "http://smart.who.int/immunizations-measles/Library/IMMZIND12Logic"
-* scoring = $measure-scoring#proportion "Proportion"
+* scoring = $measure-scoring#ratio "Ratio"
 * group[+]
-  * population[initialPopulation]
+  * population[demnominator-initialPopulation]
     * id = "IMMZ.IND.12.IP"
-    * description = "Number in target group"
+    * description = "Locations in target group, as defined by Member State, but defaulted based on locations with encounters"
     * code = $measure-population#initial-population "Initial Population"
     * criteria.language = #text/cql-identifier
-    * criteria.expression = "Initial Population"
+    * criteria.expression = "Denominator Initial Population"
   * population[denominator]
     * id = "IMMZ.IND.12.DEN"
-    * description = "Number in target group"
+    * description = "Locations in target group, as defined by Member State, but defaulted based on locations with encounters"
     * code = $measure-population#denominator "Denominator"
     * criteria.language = #text/cql-identifier
     * criteria.expression = "Denominator"
+  * population[denominator-observation]
+    * id = "IMMZ.IND.12.NUMOBS"
+    * description = "Number in target group, as defined by Member State, but defaulted to number of patients with encounters at each location"
+    * code = $measure-population#measure-observation "Measure Observation"
+    * criteria.language = #text/cql-identifier
+    * criteria.expression = "Denominator Observation"
+  * population[numerator-initialPopulation]
+    * id = "IMMZ.IND.12.IP"
+    * description = "Patients with at least one encounter during the reporting period"
+    * code = $measure-population#initial-population "Initial Population"
+    * criteria.language = #text/cql-identifier
+    * criteria.expression = "Numerator Initial Population"
   * population[numerator]
     * id = "IMMZ.IND.12.NUM"
-    * description = "Number of measles and rubella doses (1st dose) administered through routine services during reporting period"
+    * description = "Patients with measles and rubella doses (1st dose) administered through routine services during reporting period"
     * code = $measure-population#numerator "Numerator"
     * criteria.language = #text/cql-identifier
     * criteria.expression = "Numerator"
+  * population[numerator-observation]
+    * id = "IMMZ.IND.12.NUMOBS"
+    * description = "Number of measles and rubella doses (1st dose) administered through routine services during reporting period"
+    * code = $measure-population#measure-observation "Measure Observation"
+    * criteria.language = #text/cql-identifier
+    * criteria.expression = "Numerator Observation"
   * stratifier[+]
     * id = "IMMZ.IND.12.S"
     * criteria.language = #text/cql-identifier
