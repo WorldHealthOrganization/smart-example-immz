@@ -3,11 +3,11 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: smart.who.int.immunizations-measles
-canonical: http://smart.who.int/immunizations-measles
-name: ImmunizationsMeasles
-title: WHO SMART Guidelines - Measles Immunization
-description: WHO SMART Guidelines - Measles Immunization (Demonstration specification)
+id: smart.who.int.example-immz
+canonical: http://smart.who.int/example-immz
+name: ExampleImmunizationsMeasles
+title: WHO SMART Guidelines - Example Measles Immunization
+description: WHO SMART Guidelines - Example Measles Immunization (Demonstration specification)
 status: draft # draft | active | retired | unknown
 experimental: true
 version: 0.1.0
@@ -26,14 +26,19 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  hl7.terminology: 5.5.0
-  hl7.fhir.uv.extensions.r4: 5.1.0
+  # NOTE: These dependencies are required because SUSHI doesn't load transitive dependencies
+  # See the zulip thread here: https://chat.fhir.org/#narrow/stream/215610-shorthand/search/transitive
+  hl7.terminology.r4: 6.4.0
+  hl7.fhir.uv.extensions.r4: 5.2.0
   hl7.fhir.uv.cql: 1.0.0
   hl7.fhir.uv.crmi: 1.0.0
   hl7.fhir.uv.sdc: 3.0.0
-  hl7.fhir.uv.cpg: current
-  hl7.fhir.us.cqfmeasures: current
+  hl7.fhir.uv.cpg: 2.0.0
+  hl7.fhir.us.cqfmeasures: 5.0.0
+  # Actual dependencies
   fhir.cqf.common: 4.0.1
+  smart.who.int.base: dev
+  smart.who.int.base-clinical: dev
 
 #
 #
