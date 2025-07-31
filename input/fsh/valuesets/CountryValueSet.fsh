@@ -8,6 +8,6 @@ Description: """This value set defines a base set of codes for countries.
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 * include codes from system ISO3166Part1

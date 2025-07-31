@@ -5,11 +5,10 @@ Description: "Immunization - Check Contraindications Questionnaire"
 Usage: #definition
 * meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire"
 * meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire"
-* status = #draft
+* status = #active
 * experimental = true
 * subjectType = #Patient
 * language = #en
-* status = #draft
 * contained[+] = IMMZ.D4.DE161
 
 * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"

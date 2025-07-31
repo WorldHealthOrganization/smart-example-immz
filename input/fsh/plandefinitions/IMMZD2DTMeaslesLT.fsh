@@ -12,7 +12,7 @@ Usage: #definition
   * valueCode = #computable
 * url = "http://smart.who.int/immunizations-measles/PlanDefinition/IMMZD2DTMeaslesLT"
 * name = "IMMZD2DTMeaslesLT"
-* status = #draft
+* status = #active
 * experimental = true
 * publisher = "World Health Organization (WHO)"
 * relatedArtifact[+]

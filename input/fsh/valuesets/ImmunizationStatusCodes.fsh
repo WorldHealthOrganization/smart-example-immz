@@ -6,7 +6,7 @@ Description: "The value set to instantiate this attribute should be drawn from a
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
-* ^status = #draft
+* ^status = #active
 * ^experimental = true
 * EventStatus#completed
 * EventStatus#entered-in-error
