@@ -67,9 +67,9 @@ context Patient
  */
 define "Newborn By Age Stratifier":
     case 
-        when AgeInHoursAt(start of "Measurement Period") <= 24 then "PT0H--PT24H"
-        when AgeInWeeksAt(start of "Measurement Period") <= 2 then "PT24H--P2W"
-        when AgeInWeeksAt(start of "Measurement Period") > 2 then "P2W--P9999Y"
+        when AgeInHoursAt(end of "Measurement Period") <= 24 then "PT0H--PT24H"
+        when AgeInWeeksAt(end of "Measurement Period") <= 2 then "PT24H--P2W"
+        when AgeInWeeksAt(end of "Measurement Period") > 2 then "P2W--P9999Y"
         else null
     end
 
@@ -78,8 +78,8 @@ define "Newborn By Age Stratifier":
  */
 define "Infant By Age Stratifier":
     case 
-        when AgeInYearsAt(start of "Measurement Period") < 1 then "P0Y--P1Y"
-        when AgeInYearsAt(start of "Measurement Period") >= 1 then "P1Y--P9999Y"
+        when AgeInYearsAt(end of "Measurement Period") < 1 then "P0Y--P1Y"
+        when AgeInYearsAt(end of "Measurement Period") >= 1 then "P1Y--P9999Y"
         else null
     end
 
@@ -88,9 +88,9 @@ define "Infant By Age Stratifier":
  */
 define "Toddler By Age Stratifier":
     case 
-        when AgeInYearsAt(start of "Measurement Period") < 1 then "P0Y--P1Y"
-        when AgeInYearsAt(start of "Measurement Period") < 2 then "P1Y--P2Y"
-        when AgeInYearsAt(start of "Measurement Period") >= 2 then "P2Y--P9999Y"
+        when AgeInYearsAt(end of "Measurement Period") < 1 then "P0Y--P1Y"
+        when AgeInYearsAt(end of "Measurement Period") < 2 then "P1Y--P2Y"
+        when AgeInYearsAt(end of "Measurement Period") >= 2 then "P2Y--P9999Y"
         else null
     end
 
@@ -100,9 +100,9 @@ define "Toddler By Age Stratifier":
  */
 define "Adolescent By Age Stratifier":
     case 
-        when AgeInYearsAt(start of "Measurement Period") < 9 then "P0Y--P9Y"
-        when AgeInYearsAt(start of "Measurement Period") <= 14 then "P9Y--P14Y"
-        when AgeInYearsAt(start of "Measurement Period") > 14 then "P15Y--P9999Y"
+        when AgeInYearsAt(end of "Measurement Period") < 9 then "P0Y--P9Y"
+        when AgeInYearsAt(end of "Measurement Period") <= 14 then "P9Y--P14Y"
+        when AgeInYearsAt(end of "Measurement Period") > 14 then "P15Y--P9999Y"
         else null
     end
 
@@ -111,10 +111,10 @@ define "Adolescent By Age Stratifier":
  */
 define "RCV By Age Stratifier":
     case 
-        when AgeInMonthsAt(start of "Measurement Period") < 9 then "P0M--P9M"
-        when AgeInMonthsAt(start of "Measurement Period") < 18 then "P9M--P18M"
-        when AgeInYearsAt(start of "Measurement Period") < 15 then "P18M--P15Y"
-        when AgeInYearsAt(start of "Measurement Period") >= 15 then "P15Y--P9999Y"
+        when AgeInMonthsAt(end of "Measurement Period") < 9 then "P0M--P9M"
+        when AgeInMonthsAt(end of "Measurement Period") < 18 then "P9M--P18M"
+        when AgeInYearsAt(end of "Measurement Period") < 15 then "P18M--P15Y"
+        when AgeInYearsAt(end of "Measurement Period") >= 15 then "P15Y--P9999Y"
         else null
     end
 
@@ -123,11 +123,11 @@ define "RCV By Age Stratifier":
  */
 define "Varicella By Age Stratifier":
     case 
-        when AgeInMonthsAt(start of "Measurement Period") < 12 then "P0M--P12M"
-        when AgeInMonthsAt(start of "Measurement Period") < 18 then "P12M--P18M"
-        when AgeInMonthsAt(start of "Measurement Period") < 36 then "P18M--P36M"
-        when AgeInYearsAt(start of "Measurement Period") < 12 then "P36M--P12Y"
-        when AgeInYearsAt(start of "Measurement Period") >= 12 then "P12Y--P9999Y"
+        when AgeInMonthsAt(end of "Measurement Period") < 12 then "P0M--P12M"
+        when AgeInMonthsAt(end of "Measurement Period") < 18 then "P12M--P18M"
+        when AgeInMonthsAt(end of "Measurement Period") < 36 then "P18M--P36M"
+        when AgeInYearsAt(end of "Measurement Period") < 12 then "P36M--P12Y"
+        when AgeInYearsAt(end of "Measurement Period") >= 12 then "P12Y--P9999Y"
         else null
     end
 
@@ -137,10 +137,10 @@ define "Varicella By Age Stratifier":
  */
 define "Seasonal Influenza By Age Stratifier":
     case 
-        when AgeInYearsAt(start of "Measurement Period") < 1 then "P0Y--P1Y"
-        when AgeInYearsAt(start of "Measurement Period") < 15 then "P1Y--P15Y"
-        when AgeInYearsAt(start of "Measurement Period") < 60 then "P15Y--P60Y"
-        when AgeInYearsAt(start of "Measurement Period") >= 60 then "P60Y--P9999Y"
+        when AgeInYearsAt(end of "Measurement Period") < 1 then "P0Y--P1Y"
+        when AgeInYearsAt(end of "Measurement Period") < 15 then "P1Y--P15Y"
+        when AgeInYearsAt(end of "Measurement Period") < 60 then "P15Y--P60Y"
+        when AgeInYearsAt(end of "Measurement Period") >= 60 then "P60Y--P9999Y"
         else null
     end
 
